@@ -1,0 +1,40 @@
+.nav-container {
+  margin: 0 0;
+}
+
+.navbar {
+  padding: 0px 50px 0px 100px;
+  border-bottom: 1.5px solid rgb(187, 187, 187);
+}
+
+.navbar-light .navbar-brand {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: 'Playfair Display', serif;
+  background-color: #2d9d92;
+  padding: 20px 30px;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: rgb(187, 187, 187);
+}
+
+a {
+  color: rgb(187, 187, 187);
+  font-size: 15px;
+}
+
+a:hover {
+  color: #2d9d92;;
+}
+
+.nav-link {
+  padding: 0px 16px;
+  /* border-right: 1px solid rgb(236, 236, 236); */
+}
+
+.nav-centre {
+  border-left: 1px solid rgb(236, 236, 236);
+  border-right: 1px solid rgb(236, 236, 236);
+}
