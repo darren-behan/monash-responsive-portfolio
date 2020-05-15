@@ -1,3 +1,5 @@
+/* || NAVBAR */
+
 .nav-container {
   margin: 0 0;
 }
@@ -20,17 +22,14 @@
   color: rgb(187, 187, 187);
 }
 
-a {
+.nav-link {
   color: rgb(187, 187, 187);
   font-size: 15px;
-}
-
-a:hover {
-  color: #2d9d92;;
-}
-
-.nav-link {
   padding: 0px 16px;
+}
+
+.nav-link:hover {
+  color: #2d9d92;;
 }
 
 .nav-centre {
