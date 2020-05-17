@@ -1,4 +1,11 @@
 body {
-  background: url("../Images/body-background-1.jpg") no-repeat center center fixed;
+  background: url("../Images/body-background.jpg") no-repeat center center fixed;
   background-size: cover;
+  font-family: 'Playfair Display', serif
+}
+
+.main-container {
+  min-height: 100vh; /* covers 100% of viewport */
+  position: relative;
+  padding-bottom: 100px; /* height of footer */  
 }

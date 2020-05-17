@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Darren Behan's Portfolio</title>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -11,70 +11,64 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="Assets/css/style_nav.css">
+  <link rel="stylesheet" type="text/css" href="Assets/css/style_footer.css">
 
 </head>
 <body>
-
-  <!-- Nav -->
-  <div class="nav-container">
+  <div class="main-container">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-light bg-light" id="navbar">
-      <a class="navbar-brand" href="index.html">
-        Darren Behan
-      </a>
-      
-      <!-- Unordered list with links-->
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">About</a>
-        </li>
-        <li class="nav-item nav-centre">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Unordered list with links-->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" id="id" href="index.html">
+              About
+            </a>
+          </li>
+          <li class="nav-item" id="nav-centre">
+            <a class="nav-link" href="portfolio.html">
+              Portfolio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="id" href="contact.html">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
-  </div>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">
-      Darren Behan
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" id="id" href="index.html">
-            About Me
-          </a>
-        </li>
-        <li class="nav-item" id="nav-centre">
-          <a class="nav-link" href="portfolio.html">
-            Portfolio
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="id" href="contact.html">
-            Contact
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-copyright">
+        <a href="https://github.com/darren-behan/darren-behan.github.io">&copy; Darren Behan</a>
+      </div>
+      <div class="footer-social-media">
+        <a href="https://www.linkedin.com/in/darren-behan/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/darren-behan"><i class="fab fa-github-square"></i></a>
+        <a href="contact.html"><i class="fas fa-envelope-square"></i></a>
+        <a href="https://www.instagram.com/darren_behan/"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+  </div>
+</body>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->  
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-</body>
 </html>
