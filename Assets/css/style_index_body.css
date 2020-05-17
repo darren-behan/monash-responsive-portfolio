@@ -18,20 +18,20 @@
   top: 0px;
 }
 
-.brand-name, .profile-image, .social-media {
+.profile-name, .profile-image, .social-media {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.brand-name a {
+.profile-name a {
   color: rgb(187, 187, 187);
   font-size: 30px;
   font-weight: 900;
   text-decoration: none;
 }
 
-.brand-name a:hover {
+.profile-name a:hover {
   color: rgb(0, 0, 0);
 }
 
