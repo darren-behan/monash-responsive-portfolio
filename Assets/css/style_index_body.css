@@ -8,19 +8,24 @@
   border-right: 1px solid rgb(236, 236, 236);
 }
 
-.side-pane {
+.side-pane, .profile-name, .profile-image, .social-media {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+}
+
+.side-pane {
+  flex-wrap: wrap;
   font-size: 25px;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
 }
 
+.side-pane a {
+  text-decoration: none;
+}
+
 .profile-name, .profile-image, .social-media {
-  display: flex;
-  justify-content: center;
   width: 100%;
 }
 
@@ -28,7 +33,6 @@
   color: rgb(187, 187, 187);
   font-size: 30px;
   font-weight: 900;
-  text-decoration: none;
 }
 
 .profile-name a:hover {
@@ -42,7 +46,7 @@
 }
 
 .fa-linkedin, .fa-github-square, .fa-envelope-square, .fa-instagram {
-  padding: 0px 10px 0px 10px;
+  padding: 10px;
   color: rgb(187, 187, 187);
 }
 
@@ -62,4 +66,5 @@
 .logo-netsuite, .logo-css {
   height: 50px;
   width: 50px;
+  padding: 5px;
 }

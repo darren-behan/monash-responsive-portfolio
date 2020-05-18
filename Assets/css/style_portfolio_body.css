@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 40px;
+}
+
+.col-md-12 {
+  border-bottom: 1px solid rgb(236, 236, 236);
+  padding: 0;
+}
+
+.col-md-6 {
+  padding: 10px 0px 10px 0px;
+}

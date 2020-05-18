@@ -8,18 +8,18 @@ footer {
   border-top: 1.5px solid rgb(187, 187, 187);
 }
 
-footer div {
-  color: #6c757d;
-  padding: 0;
+footer div, a, .footer-social-media {
   display: flex;
   justify-content: center;
+  padding: 0;
+}
+
+footer div {
+  color: #6c757d;
 }
 
 footer a {
   color: rgb(187, 187, 187);
-  padding: 0;
-  display: flex;
-  justify-content: center;
 }
 
 footer a:hover {
@@ -29,8 +29,6 @@ footer a:hover {
 
 .footer-social-media {
   margin: 0px 90px 0px 90px;
-  display: flex;
-  justify-content: center;
 }
 
 .footer-social-media i {
