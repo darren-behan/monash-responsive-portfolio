@@ -49,3 +49,17 @@
 .fa-instagram:hover, .fa-linkedin:hover, .fa-github-square:hover, .fa-envelope-square:hover {
   color: rgb(0, 0, 0);
 }
+
+.col-md-8 {
+  padding: 0;
+}
+
+.col-md-8 section {
+  padding: 10px 10px 0px 10px;
+  border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+.logo-netsuite, .logo-css {
+  height: 50px;
+  width: 50px;
+}
