@@ -17,8 +17,22 @@
   margin: 50px;
 }
 
+/* Half columns padding */
+
+.col-md-6, .col-md-12 {
+  padding: 0px 15px 15px 15px;
+}
+
 /* Full columns padding */
 
 .col-md-12 {
-  padding: 5px 15px 5px 15px;
+  padding: 0px 15px 15px 15px;
+}
+
+/* Extending width of input form boxes */
+
+@media screen and (max-width: 767px) {
+  .form-control {
+    width: 300px;
+  }
 }
