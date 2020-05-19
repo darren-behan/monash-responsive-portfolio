@@ -1,0 +1,24 @@
+/* Contact Me Body */
+
+/* Container colour and margin */
+
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 40px;
+}
+
+/* Row margin */
+
+.row {
+  margin: 50px;
+}
+
+/* Full columns padding */
+
+.col-md-12 {
+  padding: 5px 15px 5px 15px;
+}
