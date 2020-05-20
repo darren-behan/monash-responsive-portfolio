@@ -38,7 +38,7 @@
 
 /* setting width of side navigation name, image, font awesome icons & the main body technical skills and education section */
 
-.profile-name, .profile-image, .social-media, .technical-skills, .education {
+.profile-name, .profile-image, .social-media, .education {
   width: 100%;
 }
 
@@ -110,7 +110,7 @@ section ul {
 
 /* Positioning columns side-by-side */
 
-.col-md-6 {
+#col-md-4 {
   display: flex;
   float: left;
 }
