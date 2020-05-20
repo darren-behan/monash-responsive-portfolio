@@ -110,7 +110,7 @@ section ul {
 
 /* Positioning columns side-by-side */
 
-#col-md-4 {
+#technical-skills-1, #technical-skills-2, #technical-skills-3 {
   display: flex;
   float: left;
 }
