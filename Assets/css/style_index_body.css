@@ -93,11 +93,12 @@ header a:hover, .social-media i:hover, .side-navigation a:hover {
 .col-md-8 section {
   padding: 10px 10px 0px 10px;
   border-bottom: 1px solid rgb(236, 236, 236);
+  align-items: center;
 }
 
-/* h7 font style */
+/* h6 font style */
 
-.col-md-8 section h7 {
+.col-md-8 section h6 {
   font-style: italic;
 }
 
@@ -105,6 +106,13 @@ header a:hover, .social-media i:hover, .side-navigation a:hover {
 
 section ul {
   margin: 10px 0px 10px 0px
+}
+
+/* Positioning columns side-by-side */
+
+.col-md-6 {
+  display: flex;
+  float: left;
 }
 
 /* Technical skills logo height, width & padding */
