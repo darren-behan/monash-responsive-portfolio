@@ -1,10 +1,5 @@
 /* Body Styling */
 
-/* Navbar */
-.navbar {
-  align-content: flex-end;
-}
-
 /* Columns 1 to 3 border right */
 
 .col-md-3 {
@@ -45,12 +40,6 @@
 header a, .side-navigation a {
   color: #f7f8f9;
   font-weight: 900;
-}
-
-/* Header font size */
-
-header a {
-  /* font-size: 30px; */
 }
 
 /* Image height, width & border radius */
