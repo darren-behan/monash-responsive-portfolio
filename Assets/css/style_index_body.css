@@ -1,6 +1,11 @@
 /* Body Styling */
 
-/* Columns 1 to 4 border right */
+/* Navbar */
+.navbar {
+  align-content: flex-end;
+}
+
+/* Columns 1 to 3 border right */
 
 .col-md-3 {
   background-color: #e4002b;
@@ -45,7 +50,7 @@ header a, .side-navigation a {
 /* Header font size */
 
 header a {
-  font-size: 30px;
+  /* font-size: 30px; */
 }
 
 /* Image height, width & border radius */
@@ -75,13 +80,13 @@ header a:hover, .social-media i:hover, .side-navigation a:hover {
   color: #21282e;
 }
 
-/* Columns 5 to 12 padding */
+/* Columns 4 to 12 padding */
 
 .col-md-9 {
   padding: 0;
 }
 
-/* Columns 5 to 12 section padding & bottom border style */
+/* Columns 4 to 12 section padding & bottom border style */
 
 .col-md-9 section {
   padding: 10px 10px 0px 10px;
@@ -93,6 +98,10 @@ header a:hover, .social-media i:hover, .side-navigation a:hover {
 
 .col-md-9 section h6 {
   font-style: italic;
+}
+
+.about-me {
+  background-color: #d2d5da;
 }
 
 /* ul top & bottom margin */
