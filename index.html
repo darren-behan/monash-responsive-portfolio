@@ -17,6 +17,9 @@
   <!-- Animate CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 
+  <!-- charts.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous"/>
+  
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -26,7 +29,7 @@
   <header class="sticky-top">
 
     <!-- Bootstrap Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-expand-md">
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -118,7 +121,7 @@
                 <img src="./assets/images/profile-pic.png">
               </div>
             </div>
-            <div class="col m12 s12 co-centered wow fadeIn a2 animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;">
+            <div class="col m12 s12 co-centered wow fadeIn a2 animate__animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
               <div class="intro-content col-md-10 col-sm-12">
                 <h2>Darren Behan</h2>
                 <span>Freelance Developer</span>
@@ -134,12 +137,21 @@
       </div>
     </section>
 
-    <!-- Section: About -->
+    <!-- Section: Skills -->
     <section id="skills">
-      <!-- Row -->
-      <div class="row">
-
-
+      <div class="container">
+        <div class="row">
+          <div class="skills col-md-12">
+            <div class="section-title wow fadeIn a1 animate__animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+              <h2>Skills</h2>
+            </div>
+            <div class="skill-line z-depth-1">
+              <div class="col-md-12 col-sm-12">
+                <canvas id="skills-chart" width="600" height="600"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -302,9 +314,15 @@
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+  <!-- charts.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
   <!-- Popper.js first, then Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <!-- Custom JS -->
+  <script src="./assets/js/script.js"></script>
 
 </body>
 </html>

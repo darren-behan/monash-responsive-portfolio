@@ -21,7 +21,7 @@ header {
 }
 
 .navbar {
-  background-color: #2196f3;;
+  background-color: #2196f3;
 }
 
 /* Header a tags colour and font weight */
@@ -51,7 +51,6 @@ header #navbarNav a:hover {
 
 #about {
   padding-top: 70px;
-  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -87,4 +86,29 @@ header #navbarNav a:hover {
   line-height: 34px;
   color: #8a8a8b;
   margin-bottom: 25px;
+}
+
+/* Section: Skills */
+
+.skills {
+  padding: 0;
+}
+
+#skills .section-title {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+#skills .section-title h2 {
+  font-size: 32px;
+  line-height: 42px;
+  opacity: 0.7;
+  font-weight: 500;
+  margin: 0px;
+}
+
+#skills .skill-line {
+  background-color: #ffffff;
+  padding: 40px 40px 80px 30px;
 }
