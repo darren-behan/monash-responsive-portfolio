@@ -2,13 +2,13 @@
 
 /* Columns 1 to 4 border right */
 
-.col-md-4 {
-  border-right: 1px solid rgb(236, 236, 236);
+.col-md-3 {
+  background-color: #e4002b;
 }
 
 /* Centering side panel, image and font awesome icons */
 
-.side-pane, .profile-image, .social-media {
+.side-pane, .profile-image, .social-media, .profile-name {
   display: flex;
   justify-content: center;
 }
@@ -38,7 +38,7 @@
 /* Header & side navigation a tags colour, font size and weight */
 
 header a, .side-navigation a {
-  color: rgb(187, 187, 187);
+  color: #f7f8f9;
   font-weight: 900;
 }
 
@@ -59,7 +59,7 @@ header a {
 /* Font awesome icons colour and padding */
 
 .social-media i {
-  color: rgb(187, 187, 187);
+  color: #f7f8f9;
   padding: 10px;
 }
 
@@ -72,26 +72,26 @@ header a {
 /* Header, font awesome icons & side navigation a tags hover colour */
 
 header a:hover, .social-media i:hover, .side-navigation a:hover {
-  color: rgb(0, 0, 0);
+  color: #21282e;
 }
 
 /* Columns 5 to 12 padding */
 
-.col-md-8 {
+.col-md-9 {
   padding: 0;
 }
 
 /* Columns 5 to 12 section padding & bottom border style */
 
-.col-md-8 section {
+.col-md-9 section {
   padding: 10px 10px 0px 10px;
-  border-bottom: 1px solid rgb(236, 236, 236);
+  border-bottom: 1px solid #697684;
   align-items: center;
 }
 
 /* h6 font style */
 
-.col-md-8 section h6 {
+.col-md-9 section h6 {
   font-style: italic;
 }
 
