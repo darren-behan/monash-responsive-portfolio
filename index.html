@@ -14,21 +14,54 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
   <!-- Custom CSS -->
-  <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
-  <link rel="stylesheet" type="text/css" href="Assets/css/style_index_body.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 <body>
   <!-- Header -->
-  <header>
+  <header class="sticky-top">
 
     <!-- Bootstrap Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-expand-md">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
+
+        <!-- Unordered list - Social Media -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <!-- FontAwesome: Linkedin -->
+            <a class="nav-link" href="https://www.linkedin.com/in/darren-behan/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <!-- FontAwesome: GitHub -->
+            <a class="nav-link" href="https://github.com/darren-behan">
+              <i class="fab fa-github-square"></i>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <!-- FontAwesome: Email -->
+            <a class="nav-link" href="contact.html">
+              <i class="fas fa-envelope-square"></i>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <!-- FontAwesome: Instagram -->
+            <a class="nav-link" href="https://www.instagram.com/darren_behan/">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
 
         <!-- Unordered list - Site Navigation -->
         <ul class="navbar-nav ml-auto">
@@ -68,37 +101,6 @@
             </a>
           </li>
         </ul>
-
-        <!-- Unordered list - Social Media -->
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <!-- FontAwesome: Linkedin -->
-            <a class="nav-link" href="https://www.linkedin.com/in/darren-behan/">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <!-- FontAwesome: GitHub -->
-            <a class="nav-link" href="https://github.com/darren-behan">
-              <i class="fab fa-github-square"></i>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <!-- FontAwesome: Email -->
-            <a class="nav-link" href="contact.html">
-              <i class="fas fa-envelope-square"></i>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <!-- FontAwesome: Instagram -->
-            <a class="nav-link" href="https://www.instagram.com/darren_behan/">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
       </div>
     </nav>
   </header>
@@ -106,87 +108,76 @@
   <!-- Fluid Container -->
   <div class=".container-fluid">
 
-    <!-- Row -->
-    <div class="row">
-
-      <!-- Side Navigation Panel -->
-      <div class="col-md-3">
-        <div class="side-pane">
-
-          <!-- Header -->
-          <header class="profile-name">
-            <a href="index.html">
-            Darren Behan
-            </a>
-          </header>
-
-          <!-- Profile Image -->
-          <div class="profile-image">
-            <img src="Assets/Images/me_cartoon.PNG" alt="Profile Image">
-          </div>
-
-          <!-- FontAwesome: Social Media Icons -->
-          <div class="social-media">
-
-            <!-- FontAwesome: Linkedin -->
-            <a href="https://www.linkedin.com/in/darren-behan/">
-              <i class="fab fa-linkedin"></i>
-            </a>
-
-            <!-- FontAwesome: GitHub -->
-            <a href="https://github.com/darren-behan">
-              <i class="fab fa-github-square"></i>
-            </a>
-
-            <!-- FontAwesome: Email -->
-            <a href="contact.html">
-              <i class="fas fa-envelope-square"></i>
-            </a>
-
-            <!-- FontAwesome: Instagram -->
-            <a href="https://www.instagram.com/darren_behan/">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </div>
-
-          <!-- Index Body Navigation -->
-          <div class="side-navigation">
-
-            <!-- Link to About Section -->
-            <div>
-              <a href="#main-container" class="about-me-nav">About</a>
+    <!-- Section: About -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="intro z-depth-1 col-md-12">
+            <div class="col-md-12 col-sm-12">
+              <div class="profile-pic">
+                <img src="./assets/images/profile-pic.png">
+              </div>
             </div>
-
-            <!-- Link to Experience Section -->
-            <div>
-              <a href="#experience-nav" class="experience-nav">Experience</a>
-            </div>
-
-            <!-- Link to Technical Skills Section -->
-            <div>
-              <a href="#technical-skills-1" class="technical-skills">Technical Skills</a>
-            </div>
-
-            <!-- Link to Education Section -->
-            <div>
-              <a href="#education" class="education">Education</a>
+            <div class="col m12 s12 co-centered wow fadeIn a2 animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeIn;">
+              <div class="intro-content col-md-10 col-sm-12">
+                <h2>Darren Behan</h2>
+                <span>Freelance Developer</span>
+                <p>
+                  Graduate from Monash University Full Stack Development Bootcamp (powered to Trilogy Education Services).
+                </p>
+                <button type="button" class="btn btn-primary">Download CV</button>
+                <button type="button" class="btn btn-success" href="contact.html">Contact Me</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Resume Section -->
-      <div class="col-md-9">
+    <!-- Section: About -->
+    <section id="skills">
+      <!-- Row -->
+      <div class="row">
 
-        <!-- Section: About Me -->
-        <section id="about-me" class="about-me">
-          <h6>Currently enrolled in a 6 month Full Stack Development Bootcamp known as Monash Coding Bootcamp (powered to Trilogy Education Services).</h6>
-          <p>
-            As an established user of NetSuite and a concise aim of becoming a JavaScript Developer, I made the decision to utilize my customer service and finance experience to move into an ERP Support role for NetSuite, which aligns with my career vision.
-            With a responsibility of undertaking requirements and translating them into action, I’ve recently developed and deployed my first script into production. I took great pride in delivering this as this was an enhancement (when I was a user) that I knew would make a difference to my day to day duties.
-            My core responsibility is to be accountable for the maintenance, continuity, and support of this principal financial ERP system. I aim to grow my knowledge and continue to develop and deploy scripts to solve business needs, with the career view of transitioning into a developer role.
-          </p>
-        </section>
+
+      </div>
+    </section>
+
+    <!-- Section: About -->
+    <section id="career">
+      <!-- Row -->
+      <div class="row">
+
+
+      </div>
+    </section>
+
+    <!-- Section: About -->
+    <section id="portfolio">
+      <!-- Row -->
+      <div class="row">
+
+
+      </div>
+    </section>
+
+    <!-- Section: About -->
+    <section id="education">
+      <!-- Row -->
+      <div class="row">
+
+
+      </div>
+    </section>
+
+    <!-- Section: About -->
+    <section id="contact">
+      <!-- Row -->
+      <div class="row">
+
+
+      </div>
+    </section>
 
         <!-- Section: Experience -->
         <section id="experience-nav" class="experience">
