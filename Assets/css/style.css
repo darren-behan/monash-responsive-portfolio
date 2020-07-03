@@ -1,17 +1,66 @@
-/* Body styling for each page */
+/* General Styles */
 
 body {
   background-color: #d2d5da;
   font-family: 'Roboto', sans-serif;;
 }
 
-/* Main container  */
-
 .container-fluid {
   min-height: 100vh; /* covers 100% of viewport */
   width: 100%;
   position: relative;
   padding-bottom: 100px; 
+}
+
+h2 {
+  margin: 0px;
+  font-size: 32px;
+  line-height: 42px;
+  opacity: 0.7;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+i {
+  font-size: 50px;
+  color: #333f48;
+}
+
+a > i {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+a > i:hover {
+  font-size: 25px;
+  color: #333f48;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.skills, .career, #portfolio.col-md-12, #education.col-md-12 {
+  padding: 0;
+}
+
+#about .row .intro, #skills .skill-line, #career .career-line, .portfolio, .education, .contact {
+  padding: 40px 40px 80px 30px;
+}
+
+#course, .skill-line, #contact-container {
+  background-color: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 /* Header */
@@ -64,7 +113,6 @@ header #navbarNav a:hover {
 
 #about .row .intro {
   background: #ffffff;
-  padding: 40px 40px 80px 30px;
 }
 
 #about .intro-content {
@@ -74,11 +122,10 @@ header #navbarNav a:hover {
 }
 
 #about .intro-content h2 {
-  font-weight: bold;
-  margin: 0px;
   font-size: 35px;
+  font-weight: bold;
   line-height: 52px;
-  opacity: 0.7;
+  padding-top: 0px;
 }
 
 #about .intro-content span {
@@ -88,82 +135,16 @@ header #navbarNav a:hover {
   margin-bottom: 25px;
 }
 
-/* Section: Skills */
-
-.skills {
-  padding: 0;
-}
-
-#skills .section-title {
-  text-align: center;
-  padding-bottom: 40px;
-  padding-top: 40px;
-}
-
-#skills .section-title h2 {
-  font-size: 32px;
-  line-height: 42px;
-  opacity: 0.7;
-  font-weight: 500;
-  margin: 0px;
-  padding-top: 20px;
-}
-
-#skills .skill-line {
-  background-color: #ffffff;
-  padding: 40px 40px 80px 30px;
-}
-
 /* Section: Career */
-
-.career {
-  padding: 0;
-}
-
-#career .section-title {
-  text-align: center;
-  padding-bottom: 40px;
-  padding-top: 40px;
-}
-
-#career .section-title h2 {
-  font-size: 32px;
-  line-height: 42px;
-  opacity: 0.7;
-  font-weight: 500;
-  margin: 0px;
-  padding-top: 20px;
-}
 
 #career .career-line {
   background-color: #2196f3;
-  padding: 40px 40px 80px 30px;
 }
 
 /* Section: Portfolio */
 
-#portfolio .col-md-12 {
-  padding: 0;
-}
-
-#portfolio .section-title {
-  text-align: center;
-  padding-bottom: 40px;
-  padding-top: 40px;
-}
-
-#portfolio .section-title h2 {
-  font-size: 32px;
-  line-height: 42px;
-  opacity: 0.7;
-  font-weight: 500;
-  margin: 0px;
-  padding-top: 20px;
-}
-
 .portfolio {
   background-color: #333f48;
-  padding: 40px 40px 80px 30px;
 }
 
 .carousel-caption h5 {
@@ -173,28 +154,12 @@ header #navbarNav a:hover {
 
 /* Section: Education */
 
-#education .col-md-12 {
-  padding: 0;
-}
-
-#education .section-title {
-  text-align: center;
-  padding-bottom: 40px;
-  padding-top: 40px;
-}
-
-#education .section-title h2 {
-  font-size: 32px;
-  line-height: 42px;
-  opacity: 0.7;
-  font-weight: 500;
-  margin: 0px;
-  padding-top: 20px;
+.fade {
+  opacity: 1;
 }
 
 .education {
   background-color: #d2d5da;
-  padding: 40px 40px 80px 30px;
 }
 
 .education .col-md {
@@ -202,31 +167,14 @@ header #navbarNav a:hover {
 }
 
 #course {
-  background-color: #ffffff;
   padding: 10px 10px 10px 10px;
   text-align: center;
 }
 
 /* Section: Contact */
 
-#contact .section-title {
-  text-align: center;
-  padding-bottom: 40px;
-  padding-top: 40px;
-}
-
-#contact .section-title h2 {
-  font-size: 32px;
-  line-height: 42px;
-  opacity: 0.7;
-  font-weight: 500;
-  margin: 0px;
-  padding-top: 20px;
-}
-
 .contact {
   background-color: #333f48;
-  padding: 40px 40px 80px 30px;
 }
 
 /* Container colour and margin */
@@ -236,7 +184,6 @@ header #navbarNav a:hover {
   text-align: center;
   justify-content: center;
   width: 100%;
-  background-color: #ffffff;
   margin-top: 40px;
 }
 
