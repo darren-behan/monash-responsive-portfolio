@@ -139,3 +139,123 @@ header #navbarNav a:hover {
   background-color: #2196f3;
   padding: 40px 40px 80px 30px;
 }
+
+/* Section: Portfolio */
+
+#portfolio .col-md-12 {
+  padding: 0;
+}
+
+#portfolio .section-title {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+#portfolio .section-title h2 {
+  font-size: 32px;
+  line-height: 42px;
+  opacity: 0.7;
+  font-weight: 500;
+  margin: 0px;
+  padding-top: 20px;
+}
+
+.portfolio {
+  background-color: #333f48;
+  padding: 40px 40px 80px 30px;
+}
+
+.carousel-caption h5 {
+  color: #333f48;
+  font-weight: 900;
+}
+
+/* Section: Education */
+
+#education .col-md-12 {
+  padding: 0;
+}
+
+#education .section-title {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+#education .section-title h2 {
+  font-size: 32px;
+  line-height: 42px;
+  opacity: 0.7;
+  font-weight: 500;
+  margin: 0px;
+  padding-top: 20px;
+}
+
+.education {
+  background-color: #d2d5da;
+  padding: 40px 40px 80px 30px;
+}
+
+.education .col-md {
+  padding-bottom: 10px;
+}
+
+#course {
+  background-color: #ffffff;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+/* Section: Contact */
+
+#contact .section-title {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+#contact .section-title h2 {
+  font-size: 32px;
+  line-height: 42px;
+  opacity: 0.7;
+  font-weight: 500;
+  margin: 0px;
+  padding-top: 20px;
+}
+
+.contact {
+  background-color: #333f48;
+  padding: 40px 40px 80px 30px;
+}
+
+/* Container colour and margin */
+
+#contact-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 40px;
+}
+
+/* Row margin */
+
+#contact-row {
+  padding: 50px 0px 50px 0px;
+}
+
+/* Half columns padding */
+
+#first-name, #last-name, #email, #message {
+  padding: 0px 15px 15px 15px;
+}
+
+/* Extending width of input form boxes */
+
+@media screen and (max-width: 767px) {
+  .form-control {
+    width: 300px;
+  }
+}
