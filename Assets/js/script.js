@@ -1,5 +1,5 @@
 $(function () {
-  
+
   // charts.js
   var ctx = $("#skills-chart");
 
