@@ -6,7 +6,7 @@ $(function () {
   var skillsChart = new Chart(ctx, {
     type: "pie",
     data: {
-      labels: ["HTML", "CSS", "Javascript", "jQuery", "AJAX", "node.js"],
+      labels: ["HTML5", "CSS3", "Javascript", "jQuery", "AJAX", "node.js"],
       datasets: [
         {
           label: "Skills",

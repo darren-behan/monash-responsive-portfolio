@@ -135,6 +135,16 @@ header #navbarNav a:hover {
   margin-bottom: 25px;
 }
 
+/* Section: Skills */
+
+#skills-chart-column {
+  padding: 5% 0;
+}
+
+#skills-icons-column {
+  text-align: center;
+}
+
 /* Section: Career */
 
 #career .career-line {
