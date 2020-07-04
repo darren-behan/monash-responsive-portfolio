@@ -143,13 +143,26 @@ header #navbarNav a:hover {
 
 /* Section: Portfolio */
 
+#portfolio .container {
+  padding: 0;
+}
+
 .portfolio {
   background-color: #333f48;
 }
 
-.carousel-caption h5 {
-  color: #333f48;
+.carousel-caption > h5 > a {
+  color: #2ea752;
   font-weight: 900;
+}
+
+.carousel-caption > p > a {
+  color: #000000;
+  font-weight: 900;
+}
+
+#two > p > a {
+  color: #ffffff;
 }
 
 /* Section: Education */
