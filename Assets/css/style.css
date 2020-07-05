@@ -49,12 +49,16 @@ a:hover {
   padding: 0;
 }
 
-#about .row .intro, #skills .skill-line, #career .career-line, .portfolio, .education, .contact {
-  padding: 40px 40px 80px 30px;
+#career .career-line, .portfolio, .education, .contact {
+  padding: 30px 40px 80px 30px;
 }
 
 #course, .skill-line, #contact-container {
   background-color: #ffffff;
+}
+
+section {
+  padding-bottom: 25px;
 }
 
 .section-title {
@@ -119,6 +123,7 @@ header #navbarNav a:hover {
   text-align: center;
   margin: 0 auto;
   float: none;
+  padding-bottom: 20px;
 }
 
 #about .intro-content h2 {
@@ -137,13 +142,13 @@ header #navbarNav a:hover {
 
 /* Section: Skills */
 
-#skills-chart-column {
-  padding: 5% 0;
+#skills-chart-column, #skills-icons-column {
+  text-align: center;
+  padding: 3% 0;
 }
 
-#skills-icons-column {
-  text-align: center;
-  padding: 10% 0;
+#skills .skill-line {
+  padding: 20px 40px 20px 30px;
 }
 
 /* Section: Career */
@@ -189,16 +194,14 @@ header #navbarNav a:hover {
 
 #education-column-left {
   margin-right: 10px;
-  min-height: 2vh;
 }
 
 #education-column-right {
   margin-left: 10px;
-  min-height: 2vh;
 }
 
 #course {
-  padding: 10px 0px 10px 0px;
+  padding: 10px 50px 10px 50px;
   text-align: center;
 }
 

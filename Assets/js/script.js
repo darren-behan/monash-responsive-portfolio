@@ -17,6 +17,86 @@ $(function () {
     }).scroll(); //invoke scroll-handler on page-load
   });
 
+  $(window).on("load", function() {
+    $("#skills").hide();
+    $("#career").hide();
+    $("#portfolio").hide();
+    $("#education").hide();
+    $("#contact").hide();
+  });
+
+  $("#nav-about").on("click", function() {
+    $("#skills").hide();
+    $("#career").hide();
+    $("#portfolio").hide();
+    $("#education").hide();
+    $("#contact").hide();
+    $("#about").show();
+  })
+  
+  $("#nav-skills").on("click", function() {
+    $("#about").hide();
+    $("#career").hide();
+    $("#portfolio").hide();
+    $("#education").hide();
+    $("#contact").hide();
+    $("#skills").show();
+  })
+  
+  $("#nav-career").on("click", function() {
+    $("#about").hide();
+    $("#skills").hide();
+    $("#portfolio").hide();
+    $("#education").hide();
+    $("#contact").hide();
+    $("#career").show();
+  })
+  
+  $("#nav-portfolio").on("click", function() {
+    $("#about").hide();
+    $("#skills").hide();
+    $("#career").hide();
+    $("#education").hide();
+    $("#contact").hide();
+    $("#portfolio").show();
+  })
+
+  $("#nav-education").on("click", function() {
+    $("#about").hide();
+    $("#skills").hide();
+    $("#career").hide();
+    $("#portfolio").hide();
+    $("#contact").hide();
+    $("#education").show();
+  })
+
+  $("#nav-contact").on("click", function() {
+    $("#about").hide();
+    $("#skills").hide();
+    $("#career").hide();
+    $("#portfolio").hide();
+    $("#education").hide();
+    $("#contact").show();
+  })
+
+  $("#nav-icon-contact").on("click", function() {
+    $("#about").hide();
+    $("#skills").hide();
+    $("#career").hide();
+    $("#portfolio").hide();
+    $("#education").hide();
+    $("#contact").show();
+  })
+
+  $(".btn-success").on("click", function() {
+    $("#about").hide();
+    $("#skills").hide();
+    $("#career").hide();
+    $("#portfolio").hide();
+    $("#education").hide();
+    $("#contact").show();
+  })
+
   // charts.js
   var ctx = $("#skills-chart");
 
