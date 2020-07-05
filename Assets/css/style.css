@@ -1,7 +1,7 @@
 /* General Styles */
 
 body {
-  background-color: #d2d5da;
+  background-color: #ededed;
   font-family: 'Roboto', sans-serif;;
 }
 
@@ -162,14 +162,9 @@ header #navbarNav a:hover {
   background-color: #ffffff;
 }
 
-.carousel-caption > h5 > a {
-  color: #2ea752;
-  font-weight: 900;
-}
-
-.carousel-caption > p > a {
-  color: #000000;
-  font-weight: 900;
+.carousel-caption {
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 10px;
 }
 
 #two > p > a {
@@ -183,7 +178,7 @@ header #navbarNav a:hover {
 }
 
 .education {
-  background-color: #d2d5da;
+  background-color: #ededed;
   padding-left: 0;
   padding-right: 0;
 }
@@ -194,10 +189,12 @@ header #navbarNav a:hover {
 
 #education-column-left {
   margin-right: 10px;
+  min-height: 2vh;
 }
 
 #education-column-right {
   margin-left: 10px;
+  min-height: 2vh;
 }
 
 #course {
