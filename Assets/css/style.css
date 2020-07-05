@@ -143,6 +143,7 @@ header #navbarNav a:hover {
 
 #skills-icons-column {
   text-align: center;
+  padding: 10% 0;
 }
 
 /* Section: Career */
@@ -158,7 +159,7 @@ header #navbarNav a:hover {
 }
 
 .portfolio {
-  background-color: #333f48;
+  background-color: #ffffff;
 }
 
 .carousel-caption > h5 > a {
@@ -183,14 +184,24 @@ header #navbarNav a:hover {
 
 .education {
   background-color: #d2d5da;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .education .col-md {
-  padding-bottom: 10px;
+  padding: 0px 0px 10px 0px;
+}
+
+#education-column-left {
+  margin-right: 10px;
+}
+
+#education-column-right {
+  margin-left: 10px;
 }
 
 #course {
-  padding: 10px 10px 10px 10px;
+  padding: 10px 0px 10px 0px;
   text-align: center;
 }
 
@@ -207,7 +218,7 @@ header #navbarNav a:hover {
   text-align: center;
   justify-content: center;
   width: 100%;
-  margin-top: 40px;
+  margin: 40px 0px 40px 0px;
 }
 
 /* Row margin */
