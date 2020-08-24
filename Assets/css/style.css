@@ -109,6 +109,12 @@ section:nth-of-type(1) {
 
 /* Section: Home */
 /* Adding styles to text on the landing page */
+#home {
+  background-image: url("../img/code.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .intro {
   font-size: 45px;
   line-height: 50px;
@@ -119,28 +125,26 @@ section:nth-of-type(1) {
 
 /* Setting color of specific text within the <intro> div */
 .name {
-  color: #e31b6d;
-  font-weight: 400;
+  color: #0bc2c9;
+  font-weight: 600;
 }
 
 /* Styling button on landing page */
 .btn-home {
-  background-color: #e31b6d;;
-  border-color: #e31b6d;
+  background-color: #0bc2c9;
+  border-color: #0bc2c9;
   color: #fff;
   font-weight: 500;
 }
 
 .btn-home:hover {
-  background-color: transparent;
-  border-color: transparent;
-  color: #e31b6d;
+  background-color: #e31b6d;
+  border-color: #e31b6d;
 }
 
 /* Rotates arrow on hover */
 .btn-home:hover i {
   transform: rotateZ(90deg);
-  color: #e31b6d;
 }
 
 .btn-home > div {
@@ -151,6 +155,7 @@ section:nth-of-type(1) {
   display: block;
   font-size: 20px;
   transition: all 0.4s ease;
+  color: #fff;
 }
 
 /* Section: About */
