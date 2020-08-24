@@ -108,24 +108,49 @@ section:nth-of-type(1) {
 }
 
 /* Section: Home */
-.flex {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
+/* Adding styles to text on the landing page */
 .intro {
-  font-size: 32pt;
-  line-height: 36pt;
-  margin: 0 0 20px 0;
-  pointer-events: none;
+  font-size: 45px;
+  line-height: 50px;
+  margin: 0 0 2vh 0;
   z-index: 1;
+  text-align: center;
 }
 
+/* Setting color of specific text within the <intro> div */
 .name {
   color: #e31b6d;
   font-weight: 400;
+}
+
+/* Styling button on landing page */
+.btn-home {
+  background-color: #e31b6d;;
+  border-color: #e31b6d;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn-home:hover {
+  background-color: transparent;
+  border-color: transparent;
+  color: #e31b6d;
+}
+
+/* Rotates arrow on hover */
+.btn-home:hover i {
+  transform: rotateZ(90deg);
+  color: #e31b6d;
+}
+
+.btn-home > div {
+  padding: 1vh 1vw 1vh 1vw;
+}
+
+.btn i {
+  display: block;
+  font-size: 20px;
+  transition: all 0.4s ease;
 }
 
 /* Section: About */
