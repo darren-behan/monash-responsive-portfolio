@@ -1,4 +1,10 @@
 $(function () {
+  $(".btn-home").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".navbar").offset().top
+    }, 1000);
+  });
+
   $(window).on("load", function () {
     $(window)
       .scroll(function () {
