@@ -27,11 +27,23 @@ $(document).ready(() => {
     const $headerBarDiv = $("<div>").attr("class", "header-bar").attr("data-aos", "fade-left");
     $aboutDiv.append($headerBarDiv);
 
-    const $bioDivImg = $("<div>").attr("class", "profile-pic");
-    const $bioImg = $("<img>").attr("src", "./assets/img/profile-pic.png")
-    $aboutDiv.append($bioDivImg);
+    const $aboutRow = $("<div>").attr("class", "row");
+    $aboutDiv.append($aboutRow);
+
+    const $bioDivLeft = $("<div>").attr("class", "col-md-4 bio-text-left").attr("data-aos", "fade-right");
+    const $bioTextLeft = $("<p>").text("Full Stack Web Developer utilising an extensive customer service and finance background to build complex web apps with a seamless user experience. Currently enrolled in Monash Universities Full Stack Web Development Bootcamp developing where I’m developing technical skills in CSS, JavaScript, React.js Node.js, API, MongoDB and responsive web design.");
+    $aboutRow.append($bioDivLeft);
+    $bioDivLeft.append($bioTextLeft);
+
+    const $bioDivImg = $("<div>").attr("class", "col-md-4 profile-pic").attr("data-aos", "fade-up");
+    const $bioImg = $("<img>").attr("src", "./assets/img/profile-pic.png");
+    $aboutRow.append($bioDivImg);
     $bioDivImg.append($bioImg);
 
+    const $bioDivRight = $("<div>").attr("class", "col-md-4 bio-text-left").attr("data-aos", "fade-left");
+    const $bioTextRight = $("<p>").text("My known hard work ethic coupled with my passion for developing responsive, clean web apps has allowed me the opportunity to work on developing and deploying custom built NetSuite scripts to automate processes which drive a better user experience for my stakeholders allowing them to focus on their core role tasks over manual tasks. I’m thrilled to leverage my newly developed skills to continue to deliver automated solutions and better user experiences.");
+    $aboutRow.append($bioDivRight);
+    $bioDivRight.append($bioTextRight);
   }
   
 
