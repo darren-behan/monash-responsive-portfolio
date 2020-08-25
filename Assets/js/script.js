@@ -90,13 +90,13 @@ $(document).ready(() => {
   });
 
   const skillsSection = () => {
-    const $skillsDiv = $(".skills");
-    const $h2 = $("<h2>").text("Skills").attr("data-aos", "fade-right");
-    $skillsDiv.append($h2);
+    // const $skillsDiv = $(".skills");
+    // const $h2 = $("<h2>").text("Skills").attr("data-aos", "fade-right");
+    // $skillsDiv.append($h2);
 
-    const $headerBarDiv = $("<div>")
-      .attr("class", "header-bar")
-      .attr("data-aos", "fade-left");
-    $skillsDiv.append($headerBarDiv);
+    // const $headerBarDiv = $("<div>")
+    //   .attr("class", "header-bar")
+    //   .attr("data-aos", "fade-left");
+    // $skillsDiv.append($headerBarDiv);
   }
 });

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class=" -webkit-">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -97,13 +97,8 @@
           <!-- Unordered list - Site Navigation -->
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#about" id="nav-about">
+              <a class="nav-link" href="#section-about" id="nav-about">
                 About
-              </a>
-            </li>
-            <li class="nav-item" id="nav-centre">
-              <a class="nav-link" href="#skills" id="nav-skills">
-                Skills
               </a>
             </li>
             <li class="nav-item" id="nav-centre">
@@ -112,13 +107,18 @@
               </a>
             </li>
             <li class="nav-item" id="nav-centre">
-              <a class="nav-link" href="#portfolio" id="nav-portfolio">
-                Portfolio
+              <a class="nav-link" href="#section-skills" id="nav-skills">
+                Skills
               </a>
             </li>
             <li class="nav-item" id="nav-centre">
-              <a class="nav-link" href="#education" id="nav-education">
+              <a class="nav-link" href="#section-education" id="nav-education">
                 Education
+              </a>
+            </li>
+            <li class="nav-item" id="nav-centre">
+              <a class="nav-link" href="#portfolio" id="nav-portfolio">
+                Portfolio
               </a>
             </li>
             <li class="nav-item">
@@ -136,22 +136,6 @@
       <div class="container d-flex justify-content-center">
         <div class="row">
           <div class="col-md-12 about flex">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section: Skills -->
-    <section id="section-skills">
-      <div class="container d-flex justify-content-center">
-        <div class="row">
-          <div class="col-md-12 skills flex">
-          </div>
-          <div class="graph-cont">
-            <div class="bar bar1">60%</div>
-            <div class="bar bar2">72%</div>
-            <div class="bar bar3">47%</div>
-            <div class="bar bar4">20%</div>
           </div>
         </div>
       </div>
@@ -279,6 +263,60 @@
       </div>
     </section>
 
+    <!-- Section: Skills -->
+    <section id="section-skills">
+      <div class="container d-flex justify-content-center">
+        <div class="row">
+          <div class="col-md-12 skills flex">
+          </div>
+          <div class="col-md-6 flex">
+            <div>
+            <h2 data-aos="fade-right">Skills</h2>
+            <div class="header-bar" data-aos="fade-left"></div>
+            </div>
+            <div class="graph-cont">
+              <div class="bar bar1">
+                <span><i class="fab fa-html5"></i></span>90%
+              </div>
+              <div class="bar bar2">
+                <span><i class="fab fa-css3"></i></span>90%
+              </div>
+              <div class="bar bar3">
+                <span><i class="fab fa-js"></i></span>80%
+              </div>
+              <div class="bar bar4">
+                <span><i class="fab fa-node-js"></i></span>80%
+              </div>
+              <div class="bar bar5">
+                <span><i class="fab fa-react"></i></span>60%
+              </div>
+              <div class="bar bar6">
+                <span><i class="fab fa-github"></i></span>80%
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 flex">
+            <h2 data-aos="fade-left">Education</h2>
+            <div class="header-bar" data-aos="fade-right"></div>
+            <div class="col-md col-sm" id="education-column-left">
+              <div class="z-depth-1" id="course">
+                <h3>Full Stack Web Development Bootcamp</h3>
+                <h5>Monash University</h5>
+                <p>Graduated in 2020</p>
+              </div>
+            </div>
+            <div class="col-md col-sm" id="education-column-right">
+              <div class="z-depth-1" id="course">
+                <h3>Bachelor of Arts, Honors Degree in Accounting</h3>
+                <h5>Institute of Technology, Carlow</h5>
+                <p>Graduated in 2011</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Section: About -->
     <!-- <section id="portfolio">
       <div class="container">
@@ -318,7 +356,7 @@
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="carousel-control-prev-icon" aria-hidden="true">
                   <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
