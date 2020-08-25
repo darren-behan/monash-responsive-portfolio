@@ -3,85 +3,36 @@
 body {
   background-color: #ededed;
   font-family: 'Raleway', sans-serif;
+  font-size: 3vh;
 }
 
 .container-fluid {
   min-height: 100vh; /* covers 100% of viewport */
   width: 100%;
   position: relative;
-  padding-bottom: 100px; 
+  padding-bottom: 10vh; 
 }
 
+/* Headings */
 h2 {
   color: #001b31;
-  margin: 0px;
+  margin: 0;
   font-size: 32px;
-  line-height: 42px;
-  opacity: 1!important;
-  font-weight: 500;
-  padding-top: 20px;
 }
 
-nav {
-  border-bottom: 3px solid #04c2c9;
+.flex {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
-i {
-  font-size: 50px;
-  color: #333f48;
-}
-
-a > i {
-  font-size: 25px;
-  color: #ffffff;
-}
-
-a > i:hover {
-  color: #e31b6d;
-}
-
-a {
-  color: #ffffff;
-}
-
-a:hover {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-p {
-  margin-top: 1rem;
-}
-
-.skills, .career, #portfolio.col-md-12, #education.col-md-12 {
-  padding: 0;
-}
-
-#career .career-line, .portfolio, .education, .contact {
-  padding: 30px 40px 80px 30px;
-}
-
-#course, .skill-line, #contact-container {
-  background-color: #ffffff;
-}
-
-section {
-  padding-bottom: 25px;
-}
-
-.section-title {
-  text-align: center;
-  padding-bottom: 40px;
-  padding-top: 40px;
-}
-
-/* Header */
-
+/* Navigation Menu */
 header {
   position: sticky;
 }
 
-.navbar {
+nav {
+  border-bottom: 3px solid #04c2c9;
   background-color: #001b31;
 }
 
@@ -98,8 +49,40 @@ header #navbar-nav a:hover {
   color: #e31b6d;
 }
 
-/* Section */
+/* Sections */
+section {
+  padding: 5vh 0 10vh 0;
+  text-align: center;  
+}
 
+/* Paragraphs */
+p {
+  margin: 0!important;
+}
+
+/* Font Awesome Icons */
+a > i {
+  font-size: 3vh;
+  color: #ffffff;
+}
+
+a > i:hover {
+  color: #e31b6d;
+}
+
+/* Links */
+a {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2.25vh;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Section: Home */
 section:nth-of-type(1) {
   color: #fff;
   height: 100vh;
@@ -107,15 +90,6 @@ section:nth-of-type(1) {
   background-color: #252A35;
 }
 
-.z-depth-1 {
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-}
-
-.row {
-  margin-bottom: 0px;
-}
-
-/* Section: Home */
 /* Adding styles to text on the landing page */
 #home {
   background-image: url("../img/code.jpg");
@@ -126,7 +100,7 @@ section:nth-of-type(1) {
 .intro {
   font-size: 45px;
   line-height: 50px;
-  margin: 0 0 2vh 0;
+  margin: 0 0 2vh 0!important;
   z-index: 1;
   text-align: center;
 }
@@ -137,16 +111,16 @@ section:nth-of-type(1) {
   font-weight: 600;
 }
 
-/* Styling button on landing page */
-.btn-home {
+/* Styling button */
+.btn {
   background-color: #0bc2c9;
   border-color: #0bc2c9;
   color: #fff;
   font-weight: 500;
-  font-size: 2.5vh;
+  font-size: 2.25vh;
 }
 
-.btn-home:hover {
+.btn:hover {
   background-color: #e31b6d;
   border-color: #e31b6d;
 }
@@ -168,25 +142,82 @@ section:nth-of-type(1) {
 }
 
 /* Section: About */
-
-#about {
-  padding-top: 2vh;
-  text-align: center;
+#section-about {
   background-color: #ffffff;
 }
 
 .header-bar {
   background: #0bc2c9;
   height: .5vh;
-  margin: 2vh 33vw 4vh 33vw;
+  width: 70px;
+  margin: 2vh 0 4vh 0;
 }
 
-#about .profile-pic img {
-  border-radius: 25%;
-  height: 150px;
-  width: 150px;
+.profile-pic img {
+  border-radius: 15%;
+  height: 250px;
+  width: 250px;
   vertical-align: middle;
+  padding: 0 0 1vh 0;
 }
+
+@media screen and (max-width: 1024px) {
+  /* Section: About */
+  /* Resizing the text within the button element */
+  .button-md {
+    font-size: 1.25vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Section: About */
+  /* Resizing the text within the button element */
+  .button-md {
+    font-size: 1.5vh;
+  }
+
+  /* Extending width of input form boxes */
+  .form-control {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  /* Section: About */
+  /* Adding margin to the bottom of the button to create some separation */
+  .button-sm {
+    margin: 0 0 1vh 0;
+  }
+
+  /* Resizing the text within the button element */
+  .button-md {
+    font-size: 2vh;
+  }
+  /* Extending width of input form boxes */
+  #education-column-left {
+    margin: 0px 10px 0px 10px;
+  }
+  
+  #education-column-right {
+    margin: 0px 10px 0px 10px;
+  }
+}
+
+/* .skills, .career, #portfolio.col-md-12, #education.col-md-12 {
+  padding: 0;
+}
+
+#career .career-line, .portfolio, .education, .contact {
+  padding: 30px 40px 80px 30px;
+}
+
+#course, .skill-line, #contact-container {
+  background-color: #ffffff;
+} */
+
+/* .z-depth-1 {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+} */
 
 /* Section: Skills */
 
@@ -279,22 +310,4 @@ section:nth-of-type(1) {
 
 #first-name, #last-name, #email, #message {
   padding: 0px 15px 15px 15px;
-}
-
-/* Extending width of input form boxes */
-
-@media screen and (max-width: 767px) {
-  .form-control {
-    width: 300px;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  #education-column-left {
-    margin: 0px 10px 0px 10px;
-  }
-  
-  #education-column-right {
-    margin: 0px 10px 0px 10px;
-  }
 }
