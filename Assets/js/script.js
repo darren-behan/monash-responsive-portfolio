@@ -14,7 +14,11 @@ $(document).ready(() => {
 
   // This function will run when the window loads
   $(window).on("load", () => {
-    // We're creating two <div> elements to store the About heading which animates on scroll which is controlled through AOS
+    aboutSection();
+  });
+
+  const aboutSection = () => {
+    // We're dynamically creating all elements for the About section with certain elements animating on scroll which is controlled through AOS
     // The animations are introduced by adding classes to the elements
     const $aboutDiv = $(".about");
     const $h2 = $("<h2>").text("About").attr("data-aos", "fade-right");
@@ -22,7 +26,13 @@ $(document).ready(() => {
 
     const $headerBarDiv = $("<div>").attr("class", "header-bar").attr("data-aos", "fade-left");
     $aboutDiv.append($headerBarDiv);
-  });
+
+    const $bioDivImg = $("<div>").attr("class", "profile-pic");
+    const $bioImg = $("<img>").attr("src", "./assets/img/profile-pic.png")
+    $aboutDiv.append($bioDivImg);
+    $bioDivImg.append($bioImg);
+
+  }
   
 
   // $(window).on("load", function () {

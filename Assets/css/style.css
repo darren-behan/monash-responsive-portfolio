@@ -13,10 +13,11 @@ body {
 }
 
 h2 {
+  color: #001b31;
   margin: 0px;
   font-size: 32px;
   line-height: 42px;
-  opacity: 0.7!important;
+  opacity: 1!important;
   font-weight: 500;
   padding-top: 20px;
 }
@@ -167,45 +168,20 @@ section:nth-of-type(1) {
 #about {
   padding-top: 2vh;
   text-align: center;
+  background-color: #ffffff;
 }
 
 .header-bar {
-  background: #444649;
+  background: #001b31;
   height: 4px;
-  margin: 25px 0 100px 0;
+  margin: 25px 0 50px 0;
 }
 
 #about .profile-pic img {
-  border-radius: 50%;
+  border-radius: 25%;
   height: 150px;
   width: 150px;
   vertical-align: middle;
-  margin-top: -70px;
-}
-
-#about .row .intro {
-  background: #ffffff;
-}
-
-#about .intro-content {
-  text-align: center;
-  margin: 0 auto;
-  float: none;
-  padding-bottom: 20px;
-}
-
-#about .intro-content h2 {
-  font-size: 35px;
-  font-weight: bold;
-  line-height: 52px;
-  padding-top: 0px;
-}
-
-#about .intro-content span {
-  font-size: 18px;
-  line-height: 34px;
-  color: #8a8a8b;
-  margin-bottom: 25px;
 }
 
 /* Section: Skills */
