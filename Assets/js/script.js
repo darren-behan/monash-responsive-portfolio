@@ -9,7 +9,7 @@ $(document).ready(() => {
   $(".btn-home").click(function () {
     $("html, body").animate(
       {
-        scrollTop: $(".navbar").offset().top,
+        scrollTop: $(".sticky-top").offset().top,
       },
       1000
     );
@@ -18,6 +18,7 @@ $(document).ready(() => {
   // This function will run when the window loads
   $(window).on("load", () => {
     aboutSection();
+    skillsSection();
   });
 
   const aboutSection = () => {
@@ -88,36 +89,14 @@ $(document).ready(() => {
     }
   });
 
-  // charts.js
-  var ctx = $("#skills-chart");
+  const skillsSection = () => {
+    const $skillsDiv = $(".skills");
+    const $h2 = $("<h2>").text("Skills").attr("data-aos", "fade-right");
+    $skillsDiv.append($h2);
 
-  var skillsChart = new Chart(ctx, {
-    type: "pie",
-    data: {
-      labels: ["HTML5", "CSS3", "Javascript", "jQuery", "AJAX", "node.js"],
-      datasets: [
-        {
-          label: "Skills",
-          data: [5, 10, 25, 25, 15, 20],
-          backgroundColor: [
-            "rgba(255, 99, 132, 0.2)",
-            "rgba(54, 162, 235, 0.2)",
-            "rgba(255, 206, 86, 0.2)",
-            "rgba(75, 192, 192, 0.2)",
-            "rgba(153, 102, 255, 0.2)",
-            "rgba(255, 159, 64, 0.2)",
-          ],
-          borderColor: [
-            "rgba(255, 99, 132, 1)",
-            "rgba(54, 162, 235, 1)",
-            "rgba(255, 206, 86, 1)",
-            "rgba(75, 192, 192, 1)",
-            "rgba(153, 102, 255, 1)",
-            "rgba(255, 159, 64, 1)",
-          ],
-          borderWidth: 0.5,
-        },
-      ],
-    },
-  });
+    const $headerBarDiv = $("<div>")
+      .attr("class", "header-bar")
+      .attr("data-aos", "fade-left");
+    $skillsDiv.append($headerBarDiv);
+  }
 });
