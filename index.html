@@ -19,6 +19,9 @@
 
   <!-- charts.js -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous"/>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -37,7 +40,7 @@
             <p class="intro">
               Hello, I'm <span class="name">Darren Behan</span>.
               </br>
-              I'm a full stack developer.
+              I'm a full-stack web developer.
             </p>
           </div>
           <div class="d-flex justify-content-center col-md-12">
@@ -55,10 +58,10 @@
 
       <!-- Bootstrap Navbar -->
       <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbar-nav">
 
           <!-- Unordered list - Social Media -->
           <ul class="navbar-nav mr-auto">
@@ -72,21 +75,21 @@
             <li class="nav-item">
               <!-- FontAwesome: GitHub -->
               <a class="nav-link" href="https://github.com/darren-behan">
-                <i class="fab fa-github-square"></i>
+                <i class="fab fa-github"></i>
               </a>
             </li>
 
             <li class="nav-item">
               <!-- FontAwesome: Email -->
               <a class="nav-link" href="#contact" id="nav-icon-contact">
-                <i class="fas fa-envelope-square"></i>
+                <i class="fas fa-envelope"></i>
               </a>
             </li>
 
             <li class="nav-item">
               <!-- FontAwesome: Instagram -->
               <a class="nav-link" href="https://www.instagram.com/darren_behan/">
-                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-instagram"></i>
               </a>
             </li>
           </ul>
@@ -130,38 +133,39 @@
 
     <!-- Section: About -->
     <section id="about">
-      <div class="container">
+      <div class="container d-flex justify-content-center">
         <div class="row">
-          <div class="intro z-depth-1 col-md-12">
-            <div class="col-md-12 col-sm-12">
-              <div class="profile-pic">
-                <img src="./assets/img/profile-pic.png">
-              </div>
-            </div>
-            <div class="col m12 s12 co-centered wow fadeIn a2 animate__animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-              <div class="intro-content col-md-10 col-sm-12">
-                <h2>Darren Behan</h2>
-                <span>Freelance Developer</span>
-                <p>
-                  Full Stack Web Developer utilising an extensive customer service and finance background to build complex web apps with a seamless user experience.
-                  </br>
-                  Currently enrolled in Monash Universities Full Stack Web Development Bootcamp developing where I’m developing technical skills in CSS, JavaScript, React.js Node.js, API, MongoDB and responsive web design.
-                  </br>
-                  My known hard work ethic coupled with my passion for developing responsive, clean web apps has allowed me the opportunity to work on developing and deploying custom built NetSuite scripts to automate processes which drive a better user experience for my stakeholders allowing them to focus on their core role tasks over manual tasks.
-                  </br>
-                  I’m thrilled to leverage my newly developed skills to continue to deliver automated solutions and better user experiences.
-                </p>
-                <button type="button" class="btn btn-primary"><a href="./assets/img/cv.pdf">Download CV</a></button>
-                <button type="button" class="btn btn-success"><a href="#contact">Contact Me</a></button>
-              </div>
-            </div>
+          <div class="col-md-12 about">
           </div>
         </div>
       </div>
     </section>
 
+    <!-- <div class="col-md-12 col-sm-12">
+      <div class="profile-pic">
+        <img src="./assets/img/profile-pic.png">
+      </div>
+    </div>
+    <div class="col m12 s12 co-centered wow fadeIn a2 animate__animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+      <div class="intro-content col-md-10 col-sm-12">
+        <h2>Darren Behan</h2>
+        <span>Freelance Developer</span>
+        <p>
+          Full Stack Web Developer utilising an extensive customer service and finance background to build complex web apps with a seamless user experience.
+          </br>
+          Currently enrolled in Monash Universities Full Stack Web Development Bootcamp developing where I’m developing technical skills in CSS, JavaScript, React.js Node.js, API, MongoDB and responsive web design.
+          </br>
+          My known hard work ethic coupled with my passion for developing responsive, clean web apps has allowed me the opportunity to work on developing and deploying custom built NetSuite scripts to automate processes which drive a better user experience for my stakeholders allowing them to focus on their core role tasks over manual tasks.
+          </br>
+          I’m thrilled to leverage my newly developed skills to continue to deliver automated solutions and better user experiences.
+        </p>
+        <button type="button" class="btn btn-primary"><a href="./assets/img/cv.pdf">Download CV</a></button>
+        <button type="button" class="btn btn-success"><a href="#contact">Contact Me</a></button>
+      </div>
+    </div> -->
+
     <!-- Section: Skills -->
-    <section id="skills">
+    <!-- <section id="skills">
       <div class="container">
         <div class="row">
           <div class="skills col-md-12">
@@ -198,7 +202,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Section: Career -->
     <section id="career">
@@ -323,7 +327,7 @@
     </section>
 
     <!-- Section: About -->
-    <section id="portfolio">
+    <!-- <section id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -373,10 +377,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Section: Education -->
-    <section id="education">
+    <!-- <section id="education">
       <div class="container">
         <div class="row">
           <div class="col-md col-sm">
@@ -404,7 +408,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Section: Contact -->
     <section id="contact">
@@ -458,6 +462,9 @@
   <!-- Popper.js first, then Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!-- Custom JS -->
   <script src="./assets/js/script.js"></script>

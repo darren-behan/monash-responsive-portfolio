@@ -16,9 +16,13 @@ h2 {
   margin: 0px;
   font-size: 32px;
   line-height: 42px;
-  opacity: 0.7;
+  opacity: 0.7!important;
   font-weight: 500;
   padding-top: 20px;
+}
+
+nav {
+  border-bottom: 3px solid #04c2c9;
 }
 
 i {
@@ -32,8 +36,7 @@ a > i {
 }
 
 a > i:hover {
-  font-size: 25px;
-  color: #333f48;
+  color: #e31b6d;
 }
 
 a {
@@ -74,20 +77,20 @@ header {
 }
 
 .navbar {
-  background-color: #2196f3;
+  background-color: #001b31;
 }
 
 /* Header a tags colour and font weight */
 
-header #navbarNav a {
-  color: #f7f8f9;
-  font-weight: 900;
+header #navbar-nav a {
+  color: #ffffff;
+  font-weight: 400;
 }
 
 /* Header, font awesome icons & side navigation a tags hover colour */
 
-header #navbarNav a:hover {
-  color: #333f48;
+header #navbar-nav a:hover {
+  color: #e31b6d;
 }
 
 /* Section */
@@ -135,6 +138,7 @@ section:nth-of-type(1) {
   border-color: #0bc2c9;
   color: #fff;
   font-weight: 500;
+  font-size: 2.5vh;
 }
 
 .btn-home:hover {
@@ -153,7 +157,7 @@ section:nth-of-type(1) {
 
 .btn i {
   display: block;
-  font-size: 20px;
+  font-size: 2.5vh;
   transition: all 0.4s ease;
   color: #fff;
 }
@@ -161,8 +165,14 @@ section:nth-of-type(1) {
 /* Section: About */
 
 #about {
-  padding-top: 100px;
+  padding-top: 2vh;
   text-align: center;
+}
+
+.header-bar {
+  background: #444649;
+  height: 4px;
+  margin: 25px 0 100px 0;
 }
 
 #about .profile-pic img {
