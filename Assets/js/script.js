@@ -98,5 +98,29 @@ $(document).ready(() => {
     //   .attr("class", "header-bar")
     //   .attr("data-aos", "fade-left");
     // $skillsDiv.append($headerBarDiv);
+    $("#section-skills").click(() => {
+      $(".bar").addClass("animate");
+    });
   }
+
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+
+  const bar = document.querySelector('.bar');
+
+  document.addEventListener('scroll', function () {
+      if (isInViewport(bar)) {
+        $(".bar").addClass("animate");
+      }
+  }, {
+      passive: true
+  });
 });
