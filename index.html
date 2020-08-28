@@ -19,159 +19,151 @@
 
   <!-- charts.js -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous"/>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   
   <!-- Custom CSS -->
-  <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
-  <link rel="stylesheet" type="text/css" href="Assets/css/style_timeline.css">
+  <link rel="stylesheet" type="text/css" href="asset/css/style.css">
+  <link rel="stylesheet" type="text/css" href="asset/css/style_timeline.css">
+  <link rel="stylesheet" type="text/css" href="asset/css/style_portfolio.css">
 
 </head>
 <body>
-  <!-- Header -->
-  <header class="sticky-top">
-
-    <!-- Bootstrap Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-
-        <!-- Unordered list - Social Media -->
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <!-- FontAwesome: Linkedin -->
-            <a class="nav-link" href="https://www.linkedin.com/in/darren-behan/">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <!-- FontAwesome: GitHub -->
-            <a class="nav-link" href="https://github.com/darren-behan">
-              <i class="fab fa-github-square"></i>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <!-- FontAwesome: Email -->
-            <a class="nav-link" href="#contact" id="nav-icon-contact">
-              <i class="fas fa-envelope-square"></i>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <!-- FontAwesome: Instagram -->
-            <a class="nav-link" href="https://www.instagram.com/darren_behan/">
-              <i class="fab fa-instagram-square"></i>
-            </a>
-          </li>
-        </ul>
-
-        <!-- Unordered list - Site Navigation -->
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about" id="nav-about">
-              About
-            </a>
-          </li>
-          <li class="nav-item" id="nav-centre">
-            <a class="nav-link" href="#skills" id="nav-skills">
-              Skills
-            </a>
-          </li>
-          <li class="nav-item" id="nav-centre">
-            <a class="nav-link" href="#career" id="nav-career">
-              Career
-            </a>
-          </li>
-          <li class="nav-item" id="nav-centre">
-            <a class="nav-link" href="#portfolio" id="nav-portfolio">
-              Portfolio
-            </a>
-          </li>
-          <li class="nav-item" id="nav-centre">
-            <a class="nav-link" href="#education" id="nav-education">
-              Education
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact" id="nav-contact">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
   <!-- Fluid Container -->
   <div class=".container-fluid">
 
+    <!-- Section: Home -->
+    <section id="home" class="d-flex align-items-center">
+    </section>
+
+    <!-- Header -->
+    <header class="sticky-top" id="header">
+
+      <!-- Bootstrap Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff; font-size:28px;"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-nav">
+
+          <!-- Unordered list - Social Media -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <!-- FontAwesome: Linkedin -->
+              <a class="nav-link" href="https://www.linkedin.com/in/darren-behan/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <!-- FontAwesome: GitHub -->
+              <a class="nav-link" href="https://github.com/darren-behan">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <!-- FontAwesome: Email -->
+              <a class="nav-link" href="#section-contact" id="nav-icon-contact">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <!-- FontAwesome: Instagram -->
+              <a class="nav-link" href="https://www.instagram.com/darren_behan/">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Unordered list - Site Navigation -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#section-about" id="nav-about">
+                About
+              </a>
+            </li>
+            <li class="nav-item" id="nav-centre">
+              <a class="nav-link" href="#section-skills" id="nav-skills">
+                Skills
+              </a>
+            </li>
+            <li class="nav-item" id="nav-centre">
+              <a class="nav-link" href="#section-education" id="nav-education">
+                Education
+              </a>
+            </li>
+            <li class="nav-item" id="nav-centre">
+              <a class="nav-link" href="#section-career" id="nav-career">
+                Career
+              </a>
+            </li>
+            <li class="nav-item" id="nav-centre">
+              <a class="nav-link" href="#section-portfolio" id="nav-portfolio">
+                Portfolio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section-contact" id="nav-contact">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
     <!-- Section: About -->
-    <section id="about">
-      <div class="container">
+    <section id="section-about">
+      <div class="container d-flex justify-content-center">
         <div class="row">
-          <div class="intro z-depth-1 col-md-12">
-            <div class="col-md-12 col-sm-12">
-              <div class="profile-pic">
-                <img src="./Assets/Images/profile-pic.png">
-              </div>
-            </div>
-            <div class="col m12 s12 co-centered wow fadeIn a2 animate__animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-              <div class="intro-content col-md-10 col-sm-12">
-                <h2>Darren Behan</h2>
-                <span>Freelance Developer</span>
-                <p>
-                  Full Stack Web Developer utilising an extensive customer service and finance background to build complex web apps with a seamless user experience.
-                  </br>
-                  Currently enrolled in Monash Universities Full Stack Web Development Bootcamp developing where I’m developing technical skills in CSS, JavaScript, React.js Node.js, API, MongoDB and responsive web design.
-                  </br>
-                  My known hard work ethic coupled with my passion for developing responsive, clean web apps has allowed me the opportunity to work on developing and deploying custom built NetSuite scripts to automate processes which drive a better user experience for my stakeholders allowing them to focus on their core role tasks over manual tasks.
-                  </br>
-                  I’m thrilled to leverage my newly developed skills to continue to deliver automated solutions and better user experiences.
-                </p>
-                <button type="button" class="btn btn-primary"><a href="./Assets/Images/cv.pdf">Download CV</a></button>
-                <button type="button" class="btn btn-success"><a href="#contact">Contact Me</a></button>
-              </div>
-            </div>
+          <div class="col-md-12 about flex">
           </div>
         </div>
       </div>
     </section>
 
     <!-- Section: Skills -->
-    <section id="skills">
-      <div class="container">
+    <section id="section-skills">
+      <div class="container d-flex justify-content-center">
         <div class="row">
-          <div class="skills col-md-12">
-            <div class="section-title wow fadeIn a1 animate__animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-              <h2>Skills</h2>
+          <div class="col-md-6 flex">
+            <h2 data-aos="fade-right">Skills</h2>
+            <div class="header-bar" data-aos="fade-left"></div>
+            <div class="graph-cont" data-aos="fade-right">
+              <div class="bar bar1">
+                <span><i class="fab fa-html5"></i></span>90%
+              </div>
+              <div class="bar bar2">
+                <span><i class="fab fa-css3"></i></span>90%
+              </div>
+              <div class="bar bar3">
+                <span><i class="fab fa-js"></i></span>70%
+              </div>
+              <div class="bar bar4">
+                <span><i class="fab fa-node-js"></i></span>70%
+              </div>
+              <div class="bar bar5">
+                <span><i class="fab fa-react"></i></span>60%
+              </div>
+              <div class="bar bar6">
+                <span><i class="fab fa-github"></i></span>80%
+              </div>
             </div>
-            <div class="container">
-              <div class="row skill-line z-depth-1">
-                <div class="col-md-6 col-sm-12" id="skills-chart-column">
-                  <canvas id="skills-chart" width="400" height="400"></canvas>
-                </div>
-                <div class="col-md-6 col-sm-12" id="skills-icons-column">
-                  <p>
-                    <i class="fab fa-html5"></i> HTML5
-                  </p>
-                  <p>
-                    CSS3 <i class="fab fa-css3-alt"></i>
-                  </p>
-                  <p>
-                    <i class="fab fa-js-square"></i> ES5 & ES6
-                  </p>
-                  <p>
-                    node.js <i class="fab fa-node-js"></i>
-                  </p>
-                  <p>
-                    <i class="fab fa-react"></i> react.js
-                  </p>
-                  <p>
-                    GitHub <i class="fab fa-github-square"></i>
-                  </p>
-                </div>
+          </div>
+          <div class="col-md-6 flex">
+            <h2 data-aos="fade-left">Education</h2>
+            <div class="header-bar" data-aos="fade-right"></div>
+            <div class="col-md col-sm" id="education-column" data-aos="fade-left">
+              <div class="course">
+                <h4>Full-stack Web Development Bootcamp</h4>
+                <h5>Monash University - 2020</h5>
+              </div>
+              <div class="course">
+                <h4>Bachelor of Arts, Honors Degree in Accounting</h4>
+                <h5>Institute of Technology, Carlow - 2011</h5>
               </div>
             </div>
           </div>
@@ -180,23 +172,22 @@
     </section>
 
     <!-- Section: Career -->
-    <section id="career">
-      <div class="container">
+    <section id="section-career">
+      <div class="container d-flex justify-content-center">
         <div class="row">
-          <div class="career col-md-12">
-            <div class="section-title wow fadeIn a1 animate__animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-              <h2>Career</h2>
-            </div>
+          <div class="career col-md-12 flex">
+            <h2 data-aos="fade-right">Career</h2>
+            <div class="header-bar" data-aos="fade-left"></div>
             <div class="career-line z-depth-1">
               <div class="col-md-12 col-sm-12">
                 <!-- Credit: https://codepen.io/krishnab/pen/OPwqbW/ -->
                 <ul class="timeline">
                   <!-- Item 1 -->
-                  <li>
+                  <li data-aos="fade-down-left">
                     <div class="direction-r">
                       <div class="flag-wrapper">
                         <span class="hexa"></span>
-                        <button class="btn btn-light flag" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">NetSuite ERP Support Coordinator</button>
+                        <button class="btn btn-outline-primary d-flex align-items-center button-md" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">NetSuite ERP Support Coordinator</button>
                         <span class="time-wrapper"><span class="time">March 2019 - Present</span></span>
                       </div>
                       <div class="collapse multi-collapse" id="multiCollapseExample1">
@@ -216,11 +207,11 @@
                   </li>
                 
                   <!-- Item 2 -->
-                  <li>
+                  <li data-aos="fade-down-right">
                     <div class="direction-l">
                       <div class="flag-wrapper">
                         <span class="hexa"></span>
-                        <button class="btn btn-light flag" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Accounts Payable Officer</button>
+                        <button class="btn btn-outline-primary d-flex align-items-center button-md" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Accounts Payable Officer</button>
                         <span class="time-wrapper"><span class="time">August 2018 - March 2019</span></span>
                       </div>
                       <div class="collapse multi-collapse" id="multiCollapseExample2">
@@ -240,11 +231,11 @@
                   </li>
                 
                   <!-- Item 3 -->
-                  <li>
+                  <li data-aos="fade-down-left">
                     <div class="direction-r">
                       <div class="flag-wrapper">
                         <span class="hexa"></span>
-                        <button class="btn btn-light flag" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Customer Credit Controller</button>
+                        <button class="btn btn-outline-primary d-flex align-items-center button-md" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Customer Credit Controller</button>
                         <span class="time-wrapper"><span class="time">August 2017 - August 2018</span></span>
                       </div>
                       <div class="collapse multi-collapse" id="multiCollapseExample3">
@@ -268,11 +259,11 @@
                   </li>
 
                   <!-- Item 4 -->
-                  <li>
+                  <li data-aos="fade-down-right">
                     <div class="direction-l">
                       <div class="flag-wrapper">
                         <span class="hexa"></span>
-                        <button class="btn btn-light flag" type="button" data-toggle="collapse" data-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">Customer Experience Consultant</button>
+                        <button class="btn btn-outline-primary d-flex align-items-center button-md" type="button" data-toggle="collapse" data-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">Customer Experience Consultant</button>
                         <span class="time-wrapper"><span class="time">August 2016 - August 2017</span></span>
                       </div>
                       <div class="collapse multi-collapse" id="multiCollapseExample4">
@@ -301,82 +292,117 @@
       </div>
     </section>
 
-    <!-- Section: About -->
-    <section id="portfolio">
+    <!-- Section: Portfolio -->
+    <section id="section-portfolio">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div class="section-title wow fadeIn a1 animate__animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-              <h2>Portfolio</h2>
-            </div>
-            <div class="portfolio z-depth-1 col-md-12">
-              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active" id="one">
-                    <img class="d-block w-100" src="./Assets/Images/weather-dashboard.png" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5><a href="https://github.com/darren-behan/weather-app">Dynamic Weather Dashboard</a></h5>
-                      <p><a href="https://darren-behan.github.io/weather-app/">Powered by Javascript, jQuery, AJAX & Bootstrap</a></p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="./Assets/Images/a-better-time.png" alt="Second slide">
-                    <div class="carousel-caption d-none d-md-block" id="two">
-                      <h5><a href="https://github.com/darren-behan/a-better-time">A Better Time</a></h5>
-                      <p><a href="https://darren-behan.github.io/a-better-time/">Team collaboration with version control through GitHub</a></p>
-                    </div>
-                  </div>
-                  <div class="carousel-item" id="three">
-                    <img class="d-block w-100" src="./Assets/Images/work-day-scheduler.png" alt="Third slide">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5><a href="https://github.com/darren-behan/work-day-scheduler">Day Scheduler</a></h5>
-                      <p><a href="https://darren-behan.github.io/work-day-scheduler/">Powered by Javascript, jQuery, AJAX & Bootstrap</a></p>
-                    </div>
+          <div class="portfolio col-md-12 flex">
+            <h2 data-aos="fade-right">Portfolio</h2>
+            <div class="header-bar" data-aos="fade-left"></div>
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="zoom-in-up">
+                <div class="hovereffect">
+                  <img class="img-responsive" src="./asset/img/be-redy.png" alt="">
+                  <div class="overlay">
+                    <a href="https://be-redy.herokuapp.com">
+                      <h2>BE-REDY</h2>
+                    </a>
+                    <p>
+                      <a href="https://github.com/darren-behan/be-redy">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </p>
                   </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section: Education -->
-    <section id="education">
-      <div class="container">
-        <div class="row">
-          <div class="col-md col-sm">
-            <div class="section-title wow fadeIn a1 animate__animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-              <h2>Education</h2>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row education">
-              <div class="col-md col-sm" id="education-column-left">
-                <div class="z-depth-1" id="course">
-                  <h3>Full Stack Web Development Bootcamp</h3>
-                  <h5>Monash University</h5>
-                  <p>Graduated in 2020</p>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="zoom-in-up">
+                <div class="hovereffect">
+                  <img class="img-responsive" src="./asset/img/a-better-time.png" alt="">
+                  <div class="overlay">
+                    <a href="https://darren-behan.github.io/a-better-time/">
+                      <h2>A BETTER TIME</h2>
+                    </a>
+                    <p>
+                      <a href="https://github.com/darren-behan/a-better-time">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="col-md col-sm" id="education-column-right">
-                <div class="z-depth-1" id="course">
-                  <h3>Bachelor of Arts, Honors Degree in Accounting</h3>
-                  <h5>Institute of Technology, Carlow</h5>
-                  <p>Graduated in 2011</p>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="zoom-in-up">
+                <div class="hovereffect">
+                  <img class="img-responsive" src="./asset/img/burger-logger.png" alt="">
+                  <div class="overlay">
+                    <a href="https://enigmatic-cove-34274.herokuapp.com">
+                      <h2>BURGER LOGGER</h2>
+                    </a>
+                    <p>
+                      <a href="https://github.com/darren-behan/burger-logger">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="zoom-in-up">
+                <div class="hovereffect">
+                  <img class="img-responsive" src="./asset/img/readme-generator.png" alt="">
+                  <div class="overlay">
+                    <a href="https://drive.google.com/file/d/1cVIweJ_w4y9fEC4dc8TGAjuIwE_CrJGn/view">
+                      <h2>README-GENERATOR</h2>
+                    </a>
+                    <p>
+                      <a href="https://github.com/darren-behan/readme-generator">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="zoom-in-up">
+                <div class="hovereffect">
+                  <img class="img-responsive" src="./asset/img/employee-tracker.png" alt="">
+                  <div class="overlay">
+                    <a href="https://drive.google.com/file/d/1BXL7Nv1bYQR8CsNGGPSbc6TmxPr4nTQd/view">
+                      <h2>EMPLOYEE TRACKER</h2>
+                    </a>
+                    <p>
+                      <a href="https://github.com/darren-behan/employee-tracker">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="zoom-in-up">
+                <div class="hovereffect">
+                  <img class="img-responsive" src="./asset/img/weather-dashboard.png" alt="">
+                  <div class="overlay">
+                    <a href="https://darren-behan.github.io/weather-app/">
+                      <h2>WEATHER DASHBOARD</h2>
+                    </a>
+                    <p>
+                      <a href="https://github.com/darren-behan/weather-app">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="zoom-in-up">
+                <div class="hovereffect">
+                  <img class="img-responsive" src="./asset/img/work-day-scheduler.png" alt="">
+                  <div class="overlay">
+                    <a href="https://darren-behan.github.io/work-day-scheduler/">
+                      <h2>WORK SCHEDULER</h2>
+                    </a>
+                    <p>
+                      <a href="https://github.com/darren-behan/work-day-scheduler">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -386,41 +412,32 @@
     </section>
 
     <!-- Section: Contact -->
-    <section id="contact">
+    <section id="section-contact">
       <div class="container">
         <div class="row">
-          <div class="col-md col-sm">
-            <div class="section-title wow fadeIn a1 animate__animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-              <h2>Contact Me</h2>
-            </div>
-          </div>
-          <!-- Container -->
-          <div class="container" id="contact-container">
-            <div class="row" id="contact-row">
-              <div class="col-md-12">
-
-                <!-- Bootstrap Form -->
-                <form>
-                  <div class="row">
-                    <div id="first-name" class="col-md-6">
-                      <input type="text" class="form-control" placeholder="First name">
-                    </div>
-                    <div id="last-name" class="col-md-6">
-                      <input type="text" class="form-control" placeholder="Last name">
-                    </div>
-                    <div id="email" class="col-md-12">
-                      <input type="text" class="form-control" placeholder="Email">
-                    </div>
-                    <div id="message" class="col-md-12">
-                      <input type="text" id="message-form-control" class="form-control" placeholder="Message">
-                    </div>
-                    <div id="submit" class="col-md-12">
-                      <button type="button" class="btn btn-primary">Send Email</button>
-                    </div>
-                  </div>
-                </form>
+          <div class="portfolio col-md-12 flex">
+            <h2 data-aos="fade-right">Contact Me</h2>
+            <div class="header-bar" data-aos="fade-left"></div>
+            <!-- Bootstrap Form -->
+            <form>
+              <div class="row">
+                <div id="first-name" class="col-md-6">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div id="last-name" class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Last name">
+                </div>
+                <div id="email" class="col-md-12">
+                  <input type="text" class="form-control" placeholder="Email">
+                </div>
+                <div id="message" class="col-md-12">
+                  <input type="text" id="message-form-control" class="form-control" placeholder="Message">
+                </div>
+                <div id="submit" class="col-md-12">
+                  <button type="button" class="btn btn-primary">Send Email</button>
+                </div>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -438,8 +455,11 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <!-- Custom JS -->
-  <script src="./Assets/js/script.js"></script>
+  <script src="./asset/js/script.js"></script>
 
 </body>
 </html>
