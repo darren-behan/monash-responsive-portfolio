@@ -58,7 +58,7 @@ $(document).ready(() => {
     const $bioDivImg = $("<div>")
       .attr("class", "col-md-4 profile-pic")
       .attr("data-aos", "fade-up");
-    const $bioImg = $("<img>").attr("src", "./assets/img/profile-pic.png");
+    const $bioImg = $("<img>").attr("src", "./asset/img/profile-pic.png");
     $aboutRow.append($bioDivImg);
     $bioDivImg.append($bioImg);
 
@@ -74,7 +74,7 @@ $(document).ready(() => {
       );
     const $bioLinkCv = $("<a>")
       .attr("class", "button-md")
-      .attr("href", "./assets/img/cv.pdf")
+      .attr("href", "./asset/img/cv.pdf")
       .text("Download CV");
     $bioDivImg.append($bioDivButton);
     $bioDivButton.append($bioButtonCv);
