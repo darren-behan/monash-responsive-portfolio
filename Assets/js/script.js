@@ -1,33 +1,33 @@
 // "document.ready" makes sure that our JavaScript doesn't get run until the HTML document is finished loading.
 $(document).ready(() => {
-  let containerDivEl = $("<div>").attr("class", "container");
-  let rowDivEl = $("<div>").attr("class", "row");
-  let buttonEl = $("<button>").attr("type", "button").attr(
+  let $containerDivEl = $("<div>").attr("class", "container");
+  let $rowDivEl = $("<div>").attr("class", "row");
+  let $buttonEl = $("<button>").attr("type", "button").attr(
     "class",
     "btn btn-outline-primary d-flex align-items-center"
   );
 
   const homeSection = () => {
-    const section = $("#home");
-    const flexDivElOne = $("<div>").attr("class", "d-flex justify-content-center col-md-12");
-    const flexDivElTwo = $("<div>").attr("class", "d-flex justify-content-center col-md-12");
-    const p = $("<p>")
+    const $section = $("#home");
+    const $flexDivElOne = $("<div>").attr("class", "d-flex justify-content-center col-md-12");
+    const $flexDivElTwo = $("<div>").attr("class", "d-flex justify-content-center col-md-12");
+    const $p = $("<p>")
       .attr("class", "intro")
       .html(
         "Hello, I'm <span class='name'>Darren Behan</span>.</br>I'm a full-stack web developer."
       );
-    const button = 
+    const $button = 
       $("<button>")
       .attr("type", "button")
       .attr("class", "btn btn-outline-primary d-flex align-items-center btn-home")
       .html("<div>View my work</div><i class='fa fa-arrow-right'></i>");
     
-    section.append(containerDivEl);
-    containerDivEl.append(rowDivEl);
-    rowDivEl.append(flexDivElOne);
-    flexDivElOne.append(p);
-    rowDivEl.append(flexDivElTwo);
-    flexDivElTwo.append(button);
+    $section.append($containerDivEl);
+    $containerDivEl.append($rowDivEl);
+    $rowDivEl.append($flexDivElOne);
+    $flexDivElOne.append($p);
+    $rowDivEl.append($flexDivElTwo);
+    $flexDivElTwo.append($button);
   };
 
   // Renders the elements and data for the About section
@@ -97,10 +97,12 @@ $(document).ready(() => {
       $(".profile-pic").addClass("order-1");
       $(".bio-text-left").addClass("order-2");
       $(".bio-text-right").addClass("order-3");
+      $(".flag-wrapper").attr("class", "row justify-content-center");
     } else {
       $(".profile-pic").removeClass("order-1");
       $(".bio-text-left").removeClass("order-2");
       $(".bio-text-right").removeClass("order-3");
+      $(".flag-wrapper").addClass("class", "flex-wrapper");
     }
   });
 

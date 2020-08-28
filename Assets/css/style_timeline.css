@@ -285,6 +285,7 @@ header h1{
 
   .time {
     padding: 5px 10px;
+    border-radius: .5vh;
   }
 
   .direction-r .desc {

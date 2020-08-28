@@ -26,40 +26,24 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style_timeline.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style_portfolio.css">
 
 </head>
 <body>
   <!-- Fluid Container -->
-  <div class=".container-fluid" id="container-fluid">
+  <div class=".container-fluid">
 
     <!-- Section: Home -->
     <section id="home" class="d-flex align-items-center">
-      <!-- <div class="container">
-        <div class="row">
-          <div class="d-flex justify-content-center col-md-12">
-            <p class="intro">
-              Hello, I'm <span class="name">Darren Behan</span>.
-              </br>
-              I'm a full-stack web developer.
-            </p>
-          </div>
-          <div class="d-flex justify-content-center col-md-12">
-            <button type="button" class="btn btn-outline-primary d-flex align-items-center btn-home">
-              <div>View my work</div>
-              <i class="fa fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-      </div> -->
     </section>
 
     <!-- Header -->
-    <header class="sticky-top">
+    <header class="sticky-top" id="header">
 
       <!-- Bootstrap Navbar -->
       <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff; font-size:28px;"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar-nav">
 
@@ -81,7 +65,7 @@
 
             <li class="nav-item">
               <!-- FontAwesome: Email -->
-              <a class="nav-link" href="#contact" id="nav-icon-contact">
+              <a class="nav-link" href="#section-contact" id="nav-icon-contact">
                 <i class="fas fa-envelope"></i>
               </a>
             </li>
@@ -333,13 +317,13 @@
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="zoom-in-up">
                 <div class="hovereffect">
-                  <img class="img-responsive" src="./assets/img/be-redy.png" alt="">
+                  <img class="img-responsive" src="./assets/img/a-better-time.png" alt="">
                   <div class="overlay">
-                    <a href="https://be-redy.herokuapp.com">
-                      <h2>BE-REDY</h2>
+                    <a href="https://darren-behan.github.io/a-better-time/">
+                      <h2>A BETTER TIME</h2>
                     </a>
                     <p>
-                      <a href="https://github.com/darren-behan/be-redy">
+                      <a href="https://github.com/darren-behan/a-better-time">
                         <i class="fab fa-github"></i>
                       </a>
                     </p>
@@ -348,13 +332,13 @@
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="zoom-in-up">
                 <div class="hovereffect">
-                  <img class="img-responsive" src="./assets/img/be-redy.png" alt="">
+                  <img class="img-responsive" src="./assets/img/burger-logger.png" alt="">
                   <div class="overlay">
-                    <a href="https://be-redy.herokuapp.com">
-                      <h2>BE-REDY</h2>
+                    <a href="https://enigmatic-cove-34274.herokuapp.com">
+                      <h2>BURGER LOGGER</h2>
                     </a>
                     <p>
-                      <a href="https://github.com/darren-behan/be-redy">
+                      <a href="https://github.com/darren-behan/burger-logger">
                         <i class="fab fa-github"></i>
                       </a>
                     </p>
@@ -363,13 +347,58 @@
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="zoom-in-up">
                 <div class="hovereffect">
-                  <img class="img-responsive" src="./assets/img/be-redy.png" alt="">
+                  <img class="img-responsive" src="./assets/img/readme-generator.png" alt="">
                   <div class="overlay">
-                    <a href="https://be-redy.herokuapp.com">
+                    <a href="https://drive.google.com/file/d/1cVIweJ_w4y9fEC4dc8TGAjuIwE_CrJGn/view">
                       <h2>BE-REDY</h2>
                     </a>
                     <p>
-                      <a href="https://github.com/darren-behan/be-redy">
+                      <a href="https://github.com/darren-behan/readme-generator">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="zoom-in-up">
+                <div class="hovereffect">
+                  <img class="img-responsive" src="./assets/img/employee-tracker.png" alt="">
+                  <div class="overlay">
+                    <a href="https://drive.google.com/file/d/1BXL7Nv1bYQR8CsNGGPSbc6TmxPr4nTQd/view">
+                      <h2>EMPLOYEE TRACKER</h2>
+                    </a>
+                    <p>
+                      <a href="https://github.com/darren-behan/employee-tracker">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="zoom-in-up">
+                <div class="hovereffect">
+                  <img class="img-responsive" src="./assets/img/weather-dashboard.png" alt="">
+                  <div class="overlay">
+                    <a href="https://darren-behan.github.io/weather-app/">
+                      <h2>WEATHER DASHBOARD</h2>
+                    </a>
+                    <p>
+                      <a href="https://github.com/darren-behan/weather-app">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="zoom-in-up">
+                <div class="hovereffect">
+                  <img class="img-responsive" src="./assets/img/work-day-scheduler.png" alt="">
+                  <div class="overlay">
+                    <a href="https://darren-behan.github.io/work-day-scheduler/">
+                      <h2>WORK SCHEDULER</h2>
+                    </a>
+                    <p>
+                      <a href="https://github.com/darren-behan/work-day-scheduler">
                         <i class="fab fa-github"></i>
                       </a>
                     </p>
