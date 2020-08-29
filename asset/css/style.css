@@ -4,6 +4,7 @@ body {
   background-color: #ededed;
   font-family: "Raleway", sans-serif;
   font-size: 3vh;
+  position: relative;
 }
 
 /* Headings */
@@ -40,6 +41,10 @@ header #navbar-nav a {
 
 header #navbar-nav a:hover {
   color: #e31b6d;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #04c2c9;
 }
 
 /* Sections */
@@ -147,9 +152,10 @@ section:nth-of-type(1) {
   box-shadow: none;
 }
 
-/* button:active {
+.btn-primary:active, .btn-primary:focus {
   background-color: #0bc2c9;
-} */
+  border-color: #0bc2c9;
+}
 
 /* Section: About */
 #section-about {
