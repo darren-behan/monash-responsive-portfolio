@@ -1,479 +1,789 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Darren Behan</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Darren Behan</title>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
 
-  <!-- Animate CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
 
-  <!-- charts.js -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous"/>
+    <!-- charts.js -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
+      integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E="
+      crossorigin="anonymous"
+    />
 
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  
-  <!-- Custom CSS -->
-  <link rel="stylesheet" type="text/css" href="asset/css/style.css">
-  <link rel="stylesheet" type="text/css" href="asset/css/style_timeline.css">
-  <link rel="stylesheet" type="text/css" href="asset/css/style_portfolio.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-</head>
-<body>
-  <!-- Fluid Container -->
-  <div class=".container-fluid">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="asset/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="asset/css/style_timeline.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="asset/css/style_portfolio.css"
+    />
+  </head>
+  <body>
+    <!-- Fluid Container -->
+    <div class=".container-fluid">
+      <!-- Section: Home -->
+      <section id="home" class="d-flex align-items-center"></section>
 
-    <!-- Section: Home -->
-    <section id="home" class="d-flex align-items-center">
-    </section>
+      <!-- Header -->
+      <header class="sticky-top" id="header">
+        <!-- Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar-nav"
+            aria-controls="navbar-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"
+              ><i class="fas fa-bars" style="color: #fff; font-size: 28px"></i
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-nav">
+            <!-- Unordered list - Social Media -->
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <!-- FontAwesome: Linkedin -->
+                <a
+                  class="nav-link"
+                  href="https://www.linkedin.com/in/darren-behan/"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
 
-    <!-- Header -->
-    <header class="sticky-top" id="header">
+              <li class="nav-item">
+                <!-- FontAwesome: GitHub -->
+                <a class="nav-link" href="https://github.com/darren-behan">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
 
-      <!-- Bootstrap Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff; font-size:28px;"></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-nav">
+              <li class="nav-item">
+                <!-- FontAwesome: Email -->
+                <a
+                  class="nav-link"
+                  href="#section-contact"
+                  id="nav-icon-contact"
+                >
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </li>
 
-          <!-- Unordered list - Social Media -->
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <!-- FontAwesome: Linkedin -->
-              <a class="nav-link" href="https://www.linkedin.com/in/darren-behan/">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
+              <li class="nav-item">
+                <!-- FontAwesome: Instagram -->
+                <a
+                  class="nav-link"
+                  href="https://www.instagram.com/darren_behan/"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
 
-            <li class="nav-item">
-              <!-- FontAwesome: GitHub -->
-              <a class="nav-link" href="https://github.com/darren-behan">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <!-- FontAwesome: Email -->
-              <a class="nav-link" href="#section-contact" id="nav-icon-contact">
-                <i class="fas fa-envelope"></i>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <!-- FontAwesome: Instagram -->
-              <a class="nav-link" href="https://www.instagram.com/darren_behan/">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-
-          <!-- Unordered list - Site Navigation -->
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#section-about" id="nav-about">
-                About
-              </a>
-            </li>
-            <li class="nav-item" id="nav-centre">
-              <a class="nav-link" href="#section-skills" id="nav-skills">
-                Skills
-              </a>
-            </li>
-            <li class="nav-item" id="nav-centre">
-              <a class="nav-link" href="#section-skills" id="nav-education">
-                Education
-              </a>
-            </li>
-            <li class="nav-item" id="nav-centre">
-              <a class="nav-link" href="#section-career" id="nav-career">
-                Career
-              </a>
-            </li>
-            <li class="nav-item" id="nav-centre">
-              <a class="nav-link" href="#section-portfolio" id="nav-portfolio">
-                Portfolio
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#section-contact" id="nav-contact">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Section: About -->
-    <section id="section-about">
-      <div class="container d-flex justify-content-center">
-        <div class="row">
-          <div class="col-md-12 about flex">
+            <!-- Unordered list - Site Navigation -->
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#section-about" id="nav-about">
+                  About
+                </a>
+              </li>
+              <li class="nav-item" id="nav-centre">
+                <a class="nav-link" href="#section-skills" id="nav-skills">
+                  Skills
+                </a>
+              </li>
+              <li class="nav-item" id="nav-centre">
+                <a class="nav-link" href="#section-skills" id="nav-education">
+                  Education
+                </a>
+              </li>
+              <li class="nav-item" id="nav-centre">
+                <a class="nav-link" href="#section-career" id="nav-career">
+                  Career
+                </a>
+              </li>
+              <li class="nav-item" id="nav-centre">
+                <a
+                  class="nav-link"
+                  href="#section-portfolio"
+                  id="nav-portfolio"
+                >
+                  Portfolio
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-contact" id="nav-contact">
+                  Contact
+                </a>
+              </li>
+            </ul>
           </div>
-        </div>
-      </div>
-    </section>
+        </nav>
+      </header>
 
-    <!-- Section: Skills -->
-    <section id="section-skills">
-      <div class="container d-flex justify-content-center">
-        <div class="row">
-          <div class="col-md-6 flex">
-            <h2 data-aos="fade-right">Skills</h2>
-            <div class="header-bar" data-aos="fade-left"></div>
-            <div class="graph-cont" data-aos="fade-right">
-              <div class="bar bar1">
-                <span><i class="fab fa-html5"></i></span>
-                <span>90%</span>
-              </div>
-              <div class="bar bar2">
-                <span><i class="fab fa-css3"></i></span>
-                <span>90%</span>
-              </div>
-              <div class="bar bar3">
-                <span><i class="fab fa-js"></i></span>
-                <span>70%</span>
-              </div>
-              <div class="bar bar4">
-                <span><i class="fab fa-node-js"></i></span>
-                <span>70%</span>
-              </div>
-              <div class="bar bar5">
-                <span><i class="fab fa-react"></i></span>
-                <span>60%</span>
-              </div>
-              <div class="bar bar6">
-                <span><i class="fab fa-github"></i></span>
-                <span>80%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 flex">
-            <h2 data-aos="fade-left">Education</h2>
-            <div class="header-bar" data-aos="fade-right"></div>
-            <div class="col-md col-sm" id="education-column" data-aos="fade-left">
-              <div class="course">
-                <h4>Full-stack Web Development Bootcamp</h4>
-                <h5>Monash University - 2020</h5>
-              </div>
-              <div class="course">
-                <h4>Bachelor of Arts, Honors Degree in Accounting</h4>
-                <h5>Institute of Technology, Carlow - 2011</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section: Career -->
-    <section id="section-career">
-      <div class="container d-flex justify-content-center">
-        <div class="row">
-          <div class="career col-md-12 flex">
-            <h2 data-aos="fade-right">Career</h2>
-            <div class="header-bar" data-aos="fade-left"></div>
-            <div class="career-line z-depth-1">
-              <div class="col-md-12 col-sm-12">
-                <!-- Credit: https://codepen.io/krishnab/pen/OPwqbW/ -->
-                <ul class="timeline">
-                  <!-- Item 1 -->
-                  <li data-aos="fade-down-left">
-                    <div class="direction-r">
-                      <div class="flag-wrapper">
-                        <span class="hexa"></span>
-                        <button class="btn btn-outline-primary d-flex align-items-center button-md" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">NetSuite ERP Support Coordinator</button>
-                        <span class="time-wrapper"><span class="time">March 2019 - Present</span></span>
-                      </div>
-                      <div class="collapse multi-collapse" id="multiCollapseExample1">
-                        <div class="desc">
-                          <ul>
-                            <li><strong>Employer:</strong> REA Group</li>
-                            <li>Developing Javascript scripts along with test scripts using Jasmine to deliver business requirements</li>
-                            <li>Translating business requirements into clear, concise, testable and accurate user stories & process flows</li>
-                            <li>Ensuring that requirements are understood through story kickoffs and constant communication using a variety of analysis and documentation techniques including the application of visualization techniques to underpin a joint understanding of processes and data</li>
-                            <li>Coordinate Netsuite upgrades including, development and execution of test cases to ensure upgrades occur without any business disruption</li>
-                            <li>Maintain/Update Netsuite/Adaptive account and organization structures, workflows and processes</li>
-                            <li>Supporting internal stakeholders as the main contact for all requests and enhancements for the companies ERP system (NetSuite)</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                
-                  <!-- Item 2 -->
-                  <li data-aos="fade-down-right">
-                    <div class="direction-l">
-                      <div class="flag-wrapper">
-                        <span class="hexa"></span>
-                        <button class="btn btn-outline-primary d-flex align-items-center button-md" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Accounts Payable Officer</button>
-                        <span class="time-wrapper"><span class="time">August 2018 - March 2019</span></span>
-                      </div>
-                      <div class="collapse multi-collapse" id="multiCollapseExample2">
-                        <div class="desc">
-                          <ul>
-                            <li><strong>Employer:</strong> REA Group</li>
-                            <li>Process all new & existing invoices requiring payment by directing these to the relevant requisitioners</li>
-                            <li>Performing weekly domestic and international pay runs for an international organization</li>
-                            <li>Generating data for the processing of monthly accruals throughout the organization</li>
-                            <li>Daily receipting tasks of all payments received</li>
-                            <li>General support for the accounts receivables department</li>
-                            <li>Supporting the various vendors and internal stakeholders on a daily basis</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                
-                  <!-- Item 3 -->
-                  <li data-aos="fade-down-left">
-                    <div class="direction-r">
-                      <div class="flag-wrapper">
-                        <span class="hexa"></span>
-                        <button class="btn btn-outline-primary d-flex align-items-center button-md" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Customer Credit Controller</button>
-                        <span class="time-wrapper"><span class="time">August 2017 - August 2018</span></span>
-                      </div>
-                      <div class="collapse multi-collapse" id="multiCollapseExample3">
-                        <div class="desc">
-                          <ul>
-                            <li><strong>Employer:</strong> REA Group</li>
-                            <li>Overseen a ledger of 3,000+ accounts</li>
-                            <li>Timely and effective collection of all debts and customers payments</li>
-                            <li>Negotiating payment plans</li>
-                            <li>Resolving queries both internally and externally around outstanding invoices</li>
-                            <li>Posting and allocating daily receipts</li>
-                            <li>Checking customer’s credit ratings with our external partners</li>
-                            <li>Process Improvement by delivering a new CRM (Zendesk) to increase our level of service with our customers and provide reporting on customer behaviours</li>
-                            <li>Weekly Project catch ups and reporting to ensure implemented changes are successfully impacting our customers and internal stakeholders</li>
-                            <li>Communication with internal & external stakeholders for process changes, requirements for further development and any assistance required within the credit process</li>
-                            <li>Process and user journey mapping to enable further discovery for process improvement and automation</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-
-                  <!-- Item 4 -->
-                  <li data-aos="fade-down-right">
-                    <div class="direction-l">
-                      <div class="flag-wrapper">
-                        <span class="hexa"></span>
-                        <button class="btn btn-outline-primary d-flex align-items-center button-md" type="button" data-toggle="collapse" data-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">Customer Experience Consultant</button>
-                        <span class="time-wrapper"><span class="time">August 2016 - August 2017</span></span>
-                      </div>
-                      <div class="collapse multi-collapse" id="multiCollapseExample4">
-                        <div class="desc">
-                          <ul>
-                            <li><strong>Employer:</strong> REA Group</li>
-                            <li>Assisting in the development of current processes like implementing Zendesk and a Salesforce CRM</li>
-                            <li>Process and User Journey Mapping</li>
-                            <li>Internal stakeholder interviews translated into data and further workshopping</li>
-                            <li>Communicate findings to wider team and management</li>
-                            <li>Knowledge Sharing across Digital Marketing, Products, Programming, Accounts</li>
-                            <li>Maintaining 48 hour SLA's</li>
-                            <li>Delivering high levels of customer service to internal and external stakeholders</li>
-                            <li>Day-to-day tasks such as Resourcing & assisting all queues</li>
-                            <li>Inbound calls, web chat and email replies</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section: Portfolio -->
-    <section id="section-portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="portfolio col-md-12 flex">
-            <h2 data-aos="fade-right">Portfolio</h2>
-            <div class="header-bar" data-aos="fade-left"></div>
-            <div class="row">
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="zoom-in-up">
-                <div class="hovereffect">
-                  <img class="img-responsive" src="./asset/img/be-redy.png" alt="">
-                  <div class="overlay">
-                    <a href="https://be-redy.herokuapp.com">
-                      <h2>BE-REDY</h2>
-                    </a>
-                    <p>
-                      <a href="https://github.com/darren-behan/be-redy">
-                        <i class="fab fa-github"></i>
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="zoom-in-up">
-                <div class="hovereffect">
-                  <img class="img-responsive" src="./asset/img/a-better-time.png" alt="">
-                  <div class="overlay">
-                    <a href="https://darren-behan.github.io/a-better-time/">
-                      <h2>A BETTER TIME</h2>
-                    </a>
-                    <p>
-                      <a href="https://github.com/darren-behan/a-better-time">
-                        <i class="fab fa-github"></i>
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="zoom-in-up">
-                <div class="hovereffect">
-                  <img class="img-responsive" src="./asset/img/burger-logger.png" alt="">
-                  <div class="overlay">
-                    <a href="https://enigmatic-cove-34274.herokuapp.com">
-                      <h2>BURGER LOGGER</h2>
-                    </a>
-                    <p>
-                      <a href="https://github.com/darren-behan/burger-logger">
-                        <i class="fab fa-github"></i>
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="zoom-in-up">
-                <div class="hovereffect">
-                  <img class="img-responsive" src="./asset/img/readme-generator.png" alt="">
-                  <div class="overlay">
-                    <a href="https://drive.google.com/file/d/1cVIweJ_w4y9fEC4dc8TGAjuIwE_CrJGn/view">
-                      <h2>README-GENERATOR</h2>
-                    </a>
-                    <p>
-                      <a href="https://github.com/darren-behan/readme-generator">
-                        <i class="fab fa-github"></i>
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="zoom-in-up">
-                <div class="hovereffect">
-                  <img class="img-responsive" src="./asset/img/employee-tracker.png" alt="">
-                  <div class="overlay">
-                    <a href="https://drive.google.com/file/d/1BXL7Nv1bYQR8CsNGGPSbc6TmxPr4nTQd/view">
-                      <h2>EMPLOYEE TRACKER</h2>
-                    </a>
-                    <p>
-                      <a href="https://github.com/darren-behan/employee-tracker">
-                        <i class="fab fa-github"></i>
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="zoom-in-up">
-                <div class="hovereffect">
-                  <img class="img-responsive" src="./asset/img/weather-dashboard.png" alt="">
-                  <div class="overlay">
-                    <a href="https://darren-behan.github.io/weather-app/">
-                      <h2>WEATHER DASHBOARD</h2>
-                    </a>
-                    <p>
-                      <a href="https://github.com/darren-behan/weather-app">
-                        <i class="fab fa-github"></i>
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" data-aos="zoom-in-up">
-                <div class="hovereffect">
-                  <img class="img-responsive" src="./asset/img/work-day-scheduler.png" alt="">
-                  <div class="overlay">
-                    <a href="https://darren-behan.github.io/work-day-scheduler/">
-                      <h2>WORK SCHEDULER</h2>
-                    </a>
-                    <p>
-                      <a href="https://github.com/darren-behan/work-day-scheduler">
-                        <i class="fab fa-github"></i>
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section: Contact -->
-    <section id="section-contact">
-      <div class="container">
-        <div class="row">
-          <div class="portfolio col-md-12 flex">
-            <h2 data-aos="fade-right">Contact Me</h2>
-            <div class="header-bar" data-aos="fade-left"></div>
-            <!-- Bootstrap Form -->
-            <form>
+      <!-- Section: About -->
+      <section id="section-about">
+        <div class="container d-flex justify-content-center">
+          <div class="row">
+            <div class="col-md-12 about flex">
+              <h2 data-aos="fade-right" class="aos-init aos-animate">About</h2>
+              <div class="header-bar aos-init aos-animate" data-aos="fade-left"></div>
               <div class="row">
-                <div id="first-name" class="col-md-6">
-                  <input type="text" class="form-control" placeholder="First name">
+                <div class="col-md-4 bio-text-left aos-init aos-animate order-md-1 order-sm-2" data-aos="fade-right">
+                  <p>
+                    Full Stack Web Developer utilising an extensive customer
+                    service and finance background to build complex web apps
+                    with a seamless user experience.
+                  </p>
                 </div>
-                <div id="last-name" class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Last name">
+                <div
+                  class="col-md-4 profile-pic aos-init aos-animate order-md-2 order-sm-1" data-aos="fade-up">
+                  <img src="./asset/img/profile-pic.png" />
+                  <div class="d-flex justify-content-center col-md-12 button-sm">
+                    <button type="button" class="btn btn-outline-primary d-flex align-items-center button-md">
+                      <a class="button-md" href="./asset/img/cv.pdf">Download CV</a>
+                    </button>
+                  </div>
                 </div>
-                <div id="email" class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Email">
-                </div>
-                <div id="message" class="col-md-12">
-                  <input type="text" id="message-form-control" class="form-control" placeholder="Message">
-                </div>
-                <div id="submit" class="col-md-12">
-                  <button type="button" class="btn btn-primary">Send Email</button>
+                <div class="col-md-4 bio-text-right aos-init aos-animate order-md-3 order-sm-3" data-aos="fade-left">
+                  <p>
+                    Currently enrolled in Monash Universities Full Stack Web Development Bootcamp where I’m developing technical skills in CSS, JavaScript, React.js Node.js, API, MongoDB and responsive web design.
+                  </p>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </div>
+      </section>
 
-  <!-- JavaScript -->
-  <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <!-- Section: Skills -->
+      <section id="section-skills">
+        <div class="container d-flex justify-content-center">
+          <div class="row">
+            <div class="col-md-6 flex">
+              <h2 data-aos="fade-right">Skills</h2>
+              <div class="header-bar" data-aos="fade-left"></div>
+              <div class="graph-cont" data-aos="fade-right">
+                <div class="bar bar1">
+                  <span><i class="fab fa-html5"></i></span>
+                  <span>90%</span>
+                </div>
+                <div class="bar bar2">
+                  <span><i class="fab fa-css3"></i></span>
+                  <span>90%</span>
+                </div>
+                <div class="bar bar3">
+                  <span><i class="fab fa-js"></i></span>
+                  <span>70%</span>
+                </div>
+                <div class="bar bar4">
+                  <span><i class="fab fa-node-js"></i></span>
+                  <span>70%</span>
+                </div>
+                <div class="bar bar5">
+                  <span><i class="fab fa-react"></i></span>
+                  <span>60%</span>
+                </div>
+                <div class="bar bar6">
+                  <span><i class="fab fa-github"></i></span>
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 flex">
+              <h2 data-aos="fade-left">Education</h2>
+              <div class="header-bar" data-aos="fade-right"></div>
+              <div
+                class="col-md col-sm"
+                id="education-column"
+                data-aos="fade-left"
+              >
+                <div class="course">
+                  <h4>Full-stack Web Development Bootcamp</h4>
+                  <h5>Monash University - 2020</h5>
+                </div>
+                <div class="course">
+                  <h4>Bachelor of Arts, Honors Degree in Accounting</h4>
+                  <h5>Institute of Technology, Carlow - 2011</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <!-- charts.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+      <!-- Section: Career -->
+      <section id="section-career">
+        <div class="container d-flex justify-content-center">
+          <div class="row">
+            <div class="career col-md-12 flex">
+              <h2 data-aos="fade-right">Career</h2>
+              <div class="header-bar" data-aos="fade-left"></div>
+              <div class="career-line z-depth-1">
+                <div class="col-md-12 col-sm-12">
+                  <!-- Credit: https://codepen.io/krishnab/pen/OPwqbW/ -->
+                  <ul class="timeline">
+                    <!-- Item 1 -->
+                    <li data-aos="fade-down-left">
+                      <div class="direction-r">
+                        <div class="flag-wrapper">
+                          <span class="hexa"></span>
+                          <button
+                            class="btn btn-outline-primary d-flex align-items-center button-md"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#multiCollapseExample1"
+                            aria-expanded="false"
+                            aria-controls="multiCollapseExample1"
+                          >
+                            NetSuite ERP Support Coordinator
+                          </button>
+                          <span class="time-wrapper"
+                            ><span class="time"
+                              >March 2019 - Present</span
+                            ></span
+                          >
+                        </div>
+                        <div
+                          class="collapse multi-collapse"
+                          id="multiCollapseExample1"
+                        >
+                          <div class="desc">
+                            <ul>
+                              <li><strong>Employer:</strong> REA Group</li>
+                              <li>
+                                Developing Javascript scripts along with test
+                                scripts using Jasmine to deliver business
+                                requirements
+                              </li>
+                              <li>
+                                Translating business requirements into clear,
+                                concise, testable and accurate user stories &
+                                process flows
+                              </li>
+                              <li>
+                                Ensuring that requirements are understood
+                                through story kickoffs and constant
+                                communication using a variety of analysis and
+                                documentation techniques including the
+                                application of visualization techniques to
+                                underpin a joint understanding of processes and
+                                data
+                              </li>
+                              <li>
+                                Coordinate Netsuite upgrades including,
+                                development and execution of test cases to
+                                ensure upgrades occur without any business
+                                disruption
+                              </li>
+                              <li>
+                                Maintain/Update Netsuite/Adaptive account and
+                                organization structures, workflows and processes
+                              </li>
+                              <li>
+                                Supporting internal stakeholders as the main
+                                contact for all requests and enhancements for
+                                the companies ERP system (NetSuite)
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
 
-  <!-- Popper.js first, then Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+                    <!-- Item 2 -->
+                    <li data-aos="fade-down-right">
+                      <div class="direction-l">
+                        <div class="flag-wrapper">
+                          <span class="hexa"></span>
+                          <button
+                            class="btn btn-outline-primary d-flex align-items-center button-md"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#multiCollapseExample2"
+                            aria-expanded="false"
+                            aria-controls="multiCollapseExample2"
+                          >
+                            Accounts Payable Officer
+                          </button>
+                          <span class="time-wrapper"
+                            ><span class="time"
+                              >August 2018 - March 2019</span
+                            ></span
+                          >
+                        </div>
+                        <div
+                          class="collapse multi-collapse"
+                          id="multiCollapseExample2"
+                        >
+                          <div class="desc">
+                            <ul>
+                              <li><strong>Employer:</strong> REA Group</li>
+                              <li>
+                                Process all new & existing invoices requiring
+                                payment by directing these to the relevant
+                                requisitioners
+                              </li>
+                              <li>
+                                Performing weekly domestic and international pay
+                                runs for an international organization
+                              </li>
+                              <li>
+                                Generating data for the processing of monthly
+                                accruals throughout the organization
+                              </li>
+                              <li>
+                                Daily receipting tasks of all payments received
+                              </li>
+                              <li>
+                                General support for the accounts receivables
+                                department
+                              </li>
+                              <li>
+                                Supporting the various vendors and internal
+                                stakeholders on a daily basis
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
 
-  <!-- AOS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                    <!-- Item 3 -->
+                    <li data-aos="fade-down-left">
+                      <div class="direction-r">
+                        <div class="flag-wrapper">
+                          <span class="hexa"></span>
+                          <button
+                            class="btn btn-outline-primary d-flex align-items-center button-md"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#multiCollapseExample3"
+                            aria-expanded="false"
+                            aria-controls="multiCollapseExample3"
+                          >
+                            Customer Credit Controller
+                          </button>
+                          <span class="time-wrapper"
+                            ><span class="time"
+                              >August 2017 - August 2018</span
+                            ></span
+                          >
+                        </div>
+                        <div
+                          class="collapse multi-collapse"
+                          id="multiCollapseExample3"
+                        >
+                          <div class="desc">
+                            <ul>
+                              <li><strong>Employer:</strong> REA Group</li>
+                              <li>Overseen a ledger of 3,000+ accounts</li>
+                              <li>
+                                Timely and effective collection of all debts and
+                                customers payments
+                              </li>
+                              <li>Negotiating payment plans</li>
+                              <li>
+                                Resolving queries both internally and externally
+                                around outstanding invoices
+                              </li>
+                              <li>Posting and allocating daily receipts</li>
+                              <li>
+                                Checking customer’s credit ratings with our
+                                external partners
+                              </li>
+                              <li>
+                                Process Improvement by delivering a new CRM
+                                (Zendesk) to increase our level of service with
+                                our customers and provide reporting on customer
+                                behaviours
+                              </li>
+                              <li>
+                                Weekly Project catch ups and reporting to ensure
+                                implemented changes are successfully impacting
+                                our customers and internal stakeholders
+                              </li>
+                              <li>
+                                Communication with internal & external
+                                stakeholders for process changes, requirements
+                                for further development and any assistance
+                                required within the credit process
+                              </li>
+                              <li>
+                                Process and user journey mapping to enable
+                                further discovery for process improvement and
+                                automation
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
 
-  <!-- Custom JS -->
-  <script src="./asset/js/script.js"></script>
+                    <!-- Item 4 -->
+                    <li data-aos="fade-down-right">
+                      <div class="direction-l">
+                        <div class="flag-wrapper">
+                          <span class="hexa"></span>
+                          <button
+                            class="btn btn-outline-primary d-flex align-items-center button-md"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#multiCollapseExample4"
+                            aria-expanded="false"
+                            aria-controls="multiCollapseExample4"
+                          >
+                            Customer Experience Consultant
+                          </button>
+                          <span class="time-wrapper"
+                            ><span class="time"
+                              >August 2016 - August 2017</span
+                            ></span
+                          >
+                        </div>
+                        <div
+                          class="collapse multi-collapse"
+                          id="multiCollapseExample4"
+                        >
+                          <div class="desc">
+                            <ul>
+                              <li><strong>Employer:</strong> REA Group</li>
+                              <li>
+                                Assisting in the development of current
+                                processes like implementing Zendesk and a
+                                Salesforce CRM
+                              </li>
+                              <li>Process and User Journey Mapping</li>
+                              <li>
+                                Internal stakeholder interviews translated into
+                                data and further workshopping
+                              </li>
+                              <li>
+                                Communicate findings to wider team and
+                                management
+                              </li>
+                              <li>
+                                Knowledge Sharing across Digital Marketing,
+                                Products, Programming, Accounts
+                              </li>
+                              <li>Maintaining 48 hour SLA's</li>
+                              <li>
+                                Delivering high levels of customer service to
+                                internal and external stakeholders
+                              </li>
+                              <li>
+                                Day-to-day tasks such as Resourcing & assisting
+                                all queues
+                              </li>
+                              <li>Inbound calls, web chat and email replies</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-</body>
+      <!-- Section: Portfolio -->
+      <section id="section-portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="portfolio col-md-12 flex">
+              <h2 data-aos="fade-right">Portfolio</h2>
+              <div class="header-bar" data-aos="fade-left"></div>
+              <div class="row">
+                <div
+                  class="col-lg-3 col-md-4 col-sm-6 col-xs-12"
+                  data-aos="zoom-in-up"
+                >
+                  <div class="hovereffect">
+                    <img
+                      class="img-responsive"
+                      src="./asset/img/be-redy.png"
+                      alt=""
+                    />
+                    <div class="overlay">
+                      <a href="https://be-redy.herokuapp.com">
+                        <h2>BE-REDY</h2>
+                      </a>
+                      <p>
+                        <a href="https://github.com/darren-behan/be-redy">
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-4 col-sm-6 col-xs-12"
+                  data-aos="zoom-in-up"
+                >
+                  <div class="hovereffect">
+                    <img
+                      class="img-responsive"
+                      src="./asset/img/a-better-time.png"
+                      alt=""
+                    />
+                    <div class="overlay">
+                      <a href="https://darren-behan.github.io/a-better-time/">
+                        <h2>A BETTER TIME</h2>
+                      </a>
+                      <p>
+                        <a href="https://github.com/darren-behan/a-better-time">
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-4 col-sm-6 col-xs-12"
+                  data-aos="zoom-in-up"
+                >
+                  <div class="hovereffect">
+                    <img
+                      class="img-responsive"
+                      src="./asset/img/burger-logger.png"
+                      alt=""
+                    />
+                    <div class="overlay">
+                      <a href="https://enigmatic-cove-34274.herokuapp.com">
+                        <h2>BURGER LOGGER</h2>
+                      </a>
+                      <p>
+                        <a href="https://github.com/darren-behan/burger-logger">
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-4 col-sm-6 col-xs-12"
+                  data-aos="zoom-in-up"
+                >
+                  <div class="hovereffect">
+                    <img
+                      class="img-responsive"
+                      src="./asset/img/readme-generator.png"
+                      alt=""
+                    />
+                    <div class="overlay">
+                      <a
+                        href="https://drive.google.com/file/d/1cVIweJ_w4y9fEC4dc8TGAjuIwE_CrJGn/view"
+                      >
+                        <h2>README-GENERATOR</h2>
+                      </a>
+                      <p>
+                        <a
+                          href="https://github.com/darren-behan/readme-generator"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-4 col-sm-6 col-xs-12"
+                  data-aos="zoom-in-up"
+                >
+                  <div class="hovereffect">
+                    <img
+                      class="img-responsive"
+                      src="./asset/img/employee-tracker.png"
+                      alt=""
+                    />
+                    <div class="overlay">
+                      <a
+                        href="https://drive.google.com/file/d/1BXL7Nv1bYQR8CsNGGPSbc6TmxPr4nTQd/view"
+                      >
+                        <h2>EMPLOYEE TRACKER</h2>
+                      </a>
+                      <p>
+                        <a
+                          href="https://github.com/darren-behan/employee-tracker"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-4 col-sm-6 col-xs-12"
+                  data-aos="zoom-in-up"
+                >
+                  <div class="hovereffect">
+                    <img
+                      class="img-responsive"
+                      src="./asset/img/weather-dashboard.png"
+                      alt=""
+                    />
+                    <div class="overlay">
+                      <a href="https://darren-behan.github.io/weather-app/">
+                        <h2>WEATHER DASHBOARD</h2>
+                      </a>
+                      <p>
+                        <a href="https://github.com/darren-behan/weather-app">
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-4 col-sm-6 col-xs-12"
+                  data-aos="zoom-in-up"
+                >
+                  <div class="hovereffect">
+                    <img
+                      class="img-responsive"
+                      src="./asset/img/work-day-scheduler.png"
+                      alt=""
+                    />
+                    <div class="overlay">
+                      <a
+                        href="https://darren-behan.github.io/work-day-scheduler/"
+                      >
+                        <h2>WORK SCHEDULER</h2>
+                      </a>
+                      <p>
+                        <a
+                          href="https://github.com/darren-behan/work-day-scheduler"
+                        >
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Contact -->
+      <section id="section-contact">
+        <div class="container">
+          <div class="row">
+            <div class="portfolio col-md-12 flex">
+              <h2 data-aos="fade-right">Contact Me</h2>
+              <div class="header-bar" data-aos="fade-left"></div>
+              <!-- Bootstrap Form -->
+              <form>
+                <div class="row">
+                  <div id="first-name" class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="First name"
+                    />
+                  </div>
+                  <div id="last-name" class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Last name"
+                    />
+                  </div>
+                  <div id="email" class="col-md-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div id="message" class="col-md-12">
+                    <input
+                      type="text"
+                      id="message-form-control"
+                      class="form-control"
+                      placeholder="Message"
+                    />
+                  </div>
+                  <div id="submit" class="col-md-12">
+                    <button type="button" class="btn btn-primary">
+                      Send Email
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- JavaScript -->
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- charts.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./asset/js/script.js"></script>
+  </body>
 </html>
-
-<!-- fix skills section by adding extra span, using flex - re: screenshot  -->
-<!-- use static html rather than jQuery -->
-<!-- use jQuery for appending portfolio tiles with the data stored in an object -->
-<!-- use rem over vh/vw - rem pulls the font-size defined in the body -->
-<!-- fix career section on mobile -->
-<!-- make contact form work - https://www.emailjs.com/ -->
-<!-- add order-sm-1, order-sm-2, etc. in html el rather than with JS -->
