@@ -55,7 +55,7 @@
       href="asset/css/style_portfolio.css"
     />
   </head>
-  <body data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+  <body data-spy="scroll" data-target="#navbar" data-offset="0">
     <!-- Fluid Container -->
     <div class=".container-fluid">
       <!-- Section: Home -->
@@ -65,12 +65,15 @@
             <div class="d-flex justify-content-center col-md-12">
               <p class="intro">
                 Hello, I'm <span class="name">Darren Behan</span>.
-                <br>
+                <br />
                 I'm a full-stack web developer.
               </p>
             </div>
             <div class="d-flex justify-content-center col-md-12">
-              <button type="button" class="btn btn-outline-primary d-flex align-items-center btn-home">
+              <button
+                type="button"
+                class="btn btn-outline-primary d-flex align-items-center btn-home"
+              >
                 <div>View my work</div>
                 <i class="fa fa-arrow-right"></i>
               </button>
@@ -82,7 +85,10 @@
       <!-- Header -->
       <header class="sticky-top" id="header">
         <!-- Bootstrap Navbar -->
-        <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-expand-md navbar-light">
+        <nav
+          id="navbar"
+          class="navbar navbar-expand-lg navbar-expand-md navbar-light"
+        >
           <button
             class="navbar-toggler"
             type="button"
@@ -178,16 +184,22 @@
           </div>
         </nav>
       </header>
-      
+
       <!-- Section: About -->
       <section id="section-about">
         <div class="container d-flex justify-content-center">
           <div class="row">
-            <div class="col-md-12 about flex">
+            <div class="about flex">
               <h2 data-aos="fade-right" class="aos-init aos-animate">About</h2>
-              <div class="header-bar aos-init aos-animate" data-aos="fade-left"></div>
-              <div class="row">
-                <div class="col-md-4 bio-text-left aos-init aos-animate" data-aos="fade-right">
+              <div
+                class="header-bar aos-init aos-animate"
+                data-aos="fade-left"
+              ></div>
+              <div class="d-flex flex-wrap">
+                <div
+                  class="col-lg-4 col-md-6 order-lg-0 bio-text-left aos-init aos-animate"
+                  data-aos="fade-right"
+                >
                   <p>
                     Full Stack Web Developer utilising an extensive customer
                     service and finance background to build complex web apps
@@ -195,17 +207,32 @@
                   </p>
                 </div>
                 <div
-                  class="col-md-4 profile-pic aos-init aos-animate" data-aos="fade-up">
+                  class="col-lg-4 col-md-12 order-first order-md-first order-lg-1 profile-pic aos-init aos-animate"
+                  data-aos="fade-up"
+                >
                   <img src="./asset/img/profile-pic.png" />
-                  <div class="d-flex justify-content-center col-md-12 button-sm">
-                    <button type="button" class="btn btn-outline-primary d-flex align-items-center button-md">
-                      <a class="button-md" href="./asset/img/cv.pdf">Download CV</a>
+                  <div
+                    class="d-flex justify-content-center col-md-12 button-sm"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary d-flex align-items-center button-md"
+                    >
+                      <a class="button-md" href="./asset/img/cv.pdf"
+                        >Download CV</a
+                      >
                     </button>
                   </div>
                 </div>
-                <div class="col-md-4 bio-text-right aos-init aos-animate" data-aos="fade-left">
+                <div
+                  class="col-lg-4 col-md-6 order-lg-2 bio-text-right aos-init aos-animate"
+                  data-aos="fade-left"
+                >
                   <p>
-                    Currently enrolled in Monash Universities Full Stack Web Development Bootcamp where I’m developing technical skills in CSS, JavaScript, React.js Node.js, API, MongoDB and responsive web design.
+                    Currently enrolled in Monash Universities Full Stack Web
+                    Development Bootcamp where I’m developing technical skills
+                    in CSS, JavaScript, React.js Node.js, API, MongoDB and
+                    responsive web design.
                   </p>
                 </div>
               </div>
@@ -221,6 +248,7 @@
             <div class="col-md-6 flex">
               <h2 data-aos="fade-right">Skills</h2>
               <div class="header-bar" data-aos="fade-left"></div>
+              <!-- Sourced from: https://speckyboy.com/code-snippets-css3-bar-graphs/ => Source code amended as required -->
               <div class="graph-cont" data-aos="fade-right">
                 <div class="bar bar1">
                   <span><i class="fab fa-html5"></i></span>
@@ -279,7 +307,7 @@
               <div class="header-bar" data-aos="fade-left"></div>
               <div class="career-line z-depth-1">
                 <div class="col-md-12 col-sm-12">
-                  <!-- Credit: https://codepen.io/krishnab/pen/OPwqbW/ -->
+                  <!-- Sourced from: https://codepen.io/krishnab/pen/OPwqbW/ => Source code amended as required -->
                   <ul class="timeline">
                     <!-- Item 1 -->
                     <li data-aos="fade-down-left">
@@ -554,6 +582,7 @@
             <div class="portfolio col-md-12 flex">
               <h2 data-aos="fade-right">Portfolio</h2>
               <div class="header-bar" data-aos="fade-left"></div>
+              <!-- Sourced from: https://miketricking.github.io/bootstrap-image-hover/ => Source code amended as required -->
               <div class="row">
                 <div
                   class="col-lg-3 col-md-4 col-sm-6 col-xs-12"
@@ -751,14 +780,14 @@
                       placeholder="Last name"
                     />
                   </div>
-                  <div id="email" class="col-md-12">
+                  <div id="email" class="col-lg-12 col-md-6">
                     <input
                       type="text"
                       class="form-control"
                       placeholder="Email"
                     />
                   </div>
-                  <div id="message" class="col-md-12">
+                  <div id="message" class="col-lg-12 col-md-6">
                     <input
                       type="text"
                       id="message-form-control"
