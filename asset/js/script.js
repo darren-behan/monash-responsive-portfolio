@@ -1,37 +1,6 @@
 // "document.ready" makes sure that our JavaScript doesn't get run until the HTML document is finished loading.
 $(document).ready(() => {
-  let $containerDivEl = $("<div>").attr("class", "container");
-  let $rowDivEl = $("<div>").attr("class", "row");
-  let $buttonEl = $("<button>").attr("type", "button").attr(
-    "class",
-    "btn btn-outline-primary d-flex align-items-center"
-  );
-
-  const homeSection = () => {
-    const $section = $("#home");
-    const $flexDivElOne = $("<div>").attr("class", "d-flex justify-content-center col-md-12");
-    const $flexDivElTwo = $("<div>").attr("class", "d-flex justify-content-center col-md-12");
-    const $p = $("<p>")
-      .attr("class", "intro")
-      .html(
-        "Hello, I'm <span class='name'>Darren Behan</span>.</br>I'm a full-stack web developer."
-      );
-    const $button = 
-      $("<button>")
-      .attr("type", "button")
-      .attr("class", "btn btn-outline-primary d-flex align-items-center btn-home")
-      .html("<div>View my work</div><i class='fa fa-arrow-right'></i>");
-    
-    $section.append($containerDivEl);
-    $containerDivEl.append($rowDivEl);
-    $rowDivEl.append($flexDivElOne);
-    $flexDivElOne.append($p);
-    $rowDivEl.append($flexDivElTwo);
-    $flexDivElTwo.append($button);
-  };
-
-  // When the viewport is < 500px, we add the below classes
-  // When the classes are added, the <div> elements are ordered based on the class
+  // When the viewport is < 500px, we add the below class
   $(window).resize(() => {
     if ($(window).width() < 500) {
       $(".flag-wrapper").attr("class", "row justify-content-center");
@@ -66,8 +35,6 @@ $(document).ready(() => {
   AOS.init({
     duration: 1200,
   });
-
-  homeSection();
 
   // When you click the 'View my work' button, the viewport scrolls down to the navigation menu and stops once that meets the top of the viewport
   $(".btn-home").click(function () {
