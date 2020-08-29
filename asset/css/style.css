@@ -3,7 +3,7 @@
 body {
   background-color: #ededed;
   font-family: "Raleway", sans-serif;
-  font-size: 3vh;
+  font-size: 20px;
   position: relative;
 }
 
@@ -11,7 +11,7 @@ body {
 h2 {
   color: #001b31;
   margin: 0;
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .flex {
@@ -49,12 +49,12 @@ header #navbar-nav a:hover {
 
 /* Sections */
 section {
-  padding: 5vh 0 10vh 0;
+  padding: 40px 0 80px 0;
   text-align: center;
 }
 
 section .container {
-  padding-top: 5vh;
+  padding-top: 40px;
 }
 
 .row {
@@ -69,7 +69,7 @@ p {
 
 /* Font Awesome Icons */
 a > i {
-  font-size: 3vh;
+  font-size: 1.5rem;
   color: #ffffff;
 }
 
@@ -81,7 +81,7 @@ a > i:hover {
 a {
   color: #ffffff;
   text-align: center;
-  font-size: 2.25vh;
+  font-size: 1rem;
 }
 
 a:hover {
@@ -107,7 +107,7 @@ section:nth-of-type(1) {
 .intro {
   font-size: 45px;
   line-height: 50px;
-  margin: 0 0 2vh 0 !important;
+  margin: 0 0 10px 0 !important;
   z-index: 1;
   text-align: center;
 }
@@ -124,7 +124,6 @@ section:nth-of-type(1) {
   border-color: #0bc2c9;
   color: #fff;
   font-weight: 500;
-  font-size: 2.25vh;
 }
 
 .btn:hover {
@@ -138,12 +137,11 @@ section:nth-of-type(1) {
 }
 
 .btn-home > div {
-  padding: 1vh 1vw 1vh 1vw;
+  padding: 5px 10px 5px 10px;
 }
 
 .btn i {
   display: block;
-  font-size: 2.5vh;
   transition: all 0.4s ease;
   color: #fff;
 }
@@ -152,7 +150,8 @@ section:nth-of-type(1) {
   box-shadow: none;
 }
 
-.btn-primary:active, .btn-primary:focus {
+.btn-primary:active,
+.btn-primary:focus {
   background-color: #0bc2c9;
   border-color: #0bc2c9;
 }
@@ -164,9 +163,9 @@ section:nth-of-type(1) {
 
 .header-bar {
   background: #0bc2c9;
-  height: 0.5vh;
+  height: 4px;
   width: 70px;
-  margin: 2vh 0 4vh 0;
+  margin: 15px 0 30px 0;
 }
 
 .profile-pic img {
@@ -174,7 +173,7 @@ section:nth-of-type(1) {
   height: 250px;
   width: 250px;
   vertical-align: middle;
-  padding: 0 0 1vh 0;
+  padding: 0 0 10px 0;
 }
 
 /* Section: Skills */
@@ -261,7 +260,7 @@ section:nth-of-type(1) {
 
 .time {
   color: #ffffff;
-  font-size: 1.5vh;
+  font-size: 1rem;
 }
 
 /* Section: Career */
@@ -271,7 +270,7 @@ section:nth-of-type(1) {
 }
 
 .desc > ul > li {
-  font-size: 1.5vh;
+  font-size: 1rem;
 }
 
 /* Section: Portfolio */
@@ -282,7 +281,7 @@ section:nth-of-type(1) {
 
 /* This is to add margin to the bottom of image tiles */
 .col-md-4 {
-  margin: 0vh 0vw 3.5vh 0vw;
+  margin: 0 0 2.5% 0;
 }
 
 /* Section: Contact */
@@ -317,7 +316,7 @@ section:nth-of-type(1) {
   /* Section: About */
   /* Resizing the text within the button element */
   .button-md {
-    font-size: 1.25vh;
+    font-size: 1rem;
   }
 }
 
@@ -325,7 +324,7 @@ section:nth-of-type(1) {
   /* Section: About */
   /* Resizing the text within the button element */
   .button-md {
-    font-size: 1.5vh;
+    font-size: 1rem;
   }
 
   /* Extending width of input form boxes */
@@ -338,11 +337,6 @@ section:nth-of-type(1) {
   /* Section: About */
   /* Adding margin to the bottom of the button to create some separation */
   .button-sm {
-    margin: 0 0 1vh 0;
-  }
-
-  /* Resizing the text within the button element */
-  .button-md {
-    font-size: 2vh;
+    margin: 0 0 5px 0;
   }
 }
