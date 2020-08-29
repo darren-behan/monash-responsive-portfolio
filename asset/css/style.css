@@ -143,6 +143,14 @@ section:nth-of-type(1) {
   color: #fff;
 }
 
+.btn:focus {
+  box-shadow: none;
+}
+
+/* button:active {
+  background-color: #0bc2c9;
+} */
+
 /* Section: About */
 #section-about {
   background-color: #ffffff;
@@ -169,19 +177,17 @@ section:nth-of-type(1) {
 }
 
 .bar {
-  margin: 0 auto 1vh auto;
-  padding: 0 0 0 1vh;
-  line-height: 4vh;
-  font-size: 2vh;
   color: white;
   position: relative;
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
 }
 
 .bar::before {
   content: "";
   width: 100%;
-  border-radius: 1vh;
+  border-radius: 5px;
   position: absolute;
   left: 0;
   height: 30px;
@@ -197,7 +203,7 @@ section:nth-of-type(1) {
   transition: 0.7s;
   display: block;
   width: 100%;
-  border-radius: 1vh;
+  border-radius: 5px;
   position: absolute;
   top: 0;
   left: 0;
@@ -206,11 +212,6 @@ section:nth-of-type(1) {
 
 .animate::after {
   -webkit-animation: bar-before 1 5s;
-}
-
-.bar span {
-  float: left;
-  font-size: 3vh;
 }
 
 .bar1::after {
