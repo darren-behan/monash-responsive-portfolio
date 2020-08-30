@@ -1,121 +1,60 @@
 // "document.ready" makes sure that our JavaScript doesn't get run until the HTML document is finished loading.
 $(document).ready(() => {
-  let $containerDivEl = $("<div>").attr("class", "container");
-  let $rowDivEl = $("<div>").attr("class", "row");
-  let $buttonEl = $("<button>").attr("type", "button").attr(
-    "class",
-    "btn btn-outline-primary d-flex align-items-center"
-  );
+  // An array to store an object for each portfolio item
+  const portfolio = [
+    { name: "BE-REDY", image: "./asset/img/be-redy.png",
+    app: "https://be-redy.herokuapp.com", github: "https://github.com/darren-behan/be-redy" },
+    { name: "A BETTER TIME", image: "./asset/img/a-better-time.png",
+    app: "https://darren-behan.github.io/a-better-time/", github: "https://github.com/darren-behan/a-better-time" },
+    { name: "BURGER LOGGER", image: "./asset/img/burger-logger.png",
+    app: "https://enigmatic-cove-34274.herokuapp.com", github: "https://github.com/darren-behan/burger-logger" },
+    { name: "README-GENERATOR", image: "./asset/img/readme-generator.png",
+    app: "https://drive.google.com/file/d/1cVIweJ_w4y9fEC4dc8TGAjuIwE_CrJGn/view", github: "https://github.com/darren-behan/readme-generator" },
+    { name: "EMPLOYEE TRACKER", image: "./asset/img/employee-tracker.png",
+    app: "https://drive.google.com/file/d/1BXL7Nv1bYQR8CsNGGPSbc6TmxPr4nTQd/view", github: "https://github.com/darren-behan/employee-tracker" },
+    { name: "WEATHER DASHBOARD", image: "./asset/img/weather-dashboard.png",
+    app: "https://darren-behan.github.io/weather-app/", github: "https://github.com/darren-behan/weather-app" },
+    { name: "WORK SCHEDULER", image: "./asset/img/work-day-scheduler.png",
+    app: "https://darren-behan.github.io/work-day-scheduler/", github: "https://github.com/darren-behan/work-day-scheduler" }
+  ];
 
-  const homeSection = () => {
-    const $section = $("#home");
-    const $flexDivElOne = $("<div>").attr("class", "d-flex justify-content-center col-md-12");
-    const $flexDivElTwo = $("<div>").attr("class", "d-flex justify-content-center col-md-12");
-    const $p = $("<p>")
-      .attr("class", "intro")
-      .html(
-        "Hello, I'm <span class='name'>Darren Behan</span>.</br>I'm a full-stack web developer."
-      );
-    const $button = 
-      $("<button>")
-      .attr("type", "button")
-      .attr("class", "btn btn-outline-primary d-flex align-items-center btn-home")
-      .html("<div>View my work</div><i class='fa fa-arrow-right'></i>");
-    
-    $section.append($containerDivEl);
-    $containerDivEl.append($rowDivEl);
-    $rowDivEl.append($flexDivElOne);
-    $flexDivElOne.append($p);
-    $rowDivEl.append($flexDivElTwo);
-    $flexDivElTwo.append($button);
-  };
+  // We iterate through the portfolio array and dynamically append each element to construct the portfolio with the data in the array.
+  const renderPortfolio = () => {
+    portfolio.forEach(element => {
+      const $portfolioRowDivEl = $("#portfolio-row");
+      const $portfolioColDivEl = $("<div>").attr("class", "col-lg-3 col-md-4 col-sm-6 col-xs-12").attr("data-aos", "zoom-in-up");
+      const $hoverEffectDivEl = $("<div>").attr("class", "hovereffect");
+      const $responsiveImgEl = $("<img>").attr("class", "img-responsive").attr("alt", "").attr("src", element.image);
+      const $overlayDivEl = $("<div>").attr("class", "overlay");
+      const $appLinkEl = $("<a>").attr("href", element.app);
+      const $pEl = $("<p>");
+      const $repoLinkEl = $("<a>").attr("href", element.github);
+      const $githubFontEl = $("<i>").attr("class", "fab fa-github");
 
-  // Renders the elements and data for the About section
-  const aboutSection = () => {
-    // We're dynamically creating all elements for the About section with each element animating on scroll which is controlled through the AOS library
-    // The animations are introduced by adding classes to the elements
-    const $aboutDiv = $(".about");
-    const $h2 = $("<h2>").text("About").attr("data-aos", "fade-right");
-    $aboutDiv.append($h2);
+      $portfolioRowDivEl.append($portfolioColDivEl);
+      $portfolioColDivEl.append($hoverEffectDivEl);
+      $hoverEffectDivEl.append($responsiveImgEl);
+      $hoverEffectDivEl.append($overlayDivEl);
+      $overlayDivEl.append($appLinkEl);
+      $appLinkEl.html("<h2>" + element.name + "</h2>");
+      $overlayDivEl.append($pEl);
+      $pEl.append($repoLinkEl);
+      $repoLinkEl.append($githubFontEl);
+    });
+  }
 
-    const $headerBarDiv = $("<div>")
-      .attr("class", "header-bar")
-      .attr("data-aos", "fade-left");
-    $aboutDiv.append($headerBarDiv);
+  renderPortfolio();
 
-    const $aboutRow = $("<div>").attr("class", "row");
-    $aboutDiv.append($aboutRow);
-
-    const $bioDivLeft = $("<div>")
-      .attr("class", "col-md-4 bio-text-left")
-      .attr("data-aos", "fade-right");
-    const $bioTextLeft = $("<p>").text(
-      "Full Stack Web Developer utilising an extensive customer service and finance background to build complex web apps with a seamless user experience."
-    );
-    $aboutRow.append($bioDivLeft);
-    $bioDivLeft.append($bioTextLeft);
-
-    const $bioDivImg = $("<div>")
-      .attr("class", "col-md-4 profile-pic")
-      .attr("data-aos", "fade-up");
-    const $bioImg = $("<img>").attr("src", "./asset/img/profile-pic.png");
-    $aboutRow.append($bioDivImg);
-    $bioDivImg.append($bioImg);
-
-    const $bioDivButton = $("<div>").attr(
-      "class",
-      "d-flex justify-content-center col-md-12 button-sm"
-    );
-    const $bioButtonCv = $("<button>")
-      .attr("type", "button")
-      .attr(
-        "class",
-        "btn btn-outline-primary d-flex align-items-center button-md"
-      );
-    const $bioLinkCv = $("<a>")
-      .attr("class", "button-md")
-      .attr("href", "./asset/img/cv.pdf")
-      .text("Download CV");
-    $bioDivImg.append($bioDivButton);
-    $bioDivButton.append($bioButtonCv);
-    $bioButtonCv.append($bioLinkCv);
-
-    const $bioDivRight = $("<div>")
-      .attr("class", "col-md-4 bio-text-right")
-      .attr("data-aos", "fade-left");
-    const $bioTextRight = $("<p>").text(
-      "Currently enrolled in Monash Universities Full Stack Web Development Bootcamp where I’m developing technical skills in CSS, JavaScript, React.js Node.js, API, MongoDB and responsive web design."
-    );
-    $aboutRow.append($bioDivRight);
-    $bioDivRight.append($bioTextRight);
-  };
-
-  // When the viewport is < 500px, we add the below classes
-  // When the classes are added, the <div> elements are ordered based on the class
+  // When the viewport is < 500px, we add the below class to each career item <div> with a class of "flag-wrapper" which aligns the content center for mobile
   $(window).resize(() => {
     if ($(window).width() < 500) {
-      $(".profile-pic").addClass("order-1");
-      $(".bio-text-left").addClass("order-2");
-      $(".bio-text-right").addClass("order-3");
       $(".flag-wrapper").attr("class", "row justify-content-center");
     } else {
-      $(".profile-pic").removeClass("order-1");
-      $(".bio-text-left").removeClass("order-2");
-      $(".bio-text-right").removeClass("order-3");
       $(".flag-wrapper").addClass("class", "flex-wrapper");
     }
   });
 
-  const skillsSection = () => {
-    // const $skillsDiv = $(".skills");
-    // const $h2 = $("<h2>").text("Skills").attr("data-aos", "fade-right");
-    // $skillsDiv.append($h2);
-    // const $headerBarDiv = $("<div>")
-    //   .attr("class", "header-bar")
-    //   .attr("data-aos", "fade-left");
-    // $skillsDiv.append($headerBarDiv);
-  };
-
+  // This is to animate the skills graph on scroll and when the graph is within the viewport, rather than page load
   // Pass an element into this function to calculate where in the viewport it is position
   function isInViewport(el) {
     const rect = el.getBoundingClientRect();
@@ -143,8 +82,17 @@ $(document).ready(() => {
     duration: 1200,
   });
 
-  homeSection();
-  aboutSection();
+  // Initializing emailJS
+  $("#contact-form").on("submit", function(event) {
+      event.preventDefault();
+      // generate the contact number value
+      this.contact_number.value = Math.random() * 100000 | 0;
+      emailjs.sendForm('contact_service', 'contact_form', this);
+  });
+
+  (function(){
+    emailjs.init("user_D6Whn8ZWKEkuy23eNghGk");
+  })();
 
   // When you click the 'View my work' button, the viewport scrolls down to the navigation menu and stops once that meets the top of the viewport
   $(".btn-home").click(function () {

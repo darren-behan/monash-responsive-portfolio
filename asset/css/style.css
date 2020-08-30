@@ -3,14 +3,15 @@
 body {
   background-color: #ededed;
   font-family: "Raleway", sans-serif;
-  font-size: 3vh;
+  font-size: 20px;
+  position: relative;
 }
 
 /* Headings */
 h2 {
   color: #001b31;
   margin: 0;
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .flex {
@@ -42,14 +43,18 @@ header #navbar-nav a:hover {
   color: #e31b6d;
 }
 
+.nav-pills .nav-link.active {
+  background-color: #04c2c9;
+}
+
 /* Sections */
 section {
-  padding: 5vh 0 10vh 0;
+  padding: 40px 0 80px 0;
   text-align: center;
 }
 
 section .container {
-  padding-top: 5vh;
+  padding-top: 40px;
 }
 
 .row {
@@ -64,7 +69,7 @@ p {
 
 /* Font Awesome Icons */
 a > i {
-  font-size: 3vh;
+  font-size: 1.5rem;
   color: #ffffff;
 }
 
@@ -76,7 +81,7 @@ a > i:hover {
 a {
   color: #ffffff;
   text-align: center;
-  font-size: 2.25vh;
+  font-size: 1rem;
 }
 
 a:hover {
@@ -102,7 +107,7 @@ section:nth-of-type(1) {
 .intro {
   font-size: 45px;
   line-height: 50px;
-  margin: 0 0 2vh 0 !important;
+  margin: 0 0 10px 0 !important;
   z-index: 1;
   text-align: center;
 }
@@ -119,7 +124,6 @@ section:nth-of-type(1) {
   border-color: #0bc2c9;
   color: #fff;
   font-weight: 500;
-  font-size: 2.25vh;
 }
 
 .btn:hover {
@@ -133,14 +137,23 @@ section:nth-of-type(1) {
 }
 
 .btn-home > div {
-  padding: 1vh 1vw 1vh 1vw;
+  padding: 5px 10px 5px 10px;
 }
 
 .btn i {
   display: block;
-  font-size: 2.5vh;
   transition: all 0.4s ease;
   color: #fff;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #0bc2c9;
+  border-color: #0bc2c9;
 }
 
 /* Section: About */
@@ -150,9 +163,9 @@ section:nth-of-type(1) {
 
 .header-bar {
   background: #0bc2c9;
-  height: 0.5vh;
+  height: 4px;
   width: 70px;
-  margin: 2vh 0 4vh 0;
+  margin: 15px 0 30px 0;
 }
 
 .profile-pic img {
@@ -160,7 +173,7 @@ section:nth-of-type(1) {
   height: 250px;
   width: 250px;
   vertical-align: middle;
-  padding: 0 0 1vh 0;
+  padding: 0 0 10px 0;
 }
 
 /* Section: Skills */
@@ -169,19 +182,17 @@ section:nth-of-type(1) {
 }
 
 .bar {
-  margin: 0 auto 1vh auto;
-  padding: 0 0 0 1vh;
-  line-height: 4vh;
-  font-size: 2vh;
   color: white;
   position: relative;
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 5px 10px;
 }
 
 .bar::before {
   content: "";
   width: 100%;
-  border-radius: 1vh;
+  border-radius: 5px;
   position: absolute;
   left: 0;
   height: 30px;
@@ -197,7 +208,7 @@ section:nth-of-type(1) {
   transition: 0.7s;
   display: block;
   width: 100%;
-  border-radius: 1vh;
+  border-radius: 5px;
   position: absolute;
   top: 0;
   left: 0;
@@ -206,11 +217,6 @@ section:nth-of-type(1) {
 
 .animate::after {
   -webkit-animation: bar-before 1 5s;
-}
-
-.bar span {
-  float: left;
-  font-size: 3vh;
 }
 
 .bar1::after {
@@ -254,7 +260,7 @@ section:nth-of-type(1) {
 
 .time {
   color: #ffffff;
-  font-size: 1.5vh;
+  font-size: 1rem;
 }
 
 /* Section: Career */
@@ -264,7 +270,7 @@ section:nth-of-type(1) {
 }
 
 .desc > ul > li {
-  font-size: 1.5vh;
+  font-size: 1rem;
 }
 
 /* Section: Portfolio */
@@ -275,7 +281,7 @@ section:nth-of-type(1) {
 
 /* This is to add margin to the bottom of image tiles */
 .col-md-4 {
-  margin: 0vh 0vw 3.5vh 0vw;
+  margin: 0 0 25px 0;
 }
 
 /* Section: Contact */
@@ -284,33 +290,16 @@ section:nth-of-type(1) {
   background-color: #ffffff;
 }
 
-/* Container colour and margin */
-#contact-container {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-  margin: 40px 0px 40px 0px;
-}
-
-/* Row margin */
-#contact-row {
-  padding: 50px 0px 50px 0px;
-}
-
-/* Half columns padding */
-#first-name,
-#last-name,
-#email,
-#message {
-  padding: 0px 15px 15px 15px;
+.form-control {
+  display: inline-flex!important;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1024px) {
   /* Section: About */
   /* Resizing the text within the button element */
   .button-md {
-    font-size: 1.25vh;
+    font-size: 1rem;
   }
 }
 
@@ -318,12 +307,12 @@ section:nth-of-type(1) {
   /* Section: About */
   /* Resizing the text within the button element */
   .button-md {
-    font-size: 1.5vh;
+    font-size: 1rem;
   }
 
-  /* Extending width of input form boxes */
-  .form-control {
-    width: 300px;
+  /* Adding padding to the top to create space between the text and image */
+  .bio-text-right, .bio-text-left {
+    padding-top: 20px;
   }
 }
 
@@ -331,11 +320,6 @@ section:nth-of-type(1) {
   /* Section: About */
   /* Adding margin to the bottom of the button to create some separation */
   .button-sm {
-    margin: 0 0 1vh 0;
-  }
-
-  /* Resizing the text within the button element */
-  .button-md {
-    font-size: 2vh;
+    margin: 0 0 5px 0;
   }
 }
