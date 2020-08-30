@@ -82,6 +82,18 @@ $(document).ready(() => {
     duration: 1200,
   });
 
+  // Initializing emailJS
+  $("#contact-form").on("submit", function(event) {
+      event.preventDefault();
+      // generate the contact number value
+      this.contact_number.value = Math.random() * 100000 | 0;
+      emailjs.sendForm('contact_service', 'contact_form', this);
+  });
+
+  (function(){
+    emailjs.init("user_D6Whn8ZWKEkuy23eNghGk");
+  })();
+
   // When you click the 'View my work' button, the viewport scrolls down to the navigation menu and stops once that meets the top of the viewport
   $(".btn-home").click(function () {
     $("html, body").animate(

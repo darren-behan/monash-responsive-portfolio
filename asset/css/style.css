@@ -290,26 +290,9 @@ section:nth-of-type(1) {
   background-color: #ffffff;
 }
 
-/* Container colour and margin */
-#contact-container {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-  margin: 40px 0px 40px 0px;
-}
-
-/* Row margin */
-#contact-row {
-  padding: 50px 0px 50px 0px;
-}
-
-/* Half columns padding */
-#first-name,
-#last-name,
-#email,
-#message {
-  padding: 0px 15px 15px 15px;
+.form-control {
+  display: inline-flex!important;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1024px) {
