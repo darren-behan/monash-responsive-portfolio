@@ -15,7 +15,9 @@ $(document).ready(() => {
     { name: "WEATHER DASHBOARD", image: "./asset/img/weather-dashboard.png",
     app: "https://darren-behan.github.io/weather-app/", github: "https://github.com/darren-behan/weather-app" },
     { name: "WORK SCHEDULER", image: "./asset/img/work-day-scheduler.png",
-    app: "https://darren-behan.github.io/work-day-scheduler/", github: "https://github.com/darren-behan/work-day-scheduler" }
+    app: "https://darren-behan.github.io/work-day-scheduler/", github: "https://github.com/darren-behan/work-day-scheduler" },
+    { name: "WORKOUT TRACKER", image: "./asset/img/workout-tracker.png",
+    app: "https://track-exercises.herokuapp.com", github: "https://github.com/darren-behan/workout-tracker" }
   ];
 
   // We iterate through the portfolio array and dynamically append each element to construct the portfolio with the data in the array.
