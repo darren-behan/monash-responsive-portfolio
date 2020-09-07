@@ -158,7 +158,7 @@ section:nth-of-type(1) {
 
 /* Section: About */
 #section-about {
-  background-color: #ffffff;
+  background-color: #fbfbfb;
 }
 
 .header-bar {
@@ -203,7 +203,7 @@ section:nth-of-type(1) {
 
 .animate::after {
   content: "";
-  background: #0bc2c9;
+  background: linear-gradient(90deg, rgba(11,194,201,1) 0%, rgba(13,209,217,1) 53%, rgba(62,238,245,1) 100%);
   height: 30px;
   transition: 0.7s;
   display: block;
@@ -266,7 +266,7 @@ section:nth-of-type(1) {
 /* Section: Career */
 
 #section-career {
-  background-color: #ffffff;
+  background-color: #fbfbfb;
 }
 
 .desc > ul > li {
@@ -287,7 +287,7 @@ section:nth-of-type(1) {
 /* Section: Contact */
 
 #section-contact {
-  background-color: #ffffff;
+  background-color: #fbfbfb;
 }
 
 .form-control {

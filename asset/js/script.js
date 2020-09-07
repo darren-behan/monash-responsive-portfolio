@@ -28,9 +28,9 @@ $(document).ready(() => {
       const $hoverEffectDivEl = $("<div>").attr("class", "hovereffect");
       const $responsiveImgEl = $("<img>").attr("class", "img-responsive").attr("alt", "").attr("src", element.image);
       const $overlayDivEl = $("<div>").attr("class", "overlay");
-      const $appLinkEl = $("<a>").attr("href", element.app);
+      const $appLinkEl = $("<a>").attr("href", element.app).attr("target", "_blank");
       const $pEl = $("<p>");
-      const $repoLinkEl = $("<a>").attr("href", element.github);
+      const $repoLinkEl = $("<a>").attr("href", element.github).attr("target", "_blank");
       const $githubFontEl = $("<i>").attr("class", "fab fa-github");
 
       $portfolioRowDivEl.append($portfolioColDivEl);
