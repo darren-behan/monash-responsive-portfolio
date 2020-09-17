@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import './components/CustomScript';
+import { Col, Row, Container } from "./components/Grid";
 
 function App() {
   return (
     <>
     <div class=".container-fluid">
       <section id="home" class="d-flex align-items-center">
-        <div class="container">
+        <Container>
           <div class="row">
             <div class="d-flex justify-content-center col-md-12">
               <p class="intro">
@@ -26,7 +26,7 @@ function App() {
               </button>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
 
       <header class="sticky-top" id="header">
@@ -507,7 +507,7 @@ function App() {
       </section>
 
       <section id="section-portfolio">
-        <div class="container">
+        <Container>
           <div class="row">
             <div class="portfolio col-md-12 flex">
               <h2 data-aos="fade-right">Portfolio</h2>
@@ -516,11 +516,11 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
 
       <section id="section-contact">
-        <div class="container">
+        <Container>
           <div class="row">
             <div class="portfolio col-md-12 flex">
               <h2 data-aos="fade-right">Contact Me</h2>
@@ -553,7 +553,7 @@ function App() {
               </form>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
     </div>
     </>
