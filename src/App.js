@@ -8,7 +8,7 @@ function App() {
     <div class=".container-fluid">
       <section id="home" class="d-flex align-items-center">
         <Container>
-          <div class="row">
+          <Row>
             <div class="d-flex justify-content-center col-md-12">
               <p class="intro">
                 Hello, I'm <span class="name">Darren Behan</span>.
@@ -25,7 +25,7 @@ function App() {
                 <i class="fa fa-arrow-right"></i>
               </button>
             </div>
-          </div>
+          </Row>
         </Container>
       </section>
 
@@ -127,7 +127,7 @@ function App() {
 
       <section id="section-about">
         <div class="container d-flex justify-content-center">
-          <div class="row">
+          <Row>
             <div class="about flex">
               <h2 data-aos="fade-right" class="aos-init aos-animate">About</h2>
               <div
@@ -176,13 +176,13 @@ function App() {
                 </div>
               </div>
             </div>
-          </div>
+          </Row>
         </div>
       </section>
 
       <section id="section-skills">
         <div class="container d-flex justify-content-center">
-          <div class="row">
+          <Row>
             <div class="col-md-6 flex">
               <h2 data-aos="fade-right">Skills</h2>
               <div class="header-bar" data-aos="fade-left"></div>
@@ -231,13 +231,13 @@ function App() {
                 </div>
               </div>
             </div>
-          </div>
+          </Row>
         </div>
       </section>
 
       <section id="section-career">
         <div class="container d-flex justify-content-center">
-          <div class="row">
+          <Row>
             <div class="career col-md-12 flex">
               <h2 data-aos="fade-right">Career</h2>
               <div class="header-bar" data-aos="fade-left"></div>
@@ -502,31 +502,31 @@ function App() {
                 </div>
               </div>
             </div>
-          </div>
+          </Row>
         </div>
       </section>
 
       <section id="section-portfolio">
         <Container>
-          <div class="row">
+          <Row>
             <div class="portfolio col-md-12 flex">
               <h2 data-aos="fade-right">Portfolio</h2>
               <div class="header-bar" data-aos="fade-left"></div>
-              <div id="portfolio-row" class="row">
-              </div>
+              <Row id="portfolio-row">
+              </Row>
             </div>
-          </div>
+          </Row>
         </Container>
       </section>
 
       <section id="section-contact">
         <Container>
-          <div class="row">
+          <Row>
             <div class="portfolio col-md-12 flex">
               <h2 data-aos="fade-right">Contact Me</h2>
               <div class="header-bar" data-aos="fade-left"></div>
               <form id="contact-form">
-                <div class="row">
+                <Row>
                   <div class="col-md-12">
                     <input type="hidden" name="contact_number" />
                     <input name="user_name"
@@ -549,10 +549,10 @@ function App() {
                       Send Email
                     </button>
                   </div>
-                </div>
+                </Row>
               </form>
             </div>
-          </div>
+          </Row>
         </Container>
       </section>
     </div>
