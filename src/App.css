@@ -20,33 +20,6 @@ h2 {
   flex-direction: column;
 }
 
-/* Navigation Menu */
-header {
-  position: sticky;
-}
-
-nav {
-  border-bottom: 3px solid #04c2c9;
-  background-color: #001b31;
-}
-
-/* Header a tags colour and font weight */
-
-header #navbar-nav a {
-  color: #ffffff;
-  font-weight: 400;
-}
-
-/* Header, font awesome icons & side navigation a tags hover colour */
-
-header #navbar-nav a:hover {
-  color: #e31b6d;
-}
-
-.nav-pills .nav-link.active {
-  background-color: #04c2c9;
-}
-
 /* Sections */
 section {
   padding: 40px 0 80px 0;
@@ -95,65 +68,6 @@ section:nth-of-type(1) {
   height: 100vh;
   padding: 0 10px;
   background-color: #252a35;
-}
-
-/* Adding styles to text on the landing page */
-#home {
-  background-image: url("./assets/img/code.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.intro {
-  font-size: 45px;
-  line-height: 50px;
-  margin: 0 0 10px 0 !important;
-  z-index: 1;
-  text-align: center;
-}
-
-/* Setting color of specific text within the <intro> div */
-.name {
-  color: #0bc2c9;
-  font-weight: 600;
-}
-
-/* Styling button */
-.btn {
-  background-color: #0bc2c9;
-  border-color: #0bc2c9;
-  color: #fff;
-  font-weight: 500;
-}
-
-.btn:hover {
-  background-color: #e31b6d;
-  border-color: #e31b6d;
-}
-
-/* Rotates arrow on hover */
-.btn-home:hover i {
-  transform: rotateZ(90deg);
-}
-
-.btn-home > div {
-  padding: 5px 10px 5px 10px;
-}
-
-.btn i {
-  display: block;
-  transition: all 0.4s ease;
-  color: #fff;
-}
-
-.btn:focus {
-  box-shadow: none;
-}
-
-.btn-primary:active,
-.btn-primary:focus {
-  background-color: #0bc2c9;
-  border-color: #0bc2c9;
 }
 
 /* Section: About */
