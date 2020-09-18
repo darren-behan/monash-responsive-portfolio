@@ -70,26 +70,6 @@ section:nth-of-type(1) {
   background-color: #252a35;
 }
 
-/* Section: About */
-#section-about {
-  background-color: #fbfbfb;
-}
-
-.header-bar {
-  background: #0bc2c9;
-  height: 4px;
-  width: 70px;
-  margin: 15px 0 30px 0;
-}
-
-.profile-pic img {
-  border-radius: 15%;
-  height: 250px;
-  width: 250px;
-  vertical-align: middle;
-  padding: 0 0 10px 0;
-}
-
 /* Section: Skills */
 .graph-cont {
   width: 100%;
