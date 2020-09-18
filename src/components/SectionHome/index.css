@@ -56,3 +56,10 @@
   background-color: #0bc2c9;
   border-color: #0bc2c9;
 }
+
+section:nth-of-type(1) {
+  color: #fff;
+  height: 100vh;
+  padding: 0 10px;
+  background-color: #252a35;
+}

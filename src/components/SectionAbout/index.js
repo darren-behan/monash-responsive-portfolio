@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import './index.css';
 import { Container, Row } from 'react-bootstrap';
-import { Element } from 'react-scroll';
 import AOS  from 'aos';
 
 function SectionAbout() {

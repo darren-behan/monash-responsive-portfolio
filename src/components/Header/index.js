@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import { Button } from 'react-bootstrap';
+import { Button, Nav } from 'react-bootstrap';
 import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
@@ -13,12 +13,6 @@ function Navbar() {
 
   const handleSkillsLinkClicked = () => {
     scroller.scrollTo('skills', {
-      smooth: true,
-    });
-  }
-
-  const handleEducationLinkClicked = () => {
-    scroller.scrollTo('education', {
       smooth: true,
     });
   }
@@ -45,7 +39,7 @@ function Navbar() {
     <Element
       name="header"
     >
-      <header className="sticky-top" id="header">
+      <header id="header">
         <nav
           id="navbar"
           className="navbar navbar-expand-lg navbar-expand-md navbar-light"
@@ -114,7 +108,7 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item" id="nav-centre">
-                <a className="nav-link" href="#section-skills" id="nav-education" onClick={handleEducationLinkClicked}>
+                <a className="nav-link" href="#section-skills" id="nav-education" onClick={handleSkillsLinkClicked}>
                   Education
                 </a>
               </li>

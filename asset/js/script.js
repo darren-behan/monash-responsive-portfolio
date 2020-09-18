@@ -79,11 +79,6 @@ $(document).ready(() => {
     }
   });
 
-  // Initializing AOS => https://michalsnik.github.io/aos/
-  AOS.init({
-    duration: 1200,
-  });
-
   // Initializing emailJS
   $("#contact-form").on("submit", function(event) {
       event.preventDefault();
@@ -95,14 +90,4 @@ $(document).ready(() => {
   (function(){
     emailjs.init("user_D6Whn8ZWKEkuy23eNghGk");
   })();
-
-  // When you click the 'View my work' button, the viewport scrolls down to the navigation menu and stops once that meets the top of the viewport
-  $(".btn-home").click(function () {
-    $("html, body").animate(
-      {
-        scrollTop: $(".sticky-top").offset().top,
-      },
-      1000
-    );
-  });
 });

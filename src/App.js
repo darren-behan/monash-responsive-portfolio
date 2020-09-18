@@ -3,6 +3,7 @@ import './App.css';
 import SectionHome from './components/SectionHome';
 import Header from './components/Header';
 import About from './components/SectionAbout';
+import SkillsEducation from './components/SectionSkillsEducation';
 import { Row, Container } from 'react-bootstrap';
 import { Element } from 'react-scroll';
 
@@ -14,65 +15,8 @@ function App() {
       <Header />
       <Element name="about"></Element>
       <About />
-      
-      <Element
-      name="skills"
-      >
-        <section id="section-skills">
-          <div className="container d-flex justify-content-center">
-            <Row>
-              <div className="col-md-6 flex">
-                <h2 data-aos="fade-right">Skills</h2>
-                <div className="header-bar" data-aos="fade-left"></div>
-                  <div className="graph-cont" data-aos="fade-right">
-                  <div className="bar bar1">
-                    <span><i className="fab fa-html5"></i></span>
-                    <span>90%</span>
-                  </div>
-                  <div className="bar bar2">
-                    <span><i className="fab fa-css3"></i></span>
-                    <span>90%</span>
-                  </div>
-                  <div className="bar bar3">
-                    <span><i className="fab fa-js"></i></span>
-                    <span>70%</span>
-                  </div>
-                  <div className="bar bar4">
-                    <span><i className="fab fa-node-js"></i></span>
-                    <span>70%</span>
-                  </div>
-                  <div className="bar bar5">
-                    <span><i className="fab fa-react"></i></span>
-                    <span>60%</span>
-                  </div>
-                  <div className="bar bar6">
-                    <span><i className="fab fa-github"></i></span>
-                    <span>80%</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 flex">
-                <h2 data-aos="fade-left">Education</h2>
-                <div className="header-bar" data-aos="fade-right"></div>
-                <div
-                  className="col-md col-sm"
-                  id="education-column"
-                  data-aos="fade-left"
-                >
-                  <div className="course">
-                    <h4>Full-stack Web Development Bootcamp</h4>
-                    <h5>Monash University - 2020</h5>
-                  </div>
-                  <div className="course">
-                    <h4>Bachelor of Arts, Honors Degree in Accounting</h4>
-                    <h5>Institute of Technology, Carlow - 2011</h5>
-                  </div>
-                </div>
-              </div>
-            </Row>
-          </div>
-        </section>
-      </Element>
+      <Element name="skills"></Element>
+      <SkillsEducation />
 
       <Element
       name="career"
