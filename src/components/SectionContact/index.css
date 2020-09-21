@@ -1,0 +1,8 @@
+#section-contact {
+  background-color: #fbfbfb;
+}
+
+.form-control {
+  display: inline-flex!important;
+  margin-bottom: 10px;
+}

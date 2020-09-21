@@ -67,17 +67,6 @@ a:hover {
   margin: 0 0 25px 0;
 }
 
-/* Section: Contact */
-
-#section-contact {
-  background-color: #fbfbfb;
-}
-
-.form-control {
-  display: inline-flex!important;
-  margin-bottom: 10px;
-}
-
 @media screen and (max-width: 1024px) {
   /* Section: About */
   /* Resizing the text within the button element */

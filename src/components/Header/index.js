@@ -64,13 +64,14 @@ function Navbar() {
                   className="nav-link"
                   href="https://www.linkedin.com/in/darren-behan/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <i className="fab fa-linkedin"></i>
                 </a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="https://github.com/darren-behan" target="_blank">
+                <a className="nav-link" href="https://github.com/darren-behan" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-github"></i>
                 </a>
               </li>
@@ -91,6 +92,7 @@ function Navbar() {
                   className="nav-link"
                   href="https://www.instagram.com/darren_behan/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <i className="fab fa-instagram"></i>
                 </a>
