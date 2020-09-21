@@ -1,0 +1,97 @@
+/* General Styles */
+
+body {
+  background-color: #ededed;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  position: relative;
+}
+
+/* Headings */
+h2 {
+  color: #001b31;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.flex {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sections */
+section {
+  padding: 40px 0 80px 0;
+  text-align: center;
+}
+
+section .container {
+  padding-top: 40px;
+}
+
+.row {
+  width: 100%;
+  margin: 0;
+}
+
+/* Paragraphs */
+p {
+  margin: 0 !important;
+}
+
+/* Font Awesome Icons */
+a > i {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+a > i:hover {
+  color: #e31b6d;
+}
+
+/* Links */
+a {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* This is to add margin to the bottom of image tiles */
+.col-md-4 {
+  margin: 0 0 25px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  /* Section: About */
+  /* Resizing the text within the button element */
+  .button-md {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Section: About */
+  /* Resizing the text within the button element */
+  .button-md {
+    font-size: 1rem;
+  }
+
+  /* Adding padding to the top to create space between the text and image */
+  .bio-text-right, .bio-text-left {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  /* Section: About */
+  /* Adding margin to the bottom of the button to create some separation */
+  .button-sm {
+    margin: 0 0 5px 0;
+  }
+}
