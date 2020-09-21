@@ -103,6 +103,11 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item" id="nav-centre">
+                <a className="nav-link" href="#section-career" id="nav-career" onClick={handleCareerLinkClicked}>
+                  Career
+                </a>
+              </li>
+              <li className="nav-item" id="nav-centre">
                 <a className="nav-link" href="#section-skills" id="nav-skills" onClick={handleSkillsLinkClicked}>
                   Skills
                 </a>
@@ -110,11 +115,6 @@ function Navbar() {
               <li className="nav-item" id="nav-centre">
                 <a className="nav-link" href="#section-skills" id="nav-education" onClick={handleSkillsLinkClicked}>
                   Education
-                </a>
-              </li>
-              <li className="nav-item" id="nav-centre">
-                <a className="nav-link" href="#section-career" id="nav-career" onClick={handleCareerLinkClicked}>
-                  Career
                 </a>
               </li>
               <li className="nav-item" id="nav-centre">

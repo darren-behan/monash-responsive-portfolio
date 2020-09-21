@@ -1,39 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './index.css';
 import { Container, Row } from 'react-bootstrap';
 import AOS  from 'aos';
 import VizSensor from 'react-visibility-sensor';
 
 function SectionSkillsEducation() {
-  const [barViz, setState] = useState(false);
   useEffect(() => {
     // Initializing AOS => https://michalsnik.github.io/aos/
     AOS.init({
       duration: 1200,
     });
-
-    // This is to animate the skills graph on scroll and when the graph is within the viewport, rather than page load
-    // Pass an element into this function to calculate where in the viewport it is position
-  //   const isInViewport = (el) => {
-  //     const rect = el.getBoundingClientRect();
-  //     return (
-  //       rect.top >= 0 &&
-  //       rect.left >= 0 &&
-  //       rect.bottom <=
-  //         (window.innerHeight || document.documentElement.clientHeight) &&
-  //       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  //     );
-  //   }
-  //   // Retrieving div with a class of "bar"
-    // const bar = document.querySelector(".bar");
-  //   // Adding the event scroll to the document
-  //   // Passing the bar element into the isInViewport function
-  //   // If true, adding a class to the element
-  //   document.addEventListener("scroll", function () {
-  //     if (isInViewport(bar)) {
-  //       bar.classList.add("animate");
-  //     }
-  //   });
   }, [])
 
   return (

@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import './index.css';
+import ProfileImage from '../../assets/img/profile-pic.png'
+import CV from '../../assets/img/cv.pdf'
 import { Container, Row } from 'react-bootstrap';
 import AOS  from 'aos';
 
@@ -36,7 +38,7 @@ function SectionAbout() {
                 className="col-lg-4 col-md-12 order-first order-md-first order-lg-1 profile-pic aos-init aos-animate"
                 data-aos="fade-up"
               >
-                <img src="../../assets/img/profile-pic.png" alt="profile"/>
+                <img src={ ProfileImage } alt="profile"/>
                 <div
                   className="d-flex justify-content-center col-md-12 button-sm"
                 >
@@ -44,7 +46,7 @@ function SectionAbout() {
                     type="button"
                     className="btn btn-outline-primary d-flex align-items-center button-md"
                   >
-                    <a className="button-md" href="./assets/img/cv.pdf" target="_blank"
+                    <a className="button-md" href={ CV } target="_blank"
                       >Download CV</a
                     >
                   </button>

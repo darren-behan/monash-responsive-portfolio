@@ -4,6 +4,7 @@ import SectionHome from './components/SectionHome';
 import Header from './components/Header';
 import About from './components/SectionAbout';
 import SkillsEducation from './components/SectionSkillsEducation';
+import Career from './components/SectionCareer';
 import { Row, Container } from 'react-bootstrap';
 import { Element } from 'react-scroll';
 
@@ -15,13 +16,11 @@ function App() {
       <Header />
       <Element name="about"></Element>
       <About />
+      <Element name="career"></Element>
+      <Career />
       <Element name="skills"></Element>
       <SkillsEducation />
-
-      <Element
-      name="career"
-      >
-        <section id="section-career">
+        {/* <section id="section-career">
           <div className="container d-flex justify-content-center">
             <Row>
               <div className="career col-md-12 flex">
@@ -290,8 +289,8 @@ function App() {
               </div>
             </Row>
           </div>
-        </section>
-      </Element>
+        </section> */}
+
       
       <Element
       name="portfolio"
