@@ -1,10 +1,10 @@
 import React from 'react';
 import './index.css';
-import { Button, Nav } from 'react-bootstrap';
+import { Button, Navbar } from 'react-bootstrap';
 import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
-function Navbar() {
+function NavigationMenu() {
   const handleAboutLinkClicked = () => {
     scroller.scrollTo('about', {
       smooth: true,
@@ -35,6 +35,52 @@ function Navbar() {
     });
   }
 
+  const contactDetailsArray = [
+    {
+      faIcon: "fab fa-linkedin",
+      url: "https://www.linkedin.com/in/darren-behan/"
+    },
+    {
+      faIcon: "fab fa-github",
+      url: "https://github.com/darren-behan"
+    },
+    {
+      faIcon: "fab fa-envelope",
+      url: "#section-contact"
+    },
+    {
+      faIcon: "fab fa-instagram",
+      url: "https://www.instagram.com/darren_behan/"
+    }
+  ]
+
+  const navItemsArray = [
+    {
+      name: "about",
+      url: "#section-about"
+    },
+    {
+      name: "career",
+      url: "#section-career"
+    },
+    {
+      name: "skills",
+      url: "#section-skills"
+    },
+    {
+      name: "education",
+      url: "#section-skills"
+    },
+    {
+      name: "portfolio",
+      url: "#section-portfolio"
+    },
+    {
+      name: "contact",
+      url: "#section-contact"
+    }
+  ]
+
   return (
     <Element
       name="header"
@@ -54,8 +100,8 @@ function Navbar() {
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"
-              ><i className="fas fa-bars" style={{ color: "#fff", fontSize: "28px" }}></i
-            ></span>
+              ><i className="fas fa-bars" style={{ color: "#fff", fontSize: "28px" }}></i>
+            </span>
           </Button>
           <div className="collapse navbar-collapse" id="navbar-nav">
             <ul className="navbar-nav mr-auto">
@@ -142,4 +188,4 @@ function Navbar() {
   )
 }
 
-export default Navbar;
+export default NavigationMenu;
