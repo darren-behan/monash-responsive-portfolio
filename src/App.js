@@ -13,6 +13,7 @@ function App() {
   return (
     <div className=".container-fluid">
       <SectionHome />
+      <Element name="header"></Element>
       <Header />
       <Element name="about"></Element>
       <About />

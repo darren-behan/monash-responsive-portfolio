@@ -1,26 +1,17 @@
 /* Navigation Menu */
-header {
-  position: sticky;
-}
-
-nav {
+#navbar {
   border-bottom: 3px solid #04c2c9;
   background-color: #001b31;
 }
 
-/* Header a tags colour and font weight */
-
-header #navbar-nav a {
-  color: #ffffff;
-  font-weight: 400;
-}
-
-/* Header, font awesome icons & side navigation a tags hover colour */
-
-header #navbar-nav a:hover {
-  color: #e31b6d;
-}
-
-.nav-pills .nav-link.active {
+.toggle-icon {
   background-color: #04c2c9;
+}
+
+.nav-link:hover {
+  color: #e31b6d!important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #04c2c9
 }

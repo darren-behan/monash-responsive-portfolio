@@ -1,10 +1,10 @@
 import React from 'react';
 import './index.css';
-import { Button, Navbar } from 'react-bootstrap';
+import { Button, Nav, Navbar } from 'react-bootstrap';
 import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
-function NavigationMenu() {
+function Header() {
   const handleAboutLinkClicked = () => {
     scroller.scrollTo('about', {
       smooth: true,
@@ -35,157 +35,72 @@ function NavigationMenu() {
     });
   }
 
-  const contactDetailsArray = [
-    {
-      faIcon: "fab fa-linkedin",
-      url: "https://www.linkedin.com/in/darren-behan/"
-    },
-    {
-      faIcon: "fab fa-github",
-      url: "https://github.com/darren-behan"
-    },
-    {
-      faIcon: "fab fa-envelope",
-      url: "#section-contact"
-    },
-    {
-      faIcon: "fab fa-instagram",
-      url: "https://www.instagram.com/darren_behan/"
-    }
-  ]
-
-  const navItemsArray = [
-    {
-      name: "about",
-      url: "#section-about"
-    },
-    {
-      name: "career",
-      url: "#section-career"
-    },
-    {
-      name: "skills",
-      url: "#section-skills"
-    },
-    {
-      name: "education",
-      url: "#section-skills"
-    },
-    {
-      name: "portfolio",
-      url: "#section-portfolio"
-    },
-    {
-      name: "contact",
-      url: "#section-contact"
-    }
-  ]
-
   return (
-    <Element
-      name="header"
-    >
-      <header id="header">
-        <nav
-          id="navbar"
-          className="navbar navbar-expand-lg navbar-expand-md navbar-light"
+    <Navbar id="navbar"  className="justify-content-start" expand="md" sticky="top">
+      <Nav.Item>
+        <Nav.Link 
+          href="https://www.linkedin.com/in/darren-behan/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <Button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbar-nav"
-            aria-controls="navbar-nav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"
-              ><i className="fas fa-bars" style={{ color: "#fff", fontSize: "28px" }}></i>
-            </span>
-          </Button>
-          <div className="collapse navbar-collapse" id="navbar-nav">
-            <ul className="navbar-nav mr-auto">
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="https://www.linkedin.com/in/darren-behan/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-linkedin"></i>
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a className="nav-link" href="https://github.com/darren-behan" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-github"></i>
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="#section-contact"
-                  id="nav-icon-contact"
-                  onClick={handleContactLinkClicked}
-                >
-                  <i className="fas fa-envelope"></i>
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="https://www.instagram.com/darren_behan/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
-            <ul className="nav nav-pills navbar-nav ml-auto">
-              <li className="nav-item">
-                <a className="nav-link" href="#section-about" id="nav-about" onClick={handleAboutLinkClicked}>
-                  About
-                </a>
-              </li>
-              <li className="nav-item" id="nav-centre">
-                <a className="nav-link" href="#section-career" id="nav-career" onClick={handleCareerLinkClicked}>
-                  Career
-                </a>
-              </li>
-              <li className="nav-item" id="nav-centre">
-                <a className="nav-link" href="#section-skills" id="nav-skills" onClick={handleSkillsLinkClicked}>
-                  Skills
-                </a>
-              </li>
-              <li className="nav-item" id="nav-centre">
-                <a className="nav-link" href="#section-skills" id="nav-education" onClick={handleSkillsLinkClicked}>
-                  Education
-                </a>
-              </li>
-              <li className="nav-item" id="nav-centre">
-                <a
-                  className="nav-link"
-                  href="#section-portfolio"
-                  id="nav-portfolio"
-                  onClick={handlePortfolioLinkClicked}
-                >
-                  Portfolio
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#section-contact" id="nav-contact" onClick={handleContactLinkClicked}>
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-    </Element>
+          <i className="fab fa-linkedin"></i>
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link 
+          href="https://github.com/darren-behan"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-github"></i>
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link 
+          href="https://www.instagram.com/darren_behan/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-instagram"></i>
+        </Nav.Link>
+      </Nav.Item>
+      <Navbar.Toggle className="toggle-icon ml-auto" aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+        <Nav variant="pills">
+          <Nav.Item>
+            <Nav.Link activeKey="1" className="nav-link" href="#section-about" id="nav-about" onClick={handleAboutLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
+              About
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link activeKey="2" className="nav-link" href="#section-career" id="nav-career" onClick={handleCareerLinkClicked} style={{ color: '#ffffff', fontWeight: 400 }}>
+              Career
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link className="nav-link" href="#section-skills" id="nav-skills" onClick={handleSkillsLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
+              Skills
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link className="nav-link" href="#section-skills" id="nav-education" onClick={handleSkillsLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
+              Education
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link className="nav-link" href="#section-portfolio" id="nav-portfolio" onClick={handlePortfolioLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
+              Portfolio
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link className="nav-link" href="#section-contact" id="nav-contact" onClick={handleContactLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
+              Contact
+            </Nav.Link>
+          </Nav.Item>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   )
 }
 
-export default NavigationMenu;
+export default Header;
