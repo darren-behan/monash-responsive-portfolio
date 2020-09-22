@@ -1,0 +1,8 @@
+.footer {
+  border-top: 3px solid #04c2c9;
+  background-color: #001b31;
+}
+
+.footer-a:hover {
+  color: #e31b6d!important;
+}

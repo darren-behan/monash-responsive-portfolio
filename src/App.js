@@ -7,6 +7,7 @@ import SkillsEducation from './components/SectionSkillsEducation';
 import Career from './components/SectionCareer';
 import PortfolioSection from './components/SectionPortfolio';
 import ContactSection from './components/SectionContact';
+import Footer from './components/Footer';
 import { Element } from 'react-scroll';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <PortfolioSection />
       <Element name="contact"></Element>
       <ContactSection />
+      <Footer />
     </div>
   );
 }
