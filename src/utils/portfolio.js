@@ -1,11 +1,11 @@
-import beRedy from './assets/img/be-redy.png';
-import aBetterTime from './assets/img/a-better-time.png';
-import burgerLogger from './assets/img/burger-logger.png';
-import readmeGenerator from './assets/img/readme-generator.png';
-import employeeTracker from './assets/img/employee-tracker.png';
-import weatherDashboard from './assets/img/weather-dashboard.png';
-import workDayScheduler from './assets/img/work-day-scheduler.png';
-import workoutTracker from './assets/img/workout-tracker.png';
+import beRedy from '../assets/img/be-redy.png';
+import aBetterTime from '../assets/img/a-better-time.png';
+import burgerLogger from '../assets/img/burger-logger.png';
+import readmeGenerator from '../assets/img/readme-generator.png';
+import employeeTracker from '../assets/img/employee-tracker.png';
+import weatherDashboard from '../assets/img/weather-dashboard.png';
+import workDayScheduler from '../assets/img/work-day-scheduler.png';
+import workoutTracker from '../assets/img/workout-tracker.png';
 
 export default [
   {

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './index.css';
 import { Container, Row } from 'react-bootstrap';
 import Portfolio from '../Portfolio';
-import PortfolioArray from '../../portfolio'
+import PortfolioArray from '../../utils/portfolio'
 
 function PortfolioSection() {
   // Setting this.state.portfolio to the portfolio json array
