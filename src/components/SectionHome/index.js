@@ -16,14 +16,14 @@ function SectionHome() {
     <section id="home" className="d-flex align-items-center">
       <Container>
         <Row>
-          <Col className="d-flex justify-content-center col-md-12">
+          <Col md={12} className="d-flex justify-content-center">
             <p className="intro">
               Hello, I'm <span className="name">Darren Behan</span>.
               <br />
               I'm a full-stack web developer.
             </p>
           </Col>
-          <Col className="d-flex justify-content-center col-md-12">
+          <Col md={12} className="d-flex justify-content-center">
             <Button
               type="button"
               className="btn btn-outline-primary d-flex align-items-center btn-home"
