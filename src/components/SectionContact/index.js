@@ -1,8 +1,24 @@
 import React from 'react';
+import { init, emailjs } from 'emailjs-com';
 import { Row, Container } from 'react-bootstrap';
 import './index.css';
 
 function Contact() {
+  // Initializing emailJS
+  init("user_D6Whn8ZWKEkuy23eNghGk");
+
+  function sendEmail(e) {
+    e.preventDefault();
+    console.log(e);
+
+    emailjs.sendForm('outlook', 'portfoliositecontact', e.target, 'user_D6Whn8ZWKEkuy23eNghGk')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
+
   return (
     <section id="section-contact">
       <Container>
@@ -13,7 +29,6 @@ function Contact() {
             <form id="contact-form">
               <Row>
                 <div className="col-md-12">
-                  <input type="hidden" name="contact_number" />
                   <input name="user_name"
                     type="text"
                     className="form-control"
@@ -30,7 +45,7 @@ function Contact() {
                     className="form-control"
                     placeholder="Message"
                   />
-                  <button id="button-submit" type="submit" value="submit" className="btn btn-primary">
+                  <button id="button-submit" type="submit" value="Send" className="btn btn-primary" onSubmit={sendEmail}>
                     Send Email
                   </button>
                 </div>
