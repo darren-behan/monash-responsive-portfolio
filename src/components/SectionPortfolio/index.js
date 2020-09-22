@@ -34,25 +34,3 @@ function PortfolioSection() {
 }
 
 export default PortfolioSection
-
-// portfolio.forEach(element => {
-//   const $portfolioRowDivEl = $("#portfolio-row");
-//   const $portfolioColDivEl = $("<div>").attr("class", "col-lg-3 col-md-4 col-sm-6 col-xs-12").attr("data-aos", "zoom-in-up");
-//   const $hoverEffectDivEl = $("<div>").attr("class", "hovereffect");
-//   const $responsiveImgEl = $("<img>").attr("class", "img-responsive").attr("alt", "").attr("src", element.image);
-//   const $overlayDivEl = $("<div>").attr("class", "overlay");
-//   const $appLinkEl = $("<a>").attr("href", element.app).attr("target", "_blank");
-//   const $pEl = $("<p>");
-//   const $repoLinkEl = $("<a>").attr("href", element.github).attr("target", "_blank");
-//   const $githubFontEl = $("<i>").attr("class", "fab fa-github");
-
-//   $portfolioRowDivEl.append($portfolioColDivEl);
-//   $portfolioColDivEl.append($hoverEffectDivEl);
-//   $hoverEffectDivEl.append($responsiveImgEl);
-//   $hoverEffectDivEl.append($overlayDivEl);
-//   $overlayDivEl.append($appLinkEl);
-//   $appLinkEl.html("<h2>" + element.name + "</h2>");
-//   $overlayDivEl.append($pEl);
-//   $pEl.append($repoLinkEl);
-//   $repoLinkEl.append($githubFontEl);
-// });
