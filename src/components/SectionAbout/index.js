@@ -51,6 +51,10 @@ function SectionAbout() {
                     >
                   </button>
                 </div>
+                <br/>
+                <p>
+                  darrenbehan@hotmail.com
+                </p>
               </div>
               <div
                 className="col-lg-4 col-md-6 order-lg-2 bio-text-right aos-init aos-animate"

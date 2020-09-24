@@ -26,7 +26,7 @@
 
   🚨 View my portfolio <a href="https://darren-behan.github.io">here</a>
 
-  ![Preview](./asset/img/portfolio.png "Preview of Portfolio")
+  ![Preview](./src/assets/img/portfolio.png "Preview of Portfolio")
 
   ## License
 
