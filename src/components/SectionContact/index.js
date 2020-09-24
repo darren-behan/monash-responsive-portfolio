@@ -6,7 +6,10 @@ import './index.css';
 function Contact() {
   function sendEmail(e) {
     e.preventDefault();
-    console.log(e);
+    console.log(e.target);
+    console.log(e.target.user_name.value);
+    console.log(e.target.user_email.value);
+    console.log(e.target.message.value);
 
     emailjs.sendForm('outlook', 'portfoliositecontact', e.target, 'user_D6Whn8ZWKEkuy23eNghGk')
       .then((result) => {
@@ -14,6 +17,15 @@ function Contact() {
       }, (error) => {
           console.log(error.text);
       });
+
+      e.target.user_name.value = "";
+      e.target.user_email.value = "";
+      e.target.message.value = "";
+  }
+
+  function onClick(e) {
+    e.preventDefault();
+
   }
 
   return (
@@ -42,7 +54,7 @@ function Contact() {
                     className="form-control"
                     placeholder="Message"
                   />
-                  <button id="button-submit" type="submit" value="Send" className="btn btn-primary">
+                  <button id="button-submit" type="submit" value="Send" className="btn btn-primary" click={onClick}>
                     Send Email
                   </button>
                 </div>
