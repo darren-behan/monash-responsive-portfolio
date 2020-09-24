@@ -9,7 +9,7 @@ function PortfolioSection() {
   const [portfolioArray, setPortfolioArray] = useState(PortfolioArray);
 
   return (
-    <section id="section-portfolio">
+    <section id="portfolio">
       <Container>
         <Row>
           <div className="portfolio col-md-12 flex">

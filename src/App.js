@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import SectionHome from './components/SectionHome';
 import Header from './components/Header';
@@ -9,8 +9,14 @@ import PortfolioSection from './components/SectionPortfolio';
 import ContactSection from './components/SectionContact';
 import Footer from './components/Footer';
 import { Element } from 'react-scroll';
+import { init } from 'emailjs-com';
 
 function App() {
+  useEffect(function() {
+    // Initializing emailJS
+    init("user_D6Whn8ZWKEkuy23eNghGk");
+  }, [])
+  
   return (
     <div className=".container-fluid">
       <SectionHome />

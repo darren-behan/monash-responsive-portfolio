@@ -13,7 +13,7 @@ function SectionSkillsEducation() {
   }, [])
 
   return (
-    <section id="section-skills">
+    <section id="skills">
       <Container className="d-flex justify-content-center">
         <Row>
           <div className="col-md-6 flex">

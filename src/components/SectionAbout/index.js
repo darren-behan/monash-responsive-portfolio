@@ -14,7 +14,7 @@ function SectionAbout() {
   }, [])
 
   return (
-    <section id="section-about">
+    <section id="about">
       <Container className="d-flex justify-content-center">
         <Row>
           <div className="about flex">

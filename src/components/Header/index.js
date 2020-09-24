@@ -68,32 +68,32 @@ function Header() {
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav variant="pills">
           <Nav.Item>
-            <Nav.Link activeKey="1" className="nav-link" href="#section-about" id="nav-about" onClick={handleAboutLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
+            <Nav.Link activeKey="1" className="nav-link" href="#about" id="nav-about" onClick={handleAboutLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
               About
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link activeKey="2" className="nav-link" href="#section-career" id="nav-career" onClick={handleCareerLinkClicked} style={{ color: '#ffffff', fontWeight: 400 }}>
+            <Nav.Link activeKey="2" className="nav-link" href="#career" id="nav-career" onClick={handleCareerLinkClicked} style={{ color: '#ffffff', fontWeight: 400 }}>
               Career
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-link" href="#section-skills" id="nav-skills" onClick={handleSkillsLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
+            <Nav.Link className="nav-link" href="#skills" id="nav-skills" onClick={handleSkillsLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
               Skills
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-link" href="#section-skills" id="nav-education" onClick={handleSkillsLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
+            <Nav.Link className="nav-link" href="#education" id="nav-education" onClick={handleSkillsLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
               Education
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-link" href="#section-portfolio" id="nav-portfolio" onClick={handlePortfolioLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
+            <Nav.Link className="nav-link" href="#portfolio" id="nav-portfolio" onClick={handlePortfolioLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
               Portfolio
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-link" href="#section-contact" id="nav-contact" onClick={handleContactLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
+            <Nav.Link className="nav-link" href="#contact" id="nav-contact" onClick={handleContactLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
               Contact
             </Nav.Link>
           </Nav.Item>

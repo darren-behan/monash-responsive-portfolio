@@ -1,12 +1,9 @@
 import React from 'react';
-import { init, emailjs } from 'emailjs-com';
+import emailjs from 'emailjs-com';
 import { Row, Container } from 'react-bootstrap';
 import './index.css';
 
 function Contact() {
-  // Initializing emailJS
-  init("user_D6Whn8ZWKEkuy23eNghGk");
-
   function sendEmail(e) {
     e.preventDefault();
     console.log(e);
@@ -20,13 +17,13 @@ function Contact() {
   }
 
   return (
-    <section id="section-contact">
+    <section id="contact">
       <Container>
         <Row>
           <div className="portfolio col-md-12 flex">
             <h2 data-aos="fade-right">Contact Me</h2>
             <div className="header-bar" data-aos="fade-left"></div>
-            <form id="contact-form">
+            <form id="contact-form" onSubmit={sendEmail}>
               <Row>
                 <div className="col-md-12">
                   <input name="user_name"
@@ -45,7 +42,7 @@ function Contact() {
                     className="form-control"
                     placeholder="Message"
                   />
-                  <button id="button-submit" type="submit" value="Send" className="btn btn-primary" onSubmit={sendEmail}>
+                  <button id="button-submit" type="submit" value="Send" className="btn btn-primary">
                     Send Email
                   </button>
                 </div>
