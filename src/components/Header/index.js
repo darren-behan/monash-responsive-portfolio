@@ -1,35 +1,40 @@
 import React from 'react';
 import './index.css';
-import { Button, Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 function Header() {
-  const handleAboutLinkClicked = () => {
+  const handleAboutLinkClicked = (e) => {
+    e.preventDefault();
     scroller.scrollTo('about', {
       smooth: true,
     });
   }
 
-  const handleSkillsLinkClicked = () => {
+  const handleSkillsLinkClicked = (e) => {
+    e.preventDefault();
     scroller.scrollTo('skills', {
       smooth: true,
     });
   }
 
-  const handleCareerLinkClicked = () => {
+  const handleCareerLinkClicked = (e) => {
+    e.preventDefault();
     scroller.scrollTo('career', {
       smooth: true,
     });
   }
 
-  const handlePortfolioLinkClicked = () => {
+  const handlePortfolioLinkClicked = (e) => {
+    e.preventDefault();
     scroller.scrollTo('portfolio', {
       smooth: true,
     });
   }
 
-  const handleContactLinkClicked = () => {
+  const handleContactLinkClicked = (e) => {
+    e.preventDefault();
     scroller.scrollTo('contact', {
       smooth: true,
     });
@@ -68,32 +73,32 @@ function Header() {
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav variant="pills">
           <Nav.Item>
-            <Nav.Link activeKey="1" className="nav-link" href="#about" id="nav-about" onClick={handleAboutLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
+            <Nav.Link activeKey="1" className="nav-link" href="about" id="nav-about" onClick={handleAboutLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
               About
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link activeKey="2" className="nav-link" href="#career" id="nav-career" onClick={handleCareerLinkClicked} style={{ color: '#ffffff', fontWeight: 400 }}>
+            <Nav.Link activeKey="2" className="nav-link" href="career" id="nav-career" onClick={handleCareerLinkClicked} style={{ color: '#ffffff', fontWeight: 400 }}>
               Career
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-link" href="#skills" id="nav-skills" onClick={handleSkillsLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
+            <Nav.Link className="nav-link" href="skills" id="nav-skills" onClick={handleSkillsLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
               Skills
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-link" href="#education" id="nav-education" onClick={handleSkillsLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
+            <Nav.Link className="nav-link" href="education" id="nav-education" onClick={handleSkillsLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
               Education
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-link" href="#portfolio" id="nav-portfolio" onClick={handlePortfolioLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
+            <Nav.Link className="nav-link" href="portfolio" id="nav-portfolio" onClick={handlePortfolioLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
               Portfolio
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-link" href="#contact" id="nav-contact" onClick={handleContactLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
+            <Nav.Link className="nav-link" href="contact" id="nav-contact" onClick={handleContactLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
               Contact
             </Nav.Link>
           </Nav.Item>
