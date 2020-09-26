@@ -1,11 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './index.css';
 import { Container, Row } from 'react-bootstrap';
 import Portfolio from '../Portfolio';
 import PortfolioArray from '../../utils/portfolio'
-import ScrollableSection from 'react-update-url-on-scroll';
+import ScrollableSection, { configureAnchors } from 'react-update-url-on-scroll';
 
 function PortfolioSection() {
+  useEffect(() => {
+    configureAnchors({});
+  }, []);
+  
   // Setting this.state.portfolio to the portfolio json array
   const [portfolioArray, setPortfolioArray] = useState(PortfolioArray);
 

@@ -1,14 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { Container, Row, Col, Button, Collapse } from 'react-bootstrap';
-import ScrollableSection from 'react-update-url-on-scroll';
+import ScrollableSection, { configureAnchors } from 'react-update-url-on-scroll';
 
 function Career() {
   const [openOne, setButtonOneOpen] = useState(false);
   const [openTwo, setButtonTwoOpen] = useState(false);
   const [openThree, setButtonThreeOpen] = useState(false);
   const [openFour, setButtonFourOpen] = useState(false);
+
+  useEffect(() => {
+    configureAnchors({});
+  }, []);
+
   return (
     <section>
       <Container>

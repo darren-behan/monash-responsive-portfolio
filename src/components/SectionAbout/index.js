@@ -4,7 +4,7 @@ import ProfileImage from '../../assets/img/profile-pic.png'
 import CV from '../../assets/img/cv.pdf'
 import { Container, Row } from 'react-bootstrap';
 import AOS  from 'aos';
-import ScrollableSection from 'react-update-url-on-scroll';
+import ScrollableSection, { configureAnchors } from 'react-update-url-on-scroll';
 
 function SectionAbout() {
   useEffect(() => {
@@ -12,6 +12,8 @@ function SectionAbout() {
     AOS.init({
       duration: 1200,
     });
+
+    configureAnchors({});
   }, [])
 
   return (
@@ -48,7 +50,7 @@ function SectionAbout() {
                       type="button"
                       className="btn btn-outline-primary d-flex align-items-center button-md"
                     >
-                      <a className="button-md" href={ CV } target="_blank"
+                      <a className="button-md" href={ CV } target="_blank" rel="noopener noreferrer"
                         >Download CV</a
                       >
                     </button>

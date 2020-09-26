@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import { Row, Container } from 'react-bootstrap';
 import './index.css';
-import ScrollableSection from 'react-update-url-on-scroll';
+import ScrollableSection, { configureAnchors } from 'react-update-url-on-scroll';
 
 function Contact() {
+  useEffect(() => {
+    configureAnchors({});
+  }, []);
+
   function sendEmail(e) {
     e.preventDefault();
     console.log(e.target);
@@ -22,11 +26,6 @@ function Contact() {
       e.target.user_name.value = "";
       e.target.user_email.value = "";
       e.target.message.value = "";
-  }
-
-  function onClick(e) {
-    e.preventDefault();
-
   }
 
   return (
@@ -56,7 +55,7 @@ function Contact() {
                       className="form-control"
                       placeholder="Message"
                     />
-                    <button id="button-submit" type="submit" value="Send" className="btn btn-primary" click={onClick}>
+                    <button id="button-submit" type="submit" value="Send" className="btn btn-primary">
                       Send Email
                     </button>
                   </div>

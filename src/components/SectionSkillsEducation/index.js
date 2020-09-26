@@ -3,7 +3,7 @@ import './index.css';
 import { Container, Row } from 'react-bootstrap';
 import AOS  from 'aos';
 import VizSensor from 'react-visibility-sensor';
-import ScrollableSection from 'react-update-url-on-scroll';
+import ScrollableSection, { configureAnchors } from 'react-update-url-on-scroll';
 
 function SectionSkillsEducation() {
   useEffect(() => {
@@ -11,6 +11,8 @@ function SectionSkillsEducation() {
     AOS.init({
       duration: 1200,
     });
+
+    configureAnchors({});
   }, [])
 
   return (
