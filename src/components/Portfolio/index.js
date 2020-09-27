@@ -7,6 +7,11 @@ function Portfolio(props) {
       <div className="hovereffect">
         <img src={ props.image } className="img-responsive" alt="portfolio" />
         <div className="overlay">
+          <i class={ props.html }></i>
+          <i class={ props.css }></i>
+          <i class={ props.js }></i>
+          <i class={ props.node }></i>
+          <i class={ props.react }></i>
           <a href={ props.app } target="_blank" rel="noopener noreferrer">
             <h2>{ props.name }</h2>
           </a>

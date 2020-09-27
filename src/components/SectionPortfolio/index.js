@@ -28,6 +28,11 @@ function PortfolioSection() {
                       app={portfolio.app}
                       name={portfolio.name}
                       github={portfolio.github}
+                      html={portfolio.html}
+                      css={portfolio.css}
+                      js={portfolio.js}
+                      node={portfolio.node}
+                      react={portfolio.react}
                     />
                   )
                 )}
