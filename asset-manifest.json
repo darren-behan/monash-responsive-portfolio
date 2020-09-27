@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.ad910b33.chunk.css",
-    "main.js": "/static/js/main.89763c59.chunk.js",
-    "main.js.map": "/static/js/main.89763c59.chunk.js.map",
+    "main.css": "/static/css/main.5c600c14.chunk.css",
+    "main.js": "/static/js/main.058d29cd.chunk.js",
+    "main.js.map": "/static/js/main.058d29cd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
     "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
     "static/css/2.7513ed2d.chunk.css": "/static/css/2.7513ed2d.chunk.css",
-    "static/js/2.367bb851.chunk.js": "/static/js/2.367bb851.chunk.js",
-    "static/js/2.367bb851.chunk.js.map": "/static/js/2.367bb851.chunk.js.map",
+    "static/js/2.70499e39.chunk.js": "/static/js/2.70499e39.chunk.js",
+    "static/js/2.70499e39.chunk.js.map": "/static/js/2.70499e39.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b5572e92a8f7534f95383fb79f6e83b4.js": "/precache-manifest.b5572e92a8f7534f95383fb79f6e83b4.js",
+    "precache-manifest.ab35ad257db96780890115fc9b0672c9.js": "/precache-manifest.ab35ad257db96780890115fc9b0672c9.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.7513ed2d.chunk.css.map": "/static/css/2.7513ed2d.chunk.css.map",
-    "static/css/main.ad910b33.chunk.css.map": "/static/css/main.ad910b33.chunk.css.map",
-    "static/js/2.367bb851.chunk.js.LICENSE.txt": "/static/js/2.367bb851.chunk.js.LICENSE.txt",
+    "static/css/main.5c600c14.chunk.css.map": "/static/css/main.5c600c14.chunk.css.map",
+    "static/js/2.70499e39.chunk.js.LICENSE.txt": "/static/js/2.70499e39.chunk.js.LICENSE.txt",
     "static/media/a-better-time.png": "/static/media/a-better-time.377f5db7.png",
     "static/media/burger-logger.png": "/static/media/burger-logger.ec3600bf.png",
     "static/media/index.css": "/static/media/code.4ee9ace3.jpg",
     "static/media/cv.pdf": "/static/media/cv.be8e98ba.pdf",
+    "static/media/employee-list.png": "/static/media/employee-list.8449c9bf.png",
     "static/media/employee-tracker.png": "/static/media/employee-tracker.67b1cfbf.png",
     "static/media/profile-pic.png": "/static/media/profile-pic.f4ed7758.png",
     "static/media/readme-generator.png": "/static/media/readme-generator.a747b3ee.png",
@@ -27,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.19ccc7f6.js",
     "static/css/2.7513ed2d.chunk.css",
-    "static/js/2.367bb851.chunk.js",
-    "static/css/main.ad910b33.chunk.css",
-    "static/js/main.89763c59.chunk.js"
+    "static/js/2.70499e39.chunk.js",
+    "static/css/main.5c600c14.chunk.css",
+    "static/js/main.058d29cd.chunk.js"
   ]
 }
