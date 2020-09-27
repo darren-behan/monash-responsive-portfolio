@@ -73,12 +73,12 @@ function Header() {
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav variant="pills">
           <Nav.Item>
-            <Nav.Link activeKey="1" className="nav-link" href="about" id="nav-about" onClick={handleAboutLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
+            <Nav.Link className="nav-link" href="#about" id="nav-about" onClick={handleAboutLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
               About
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link activeKey="2" className="nav-link" href="career" id="nav-career" onClick={handleCareerLinkClicked} style={{ color: '#ffffff', fontWeight: 400 }}>
+            <Nav.Link className="nav-link" href="career" id="nav-career" onClick={handleCareerLinkClicked} style={{ color: '#ffffff', fontWeight: 400 }}>
               Career
             </Nav.Link>
           </Nav.Item>
