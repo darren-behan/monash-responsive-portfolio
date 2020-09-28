@@ -1,19 +1,20 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  useLocation
-} from "react-router-dom";
-
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+    
 function NoMatch() {
-  let location = useLocation();
-
   return (
-    <div>
-      <h3>
-        No match for <code>{location.pathname}</code>
-      </h3>
-      <h5>Click <a href="/">here</a> to return home</h5>
-    </div>
+    <Jumbotron fluid>
+      <Container>
+        <Row>
+          <Col className="d-flex justify-content-center">
+            <h1>Oooops, Page Not Found <span role="img" aria-label="emoji">🧐</span></h1>
+          </Col>
+        </Row>
+      </Container>
+    </Jumbotron>
   );
 }
 

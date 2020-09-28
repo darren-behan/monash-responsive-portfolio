@@ -1,45 +1,9 @@
 import React from 'react';
 import './index.css';
 import { Nav, Navbar } from 'react-bootstrap';
-import * as Scroll from 'react-scroll';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 function Header() {
-  const handleAboutLinkClicked = (e) => {
-    e.preventDefault();
-    scroller.scrollTo('about', {
-      smooth: true,
-    });
-  }
-
-  const handleSkillsLinkClicked = (e) => {
-    e.preventDefault();
-    scroller.scrollTo('skills', {
-      smooth: true,
-    });
-  }
-
-  const handleCareerLinkClicked = (e) => {
-    e.preventDefault();
-    scroller.scrollTo('career', {
-      smooth: true,
-    });
-  }
-
-  const handlePortfolioLinkClicked = (e) => {
-    e.preventDefault();
-    scroller.scrollTo('portfolio', {
-      smooth: true,
-    });
-  }
-
-  const handleContactLinkClicked = (e) => {
-    e.preventDefault();
-    scroller.scrollTo('contact', {
-      smooth: true,
-    });
-  }
-
   return (
     <Navbar id="navbar"  className="justify-content-start" expand="md" sticky="top">
       <Nav.Item>
@@ -73,34 +37,34 @@ function Header() {
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav variant="pills">
           <Nav.Item>
-            <Nav.Link className="nav-link" href="#about" id="nav-about" onClick={handleAboutLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
+            <Link to="/about" className="nav-link" id="nav-about" style={{color: '#ffffff', fontWeight: 400}}>
               About
-            </Nav.Link>
+            </Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-link" href="career" id="nav-career" onClick={handleCareerLinkClicked} style={{ color: '#ffffff', fontWeight: 400 }}>
+            <Link to="/career" className="nav-link" id="nav-career" style={{ color: '#ffffff', fontWeight: 400 }}>
               Career
-            </Nav.Link>
+            </Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-link" href="skills" id="nav-skills" onClick={handleSkillsLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
+            <Link to="/skills" className="nav-link" id="nav-skills" style={{color: '#ffffff', fontWeight: 400}}>
               Skills
-            </Nav.Link>
+            </Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-link" href="education" id="nav-education" onClick={handleSkillsLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
+            <Link to="/skills" className="nav-link" href="education" id="nav-education" style={{color: '#ffffff', fontWeight: 400}}>
               Education
-            </Nav.Link>
+            </Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-link" href="portfolio" id="nav-portfolio" onClick={handlePortfolioLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
+            <Link to="/portfolio" className="nav-link" href="portfolio" id="nav-portfolio" style={{color: '#ffffff', fontWeight: 400}}>
               Portfolio
-            </Nav.Link>
+            </Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-link" href="contact" id="nav-contact" onClick={handleContactLinkClicked} style={{color: '#ffffff', fontWeight: 400}}>
+            <Link to="/contact" className="nav-link" href="contact" id="nav-contact" style={{color: '#ffffff', fontWeight: 400}}>
               Contact
-            </Nav.Link>
+            </Link>
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>
