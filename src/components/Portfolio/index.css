@@ -1,0 +1,7 @@
+.portfolio-modal {
+  cursor: pointer;
+}
+
+.portfolio-modal:hover {
+  color: #e31b6d;
+}

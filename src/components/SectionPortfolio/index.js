@@ -1,10 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import './index.css';
 import { Container, Row } from 'react-bootstrap';
 import Portfolio from '../Portfolio';
+import PortfolioModal from '../PortfolioModal';
 import PortfolioArray from '../../utils/portfolio';
+import DataAreaContext from '../../utils/DataAreaContext';
 
 function PortfolioSection() {
+  const { portfolioModal, setPortfolioModal } = useContext(DataAreaContext);
+
   // Setting this.state.portfolio to the portfolio json array
   const [portfolioArray, setPortfolioArray] = useState(PortfolioArray);
 
@@ -17,7 +21,8 @@ function PortfolioSection() {
             <div className="header-bar" data-aos="fade-left" />
             <Row id="portfolio-row">
               {portfolioArray.map(portfolio => (
-                  <Portfolio 
+                <>
+                  <Portfolio
                     image={portfolio.image}
                     app={portfolio.app}
                     name={portfolio.name}
@@ -28,9 +33,15 @@ function PortfolioSection() {
                     node={portfolio.node}
                     react={portfolio.react}
                   />
+                </>
                 )
               )}
             </Row>
+            <PortfolioModal
+              show={portfolioModal}
+              onHide={() => setPortfolioModal(false)}
+              size="lg"
+            />
           </div>
         </Row>
       </Container>

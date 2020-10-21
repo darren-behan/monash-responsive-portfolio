@@ -1,3 +1,4 @@
+import golfersChoice from '../assets/img/golfers-choice.png';
 import beRedy from '../assets/img/be-redy.png';
 import aBetterTime from '../assets/img/a-better-time.png';
 import burgerLogger from '../assets/img/burger-logger.png';
@@ -9,6 +10,17 @@ import workDayScheduler from '../assets/img/work-day-scheduler.png';
 import workoutTracker from '../assets/img/workout-tracker.png';
 
 export default [
+  {
+    name: "GOLFERS CHOICE",
+    image: golfersChoice,
+    app: "https://golfers-choice.herokuapp.com",
+    github: "https://github.com/darren-behan/golfers-choice",
+    html: "fab fa-html5",
+    css: "fab fa-css3",
+    js: "fab fa-js-square",
+    node: "fab fa-node-js",
+    react: "fab fa-react"
+  },
   {
     name: "BE-REDY",
     image: beRedy,

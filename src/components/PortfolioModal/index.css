@@ -1,0 +1,32 @@
+.modal-img-responsive {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: 100%;
+}
+
+.fab {
+  margin-right: 5px;
+}
+
+.fab > .project-fa {
+  font-family: "Raleway", sans-serif!important;
+}
+
+.project-fa {
+  text-align: center;
+  color: black!important;
+  font-size: 20px;
+}
+
+.project-fa:hover {
+  color: #e31b6d!important;
+}
+
+.project-fa > i {
+  color: black!important;
+}
+
+.project-fa > i:hover {
+  color: #e31b6d!important;
+}
