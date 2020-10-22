@@ -32,6 +32,7 @@ function PortfolioSection() {
                     js={portfolio.js}
                     node={portfolio.node}
                     react={portfolio.react}
+                    description={portfolio.description}
                   />
                 </>
                 )

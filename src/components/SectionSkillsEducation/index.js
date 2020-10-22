@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import './index.css';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import AOS  from 'aos';
-import VizSensor from 'react-visibility-sensor';
 
 function SectionSkillsEducation() {
   useEffect(() => {
@@ -19,56 +18,31 @@ function SectionSkillsEducation() {
           <div className="col-md-6 flex">
             <h2 data-aos="fade-right">Skills</h2>
             <div className="header-bar" data-aos="fade-left"></div>
-              <div className="graph-cont" data-aos="fade-right">
-              <VizSensor>
-                {({isVisible}) =>
-                  <div className={`bar bar1 ${isVisible ? "animate" : ""}`}>
-                    <span><i className="fab fa-html5"></i></span>
-                    <span>90%</span>
+              <Row className="featurette"
+              data-aos="fade-right"
+              >
+                <Col lg={4} style={{ marginBottom: "20px" }}>
+                  <div class="featurette-icon">
+                    <i class="fab fa-uikit"></i>
                   </div>
-                }
-              </VizSensor>
-              <VizSensor>
-                {({isVisible}) =>
-                  <div className={`bar bar2 ${isVisible ? "animate" : ""}`}>
-                    <span><i className="fab fa-css3"></i></span>
-                    <span>90%</span>
+                  <h4>UI</h4>
+                  <p>React, Javascript, jQuery, AJAX, Bootstrap, CSS3, HTML5</p>
+                </Col>
+                <Col lg={4} style={{ marginBottom: "20px" }}>
+                  <div class="featurette-icon">
+                    <i class="fas fa-server"></i>
                   </div>
-                }
-              </VizSensor>
-              <VizSensor>
-                {({isVisible}) =>
-                  <div className={`bar bar3 ${isVisible ? "animate" : ""}`}>
-                    <span><i className="fab fa-js"></i></span>
-                    <span>70%</span>
+                  <h4>Server</h4>
+                  <p>Node &amp; Express</p>
+                </Col>
+                <Col lg={4} style={{ marginBottom: "20px" }}>
+                  <div class="featurette-icon">
+                    <i class="fas fa-database"></i>
                   </div>
-                }
-              </VizSensor>
-              <VizSensor>
-                {({isVisible}) =>
-                  <div className={`bar bar4 ${isVisible ? "animate" : ""}`}>
-                    <span><i className="fab fa-node-js"></i></span>
-                    <span>70%</span>
-                  </div>
-                }
-              </VizSensor>
-              <VizSensor>
-                {({isVisible}) =>
-                  <div className={`bar bar5 ${isVisible ? "animate" : ""}`}>
-                    <span><i className="fab fa-react"></i></span>
-                    <span>60%</span>
-                  </div>
-                }
-              </VizSensor>
-              <VizSensor>
-                {({isVisible}) =>
-                  <div className={`bar bar6 ${isVisible ? "animate" : ""}`}>
-                    <span><i className="fab fa-github"></i></span>
-                    <span>80%</span>
-                  </div>
-                }
-              </VizSensor>
-            </div>
+                  <h4>Databases</h4>
+                  <p>MongoDB &amp; MySQL</p>
+                </Col>
+              </Row>
           </div>
           <div className="col-md-6 flex">
             <h2 data-aos="fade-left">Education</h2>

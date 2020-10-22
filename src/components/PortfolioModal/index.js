@@ -5,7 +5,6 @@ import DataAreaContext from '../../utils/DataAreaContext';
 
 function PortfolioModal(props) {
   const { portfolioObject } = useContext(DataAreaContext);
-  console.log(portfolioObject);
 
   return (
     <Modal {...props} 
@@ -33,6 +32,8 @@ function PortfolioModal(props) {
                 <a href={ portfolioObject.github } target="_blank" rel="noopener noreferrer" className="project-fa">
                   <i className="fab fa-github"></i>
                 </a>
+                <br/>
+                <p>{ portfolioObject.description }</p>
                 <br/>
                 <a href={ portfolioObject.app } target="_blank" rel="noopener noreferrer" className="project-fa">
                   View App here
